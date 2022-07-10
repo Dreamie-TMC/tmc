@@ -3,7 +3,7 @@ var searchData=
   ['eepromcompare_0',['EEPROMCompare',['../eeprom_8h.html#aa91efd3bf05da7730628729ae9649bff',1,'EEPROMCompare(u16 address, const u16 *data):&#160;eeprom.c'],['../eeprom_8c.html#aa91efd3bf05da7730628729ae9649bff',1,'EEPROMCompare(u16 address, const u16 *data):&#160;eeprom.c']]],
   ['eepromconfigure_1',['EEPROMConfigure',['../eeprom_8h.html#a77f0e3a3eaee82d1e5c241e8ee2836a8',1,'EEPROMConfigure(u16 unk_1):&#160;eeprom.c'],['../eeprom_8c.html#a77f0e3a3eaee82d1e5c241e8ee2836a8',1,'EEPROMConfigure(u16 unk_1):&#160;eeprom.c']]],
   ['eepromread_2',['EEPROMRead',['../eeprom_8h.html#a87f821820e98a16ee933f9070390e400',1,'EEPROMRead(u16 address, u16 *data):&#160;eeprom.c'],['../eeprom_8c.html#a87f821820e98a16ee933f9070390e400',1,'EEPROMRead(u16 address, u16 *data):&#160;eeprom.c']]],
-  ['eepromwrite_3',['EEPROMWrite',['../eeprom_8c.html#a60e49e1c34d68e7547aafad2fa8b3805',1,'eeprom.c']]],
+  ['eepromwrite_3',['EEPROMWrite',['../eeprom_8c.html#a4d854e7fb5c232ba5dfc476632e0875b',1,'eeprom.c']]],
   ['eepromwrite0_5f8k_4',['EEPROMWrite0_8k',['../eeprom_8c.html#a5ea09d38c5799361c0e6ffbca2045eaa',1,'eeprom.c']]],
   ['eepromwrite0_5f8k_5fcheck_5',['EEPROMWrite0_8k_Check',['../eeprom_8c.html#a650208df1e87920ec6a4741a82fce778',1,'EEPROMWrite0_8k_Check(u16 address, const u16 *data):&#160;eeprom.c'],['../eeprom_8h.html#a650208df1e87920ec6a4741a82fce778',1,'EEPROMWrite0_8k_Check(u16 address, const u16 *data):&#160;eeprom.c']]],
   ['eepromwrite1_6',['EEPROMWrite1',['../eeprom_8c.html#a89d8168734941d3faa387efeae37ca1d',1,'eeprom.c']]],

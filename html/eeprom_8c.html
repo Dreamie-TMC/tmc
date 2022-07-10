@@ -116,13 +116,13 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1c4deff278a7a3069894f213b54f6220"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#a1c4deff278a7a3069894f213b54f6220">REG_EEPROM</a>&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>*)0xd000000)</td></tr>
+<tr class="memitem:a1c4deff278a7a3069894f213b54f6220"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#a1c4deff278a7a3069894f213b54f6220">REG_EEPROM</a>&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#a677aa1edce4bbb53741b1cc24eb4c035">vu16</a>*)0xd000000)</td></tr>
 <tr class="separator:a1c4deff278a7a3069894f213b54f6220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a60e49e1c34d68e7547aafad2fa8b3805"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#a60e49e1c34d68e7547aafad2fa8b3805">EEPROMWrite</a> (<a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>, const <a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> *, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>)</td></tr>
-<tr class="separator:a60e49e1c34d68e7547aafad2fa8b3805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d854e7fb5c232ba5dfc476632e0875b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#a4d854e7fb5c232ba5dfc476632e0875b">EEPROMWrite</a> (<a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>, const <a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> *, <a class="el" href="types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a>)</td></tr>
+<tr class="separator:a4d854e7fb5c232ba5dfc476632e0875b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77f0e3a3eaee82d1e5c241e8ee2836a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#a77f0e3a3eaee82d1e5c241e8ee2836a8">EEPROMConfigure</a> (<a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> unk_1)</td></tr>
 <tr class="memdesc:a77f0e3a3eaee82d1e5c241e8ee2836a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">selects EEPROM type selects 512byte on invalid argument  <a href="eeprom_8c.html#a77f0e3a3eaee82d1e5c241e8ee2836a8">More...</a><br /></td></tr>
 <tr class="separator:a77f0e3a3eaee82d1e5c241e8ee2836a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,8 +152,6 @@ Variables</h2></td></tr>
 <tr class="separator:a570205c90dc0bcb86545e479d321ddb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d54cc9440bfad48d8dad3440dc83a89"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structEEPROMConfig.html">EEPROMConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#a3d54cc9440bfad48d8dad3440dc83a89">gEEPROMConfig8k</a> = { 0x2000, 0x400, 0x300, 0xe }</td></tr>
 <tr class="separator:a3d54cc9440bfad48d8dad3440dc83a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e7ef6296814e4853e3a3a6e34584529"><td class="memItemLeft" align="right" valign="top">asm non_matching code_080B1520 <a class="el" href="eeprom_8c.html#a60e49e1c34d68e7547aafad2fa8b3805">EEPROMWrite</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#a6e7ef6296814e4853e3a3a6e34584529">inc</a></td></tr>
-<tr class="separator:a6e7ef6296814e4853e3a3a6e34584529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35991bf380ae7e04b23662ab435e4333"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#a35991bf380ae7e04b23662ab435e4333">EEPROM_NOWAIT</a> [] = &quot;EEPROM_NOWAIT&quot;</td></tr>
 <tr class="separator:a35991bf380ae7e04b23662ab435e4333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd683e30335c5557cefaa17088ebeae"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#accd683e30335c5557cefaa17088ebeae">thing</a> [0x1c] = &quot;\xff\xff\xff\xff&quot;</td></tr>
@@ -167,7 +165,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REG_EEPROM&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>*)0xd000000)</td>
+          <td class="memname">#define REG_EEPROM&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#a677aa1edce4bbb53741b1cc24eb4c035">vu16</a>*)0xd000000)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -310,14 +308,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a60e49e1c34d68e7547aafad2fa8b3805" name="a60e49e1c34d68e7547aafad2fa8b3805"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60e49e1c34d68e7547aafad2fa8b3805">&#9670;&nbsp;</a></span>EEPROMWrite()</h2>
+<a id="a4d854e7fb5c232ba5dfc476632e0875b" name="a4d854e7fb5c232ba5dfc476632e0875b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d854e7fb5c232ba5dfc476632e0875b">&#9670;&nbsp;</a></span>EEPROMWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm non_matching code_080B1520 EEPROMWrite <a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> EEPROMWrite </td>
+          <td class="memname"><a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> EEPROMWrite </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
@@ -529,20 +527,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="structEEPROMConfig.html">EEPROMConfig</a> gEEPROMConfig8k = { 0x2000, 0x400, 0x300, 0xe }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6e7ef6296814e4853e3a3a6e34584529" name="a6e7ef6296814e4853e3a3a6e34584529"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e7ef6296814e4853e3a3a6e34584529">&#9670;&nbsp;</a></span>inc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm non_matching code_080B1520 <a class="el" href="eeprom_8c.html#a60e49e1c34d68e7547aafad2fa8b3805">EEPROMWrite</a> inc</td>
         </tr>
       </table>
 </div><div class="memdoc">

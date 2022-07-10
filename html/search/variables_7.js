@@ -709,7 +709,7 @@ var searchData=
   ['gnpcdefinition_5f6_706',['gNPCDefinition_6',['../npcDefinitions_8c.html#af59342dac4c88b905a93c89ca306516e',1,'npcDefinitions.c']]],
   ['gnpcdefinition_5f7_707',['gNPCDefinition_7',['../npcDefinitions_8c.html#a33c8a486fa0990b23b891c06b42020aa',1,'npcDefinitions.c']]],
   ['gnpcdefinitions_708',['gNPCDefinitions',['../npcDefinitions_8c.html#a19bcdfbc87c5c1bce970ddd3a7c05e16',1,'gNPCDefinitions():&#160;npcDefinitions.c'],['../npcUtils_8c.html#a19bcdfbc87c5c1bce970ddd3a7c05e16',1,'gNPCDefinitions():&#160;npcDefinitions.c']]],
-  ['gnpcfunctions_709',['gNPCFunctions',['../npc_8c.html#a3f46e631d19df62fc2a792cfa955e463',1,'gNPCFunctions():&#160;npc.c'],['../npc_8h.html#af3b7f1be4126d9258ae56f96ea66de6e',1,'gNPCFunctions():&#160;npc.c']]],
+  ['gnpcfunctions_709',['gNPCFunctions',['../npcFunctions_8c.html#a3f46e631d19df62fc2a792cfa955e463',1,'gNPCFunctions():&#160;npcFunctions.c'],['../npc_8h.html#af3b7f1be4126d9258ae56f96ea66de6e',1,'gNPCFunctions():&#160;npcFunctions.c']]],
   ['gnpchitboxes_710',['gNPCHitboxes',['../npcUtils_8c.html#a654c4dce0dde3c1269474c7e12731031',1,'npcUtils.c']]],
   ['gnummusicplayers_711',['gNumMusicPlayers',['../m4a_8c.html#aa356349f477eaecc4e10f55bfc632a33',1,'m4a.c']]],
   ['goamcmd_712',['gOamCmd',['../screen_8h.html#a33210f9158e92d60991230f0f703fefa',1,'screen.h']]],

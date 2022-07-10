@@ -212,7 +212,7 @@ var searchData=
   ['msgclose_209',['MsgClose',['../message_8c.html#a19c6a7e8b340d86625785a07c2bfe630',1,'message.c']]],
   ['msgdie_210',['MsgDie',['../message_8c.html#ae39b424150d347ad6555a48a03b27159',1,'message.c']]],
   ['msgidle_211',['MsgIdle',['../message_8c.html#a4d366afa0ffeec774a8d50c1e4e585d4',1,'message.c']]],
-  ['msginit_212',['MsgInit',['../message_8c.html#ac54cb2a1cd0dc54f74865551b6830c71',1,'message.c']]],
+  ['msginit_212',['MsgInit',['../message_8c.html#a6419a236fb623bb0887e8c9abd5f9f14',1,'message.c']]],
   ['msgopen_213',['MsgOpen',['../message_8c.html#af71d1ef3383de8150cc284624688c45a',1,'message.c']]],
   ['msgupdate_214',['MsgUpdate',['../message_8c.html#ad8b90c658804097f7ccc143aa85f4e23',1,'message.c']]],
   ['mulldozer_215',['Mulldozer',['../mulldozer_8c.html#a136735b071605dae7a0403f0f1787e0e',1,'Mulldozer(MulldozerEntity *this):&#160;mulldozer.c'],['../enemy_8h.html#a7c85700e14dee806827cc3147be8aa50',1,'Mulldozer():&#160;enemy.h']]],
