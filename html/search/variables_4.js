@@ -53,7 +53,7 @@ var searchData=
   ['doormimic_5ffunctions_50',['DoorMimic_Functions',['../doorMimic_8c.html#ac3a10e14473db99848d774021f5972c2',1,'doorMimic.c']]],
   ['dotextbox_51',['doTextBox',['../structMessage.html#a8b837a6e38649561c5fec780fe2296a2',1,'Message']]],
   ['down_52',['down',['../structItemMenuTableEntry.html#a5712ac2c36b377cce3800fa450164f04',1,'ItemMenuTableEntry']]],
-  ['draw_53',['draw',['../zeldaFollower_8c.html#ad0f6cad17055ab5272ab88d02fa78571',1,'draw():&#160;zeldaFollower.c'],['../structNPCDefinition.html#a268cfb65c259030b1f669834d1783207',1,'NPCDefinition::draw()'],['../structEnemyDefinition.html#a3da6bdf486dc50fb1748c7053ce09e19',1,'EnemyDefinition::draw()'],['../structProjectileDefinition.html#a74807154436d30122207a199dadb9b01',1,'ProjectileDefinition::draw()'],['../structObjectDefinition.html#ab8c9d264b1646b49d6b0f487cf97a3c6',1,'ObjectDefinition::draw()'],['../structEntity.html#a1d79993c1e2fbab96b2c52a0acec87fe',1,'Entity::draw()']]],
+  ['draw_53',['draw',['../zeldaFollower_8c.html#ad0f6cad17055ab5272ab88d02fa78571',1,'draw():&#160;zeldaFollower.c'],['../structNPCDefinition.html#a268cfb65c259030b1f669834d1783207',1,'NPCDefinition::draw()'],['../structObjectDefinition.html#ab8c9d264b1646b49d6b0f487cf97a3c6',1,'ObjectDefinition::draw()'],['../structEnemyDefinition.html#a3da6bdf486dc50fb1748c7053ce09e19',1,'EnemyDefinition::draw()'],['../structProjectileDefinition.html#a74807154436d30122207a199dadb9b01',1,'ProjectileDefinition::draw()'],['../structEntity.html#a1d79993c1e2fbab96b2c52a0acec87fe',1,'Entity::draw()']]],
   ['draw_5fborder_54',['draw_border',['../structFont.html#a95e1225beae11870e4ad3b035cc83f66',1,'Font']]],
   ['dummy_55',['dummy',['../structBgCnt.html#a646674a183cdfb4fbbfedf580c67253d',1,'BgCnt']]],
   ['dungeon_5farea_56',['dungeon_area',['../structPlayerRoomStatus.html#a9fe15d8fb826082497655a6b581e093f',1,'PlayerRoomStatus']]],
@@ -64,7 +64,8 @@ var searchData=
   ['dungeon_5fx_61',['dungeon_x',['../structPlayerRoomStatus.html#ac59718a02700e02b2872766a7ae5dbcc',1,'PlayerRoomStatus']]],
   ['dungeon_5fy_62',['dungeon_y',['../structPlayerRoomStatus.html#aac5acaace9515e8b25a10ff4bb1420fb',1,'PlayerRoomStatus']]],
   ['duplicate_63',['duplicate',['../structFigurineMenu.html#a1b4c398e59d0407b264cebfee074cd8b',1,'FigurineMenu']]],
-  ['duration_64',['duration',['../ui_8c.html#a88f98167f55e7fb55b3adc3db056980d',1,'duration():&#160;ui.c'],['../structPACKED.html#a546c33fea20deb541e3546c0dbb63513',1,'PACKED::duration()'],['../structUIElement.html#a0a8982fdbbe3e02c04c1e59fbee05667',1,'UIElement::duration()']]],
-  ['dx_65',['dx',['../structBgAffineDstData.html#a9854bc6c056eaf7997fe502e63d11649',1,'BgAffineDstData::dx()'],['../structBgTransformationSettings.html#a78ac2dc26bc5ff72e7f4e0c8540231cb',1,'BgTransformationSettings::dx()']]],
-  ['dy_66',['dy',['../structBgAffineDstData.html#a04ad69f043c09619f055f79668b65579',1,'BgAffineDstData::dy()'],['../structBgTransformationSettings.html#a9348b4995d2a99e5e071c57a3e8d7916',1,'BgTransformationSettings::dy()']]]
+  ['duration_64',['duration',['../structPACKED.html#a546c33fea20deb541e3546c0dbb63513',1,'PACKED::duration()'],['../structUIElement.html#a0a8982fdbbe3e02c04c1e59fbee05667',1,'UIElement::duration()'],['../ui_8c.html#a88f98167f55e7fb55b3adc3db056980d',1,'duration():&#160;ui.c']]],
+  ['dust_5ffunctions_65',['Dust_Functions',['../dust_8c.html#a26e026b2ed0367b09aef8c65bc6b96bb',1,'dust.c']]],
+  ['dx_66',['dx',['../structBgAffineDstData.html#a9854bc6c056eaf7997fe502e63d11649',1,'BgAffineDstData::dx()'],['../structBgTransformationSettings.html#a78ac2dc26bc5ff72e7f4e0c8540231cb',1,'BgTransformationSettings::dx()']]],
+  ['dy_67',['dy',['../structBgAffineDstData.html#a04ad69f043c09619f055f79668b65579',1,'BgAffineDstData::dy()'],['../structBgTransformationSettings.html#a9348b4995d2a99e5e071c57a3e8d7916',1,'BgTransformationSettings::dy()']]]
 ];

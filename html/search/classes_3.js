@@ -11,5 +11,6 @@ var searchData=
   ['dmaregisters_8',['DMARegisters',['../structDMARegisters.html',1,'']]],
   ['doublebookshelfentity_9',['DoubleBookshelfEntity',['../structDoubleBookshelfEntity.html',1,'']]],
   ['droptable_10',['Droptable',['../unionDroptable.html',1,'']]],
-  ['dungeonlayout_11',['DungeonLayout',['../structDungeonLayout.html',1,'']]]
+  ['dungeonlayout_11',['DungeonLayout',['../structDungeonLayout.html',1,'']]],
+  ['dustentity_12',['DustEntity',['../structDustEntity.html',1,'']]]
 ];
