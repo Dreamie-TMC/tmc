@@ -296,7 +296,7 @@ var searchData=
   ['updatecontext_293',['UpdateContext',['../structUpdateContext.html',1,'']]],
   ['updated_294',['updated',['../structBgSettings.html#afc8536c5a1a5d6bb7456c7b062dad78d',1,'BgSettings::updated()'],['../structBgAffSettings.html#a9aef8a048489f11ec38dce437878660f',1,'BgAffSettings::updated()'],['../structOAMControls.html#a82812ac1755781e78797ceb974801957',1,'OAMControls::updated()']]],
   ['updatedisplaycontrols_295',['UpdateDisplayControls',['../interrupts_8c.html#acb2ec120b496027ffef71cb349e00610',1,'UpdateDisplayControls(void):&#160;interrupts.c'],['../functions_8h.html#acb2ec120b496027ffef71cb349e00610',1,'UpdateDisplayControls(void):&#160;interrupts.c']]],
-  ['updatedoortransition_296',['UpdateDoorTransition',['../game_8c.html#a46ec1e41bc5ca6bf6a424a04fc951070',1,'UpdateDoorTransition(void):&#160;game.c'],['../scroll_8c.html#a90a9dcfd1c357fd402868b1138f434ca',1,'UpdateDoorTransition()) 1(&quot;asm/non_matching/scroll/sub_08080B60.inc&quot;:&#160;scroll.c']]],
+  ['updatedoortransition_296',['UpdateDoorTransition',['../game_8c.html#a46ec1e41bc5ca6bf6a424a04fc951070',1,'UpdateDoorTransition(void):&#160;scroll.c'],['../scroll_8c.html#aa79be06616e2bfdefd85b9e5df0a8680',1,'UpdateDoorTransition()):&#160;scroll.c']]],
   ['updatedraw_297',['updateDraw',['../structTextRender.html#aa13a00acce396ca1e0af655d1c372445',1,'TextRender']]],
   ['updateentities_298',['UpdateEntities',['../entity_8c.html#a773eed4b8020d1f54f34aa6b2b482110',1,'UpdateEntities(void):&#160;entity.c'],['../entity_8h.html#a773eed4b8020d1f54f34aa6b2b482110',1,'UpdateEntities(void):&#160;entity.c']]],
   ['updatefakescroll_299',['UpdateFakeScroll',['../game_8c.html#a4f7ec8c04f3c406d7ed1dd0d1e9029c9',1,'game.c']]],
