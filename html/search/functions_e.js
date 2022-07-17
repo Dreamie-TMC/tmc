@@ -229,7 +229,7 @@ var searchData=
   ['objectonspinybeetle_5fgetparent_226',['ObjectOnSpinyBeetle_GetParent',['../objectOnSpinyBeetle_8c.html#abc7065faf2e226cb26b9b26feb8805e6',1,'objectOnSpinyBeetle.c']]],
   ['objectonspinybeetle_5finit_227',['ObjectOnSpinyBeetle_Init',['../objectOnSpinyBeetle_8c.html#a6a47c599805a2b105e261d06fd23daeb',1,'objectOnSpinyBeetle.c']]],
   ['objectupdate_228',['ObjectUpdate',['../object_8c.html#a3323119f95f84fd2d80fbb7b64f51e7a',1,'object.c']]],
-  ['ocarinaupdate_229',['OcarinaUpdate',['../itemOcarina_8c.html#a4273c48c2361bf5aa63c038cbfd6c406',1,'itemOcarina.c']]],
+  ['ocarinaupdate_229',['OcarinaUpdate',['../itemOcarina_8c.html#aa2c6be98cb8233b7f10c068e56a0e4ee',1,'itemOcarina.c']]],
   ['ocarinause_230',['OcarinaUse',['../itemOcarina_8c.html#a0a990538b9507a65e0257fb0929607a6',1,'itemOcarina.c']]],
   ['octorok_231',['Octorok',['../octorok_8c.html#ad7a28bc191d280a9f8ae4ae5ad7520da',1,'Octorok(Entity *this):&#160;octorok.c'],['../enemy_8h.html#afd6c788e1e26c23adca83442b69c2817',1,'Octorok(Entity *):&#160;octorok.c']]],
   ['octorok_5ffacesplayer_232',['Octorok_FacesPlayer',['../octorok_8c.html#aa81702a20b77369d9a0916595f2c764c',1,'octorok.c']]],

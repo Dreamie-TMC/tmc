@@ -449,7 +449,7 @@ var searchData=
   ['objmode_446',['objMode',['../structOamData.html#ae0d8d8ccd7507ed2d14a43c9002d54ec',1,'OamData']]],
   ['observedtile_447',['observedTile',['../structTileChangeObserveManager.html#afaebff619679ed54cb1a1034fe190b80',1,'TileChangeObserveManager']]],
   ['observeregion_448',['ObserveRegion',['../regionTriggerManager_8c.html#a42f252abcd7082d1008f7d13018dbd9ea3522219bb80d31c312621d6a6790899f',1,'regionTriggerManager.c']]],
-  ['ocarinaupdate_449',['OcarinaUpdate',['../itemOcarina_8c.html#a4273c48c2361bf5aa63c038cbfd6c406',1,'itemOcarina.c']]],
+  ['ocarinaupdate_449',['OcarinaUpdate',['../itemOcarina_8c.html#aa2c6be98cb8233b7f10c068e56a0e4ee',1,'itemOcarina.c']]],
   ['ocarinause_450',['OcarinaUse',['../itemOcarina_8c.html#a0a990538b9507a65e0257fb0929607a6',1,'itemOcarina.c']]],
   ['octorok_451',['OCTOROK',['../enemy_8h.html#aea93ec65ac90bcf874dde349967f08aba2ea51251120b4fbab3d3765d1567bcfe',1,'enemy.h']]],
   ['octorok_452',['Octorok',['../enemy_8h.html#afd6c788e1e26c23adca83442b69c2817',1,'Octorok(Entity *):&#160;octorok.c'],['../octorok_8c.html#ad7a28bc191d280a9f8ae4ae5ad7520da',1,'Octorok(Entity *this):&#160;octorok.c']]],
