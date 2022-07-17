@@ -30,7 +30,7 @@ var searchData=
   ['cgbmodvol_27',['CgbModVol',['../m4a_8c.html#a346a5094ed8b226a770c46be5f8ee3fd',1,'m4a.c']]],
   ['cgboscoff_28',['CgbOscOff',['../m4a_8c.html#a2ea5cb330ab40c3a8012fae757009110',1,'m4a.c']]],
   ['cgbpan_29',['CgbPan',['../m4a_8c.html#a86313ce44cba1cb6cf153a07e408a02b',1,'m4a.c']]],
-  ['cgbsound_30',['CgbSound',['../m4a_8c.html#a147f0cbfb8116d0928ae9a8c26166717',1,'m4a.c']]],
+  ['cgbsound_30',['CgbSound',['../m4a_8c.html#a67b24ce6f2045a86de8d41214e680d3b',1,'m4a.c']]],
   ['changelightlevel_31',['ChangeLightLevel',['../game_8h.html#ad3c78073378ab7a04c221b4d06321bf0',1,'ChangeLightLevel(s32 level):&#160;game.c'],['../game_8c.html#ae6b4d71134f74d18f15662bbe6ba39ec',1,'ChangeLightLevel(s32 lightLevel):&#160;game.c']]],
   ['changeobjpalette_32',['ChangeObjPalette',['../color_8c.html#abf6fbd2a47a4637680d3f7523c3aa93c',1,'ChangeObjPalette(Entity *entity, u32 a2):&#160;color.c'],['../color_8h.html#aedb9e5e41901894f1b5fab5d9cb47238',1,'ChangeObjPalette(struct Entity_ *entity, u32 palette):&#160;color.h']]],
   ['changewindowsize_33',['ChangeWindowSize',['../message_8c.html#ac606a6bd40bef79e4abe7ed44eb87d04',1,'message.c']]],

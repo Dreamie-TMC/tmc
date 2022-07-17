@@ -75,7 +75,7 @@ var searchData=
   ['cgboscoff_72',['CgbOscOff',['../structSoundInfo.html#a9e8c64f6d9c89af7930fd4a94d0e664a',1,'SoundInfo::CgbOscOff()'],['../m4a_8c.html#a2ea5cb330ab40c3a8012fae757009110',1,'CgbOscOff(u8):&#160;m4a.c']]],
   ['cgboscofffunc_73',['CgbOscOffFunc',['../m4a_8c.html#a0fd6dd9d6615a5322e8d3b4371f52c63',1,'m4a.c']]],
   ['cgbpan_74',['CgbPan',['../m4a_8c.html#a86313ce44cba1cb6cf153a07e408a02b',1,'m4a.c']]],
-  ['cgbsound_75',['CgbSound',['../structSoundInfo.html#a1030c81942661b8fce9d6d1ebdef510e',1,'SoundInfo::CgbSound()'],['../m4a_8c.html#a147f0cbfb8116d0928ae9a8c26166717',1,'CgbSound(void):&#160;m4a.c']]],
+  ['cgbsound_75',['CgbSound',['../structSoundInfo.html#a1030c81942661b8fce9d6d1ebdef510e',1,'SoundInfo::CgbSound()'],['../m4a_8c.html#a67b24ce6f2045a86de8d41214e680d3b',1,'CgbSound(void):&#160;m4a.c']]],
   ['cgbsoundfunc_76',['CgbSoundFunc',['../m4a_8c.html#ae5f8a97a19b81ef98c88222157748b2e',1,'m4a.c']]],
   ['chan_77',['chan',['../structMusicPlayerTrack.html#a07b7ef862be7ab798cac56a5e89cd39d',1,'MusicPlayerTrack']]],
   ['changelightlevel_78',['ChangeLightLevel',['../game_8c.html#ae6b4d71134f74d18f15662bbe6ba39ec',1,'ChangeLightLevel(s32 lightLevel):&#160;game.c'],['../game_8h.html#ad3c78073378ab7a04c221b4d06321bf0',1,'ChangeLightLevel(s32 level):&#160;game.c']]],
