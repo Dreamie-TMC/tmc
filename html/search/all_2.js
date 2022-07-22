@@ -575,6 +575,6 @@ var searchData=
   ['byte1_572',['byte1',['../unionSplitWord.html#af11d0b1c275fbfe088fe00092ce0f5b9',1,'SplitWord']]],
   ['byte2_573',['byte2',['../unionSplitWord.html#a0e3a4d08fd7efb183686017700e291f0',1,'SplitWord']]],
   ['byte3_574',['byte3',['../unionSplitWord.html#ac6f8877b963f4ed29d53e0e8822a9d27',1,'SplitWord']]],
-  ['bytes_575',['bytes',['../structTextRender.html#a72c229158f14f283a365ed655d28d3bf',1,'TextRender::bytes()'],['../structGfxItem.html#aafdfb418d33590bf37e1d9831ed74a78',1,'GfxItem::bytes()']]],
-  ['bytes_576',['BYTES',['../unionSplitWord.html#a4d6843936a6aae69d9b9be7de050a5a4',1,'SplitWord']]]
+  ['bytes_575',['BYTES',['../unionSplitWord.html#a4d6843936a6aae69d9b9be7de050a5a4',1,'SplitWord']]],
+  ['bytes_576',['bytes',['../structTextRender.html#a72c229158f14f283a365ed655d28d3bf',1,'TextRender::bytes()'],['../structGfxItem.html#aafdfb418d33590bf37e1d9831ed74a78',1,'GfxItem::bytes()']]]
 ];
