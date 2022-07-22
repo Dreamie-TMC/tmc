@@ -104,7 +104,7 @@ var searchData=
   ['gibdo_5fontick_101',['Gibdo_OnTick',['../gibdo_8c.html#ae4867e43743a9fed87598110ff6e7311',1,'gibdo.c']]],
   ['gina_102',['Gina',['../gina_8c.html#a2f55baf2757b00204d5737ddef406138',1,'Gina(Entity *this):&#160;gina.c'],['../npc_8h.html#a6a64f350a98ed587e4e5daebd9ec80d4',1,'Gina(Entity *):&#160;gina.c']]],
   ['gina_5ffusion_103',['Gina_Fusion',['../gina_8c.html#ada9c5f45ec56c9177e400495472794e9',1,'Gina_Fusion(Entity *this):&#160;gina.c'],['../npc_8h.html#ae3ed34f843453b6fb054cd1692c2906f',1,'Gina_Fusion(Entity *):&#160;gina.c']]],
-  ['giveitem_104',['GiveItem',['../game_8c.html#a0ddb8fc51c79c23131bed5f4f72b1d2a',1,'GiveItem(u32 a, u32 b)) void sub_08054288(s32 param_1):&#160;game.c'],['../functions_8h.html#af302c52f38ff15de963d0dac01c83eac',1,'GiveItem(u32, u32):&#160;game.c']]],
+  ['giveitem_104',['GiveItem',['../game_8c.html#a7321ebdd184c225c850cd6d65a8337c2',1,'GiveItem(Item item, u32 param_2):&#160;game.c'],['../functions_8h.html#af302c52f38ff15de963d0dac01c83eac',1,'GiveItem(u32, u32):&#160;functions.h']]],
   ['giveitemwithcutscene_105',['GiveItemWithCutscene',['../playerItemUtils_8c.html#a534a2d6be0e93d0649e99e6fbf82e168',1,'playerItemUtils.c']]],
   ['gleerok_106',['Gleerok',['../gleerok_8c.html#aa5daa6c4e9ffa2f180f8c8b767c1741a',1,'Gleerok(Entity *this):&#160;gleerok.c'],['../enemy_8h.html#a092601faaf3f80881781dfbff1543383',1,'Gleerok(Entity *):&#160;gleerok.c']]],
   ['gleerok_5fondeath_107',['Gleerok_OnDeath',['../gleerok_8c.html#adb278603e008a9551b6c69a0c5c57106',1,'gleerok.c']]],
