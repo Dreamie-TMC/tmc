@@ -65,7 +65,7 @@ var searchData=
   ['settingdict_62',['settingDict',['../structPACKED.html#aba48bf8bfa924f7684055c47cc878f5b',1,'PACKED']]],
   ['sfilescreensubhandlers_63',['sFileScreenSubHandlers',['../fileselect_8c.html#a08632226197f3cb846d1882df81a867d',1,'fileselect.c']]],
   ['sfileselectdefaulthandlers_64',['sFileSelectDefaultHandlers',['../fileselect_8c.html#a7cc01a001062b619307438eaede634fe',1,'fileselect.c']]],
-  ['sfx_65',['sfx',['../structUnk__0811E84C.html#a6dd6fb372c26b30be99ad1802f477d0b',1,'Unk_0811E84C::sfx()'],['../structstruct__080D8E54.html#afc229ec1ecbfb1a0bce93a9bedc1fba6',1,'struct_080D8E54::sfx()']]],
+  ['sfx_65',['sfx',['../structstruct__0811F960.html#ad1859c37b11add70c2cbe6e7722ca88e',1,'struct_0811F960::sfx()'],['../structUnk__0811E84C.html#a6dd6fb372c26b30be99ad1802f477d0b',1,'Unk_0811E84C::sfx()'],['../structstruct__08122950.html#abb71c54354fc500c5e22f3c93212aa43',1,'struct_08122950::sfx()'],['../structstruct__080D8E54.html#afc229ec1ecbfb1a0bce93a9bedc1fba6',1,'struct_080D8E54::sfx()']]],
   ['sfx100_66',['sfx100',['../sound_8c.html#a6ae569c819314448c7e1c4fa31931434',1,'sound.c']]],
   ['sfx101_67',['sfx101',['../sound_8c.html#a7d8cfa69413668eca9115e9ef360799c',1,'sound.c']]],
   ['sfx102_68',['sfx102',['../sound_8c.html#a63aad3acbf7559d54e3ab240e3ec2791',1,'sound.c']]],
