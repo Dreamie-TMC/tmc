@@ -1,5 +1,5 @@
 <map id="src/object/ladderHoleInBookshelf.c" name="src/object/ladderHoleInBookshelf.c">
-<area shape="rect" id="node1" title=" " alt="" coords="89,5,313,32"/>
+<area shape="rect" id="node1" title="Ladder Hole In Bookshelf object." alt="" coords="89,5,313,32"/>
 <area shape="rect" id="node2" href="$entity_8h.html" title=" " alt="" coords="135,155,198,181"/>
 <area shape="rect" id="node17" href="$player_8h.html" title=" " alt="" coords="204,80,271,107"/>
 <area shape="rect" id="node3" href="$global_8h.html" title=" " alt="" coords="133,304,200,331"/>

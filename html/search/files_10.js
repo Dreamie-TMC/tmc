@@ -23,6 +23,7 @@ var searchData=
   ['roominit_2ec_20',['roomInit.c',['../roomInit_8c.html',1,'']]],
   ['rope_2ec_21',['rope.c',['../rope_8c.html',1,'']]],
   ['ropegolden_2ec_22',['ropeGolden.c',['../ropeGolden_8c.html',1,'']]],
-  ['rupee_2ec_23',['rupee.c',['../rupee_8c.html',1,'']]],
-  ['rupeelike_2ec_24',['rupeeLike.c',['../rupeeLike_8c.html',1,'']]]
+  ['rotatingtrapdoor_2ec_23',['rotatingTrapdoor.c',['../rotatingTrapdoor_8c.html',1,'']]],
+  ['rupee_2ec_24',['rupee.c',['../rupee_8c.html',1,'']]],
+  ['rupeelike_2ec_25',['rupeeLike.c',['../rupeeLike_8c.html',1,'']]]
 ];

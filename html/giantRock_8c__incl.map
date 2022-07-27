@@ -1,5 +1,5 @@
 <map id="src/object/giantRock.c" name="src/object/giantRock.c">
-<area shape="rect" id="node1" title=" " alt="" coords="91,5,242,32"/>
+<area shape="rect" id="node1" title="Giant Rock object." alt="" coords="91,5,242,32"/>
 <area shape="rect" id="node2" href="$entity_8h.html" title=" " alt="" coords="135,80,198,107"/>
 <area shape="rect" id="node3" href="$global_8h.html" title=" " alt="" coords="133,229,200,256"/>
 <area shape="rect" id="node15" href="$color_8h.html" title=" " alt="" coords="137,155,197,181"/>

@@ -7,6 +7,7 @@ var searchData=
   ['vaatiarm_5fheapstruct_4',['VaatiArm_HeapStruct',['../structVaatiArm__HeapStruct.html',1,'']]],
   ['vaatiarm_5fheapstruct1_5',['VaatiArm_HeapStruct1',['../structVaatiArm__HeapStruct1.html',1,'']]],
   ['vaatiwrathheapstruct_6',['VaatiWrathHeapStruct',['../structVaatiWrathHeapStruct.html',1,'']]],
-  ['verticalminishpathbackgroundmanager_7',['VerticalMinishPathBackgroundManager',['../structVerticalMinishPathBackgroundManager.html',1,'']]],
-  ['vstruct_8',['VStruct',['../structVStruct.html',1,'']]]
+  ['vblankdma_7',['VBlankDMA',['../structVBlankDMA.html',1,'']]],
+  ['verticalminishpathbackgroundmanager_8',['VerticalMinishPathBackgroundManager',['../structVerticalMinishPathBackgroundManager.html',1,'']]],
+  ['vstruct_9',['VStruct',['../structVStruct.html',1,'']]]
 ];

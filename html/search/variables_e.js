@@ -1,7 +1,7 @@
 var searchData=
 [
   ['n4_0',['n4',['../structCgbChannel.html#afc5fa59e21ab62ed9f91ee5d04603171',1,'CgbChannel']]],
-  ['name_1',['name',['../structDefaults.html#a160d9692adf82ea7245de9d8cc591db8',1,'Defaults::name()'],['../structSaveFile.html#a264b7606e2d208680583f3cf13bf574b',1,'SaveFile::name()'],['../structSaveHeader.html#a5b7d0e95c39f63877e4967da6f07b28f',1,'SaveHeader::name()']]],
+  ['name_1',['name',['../structSaveFile.html#a264b7606e2d208680583f3cf13bf574b',1,'SaveFile::name()'],['../structSaveHeader.html#a5b7d0e95c39f63877e4967da6f07b28f',1,'SaveHeader::name()']]],
   ['necessarypulllength_2',['necessaryPullLength',['../structPullableLeverEntity.html#a67932c3da29ab23e2248bbfab686400e',1,'PullableLeverEntity']]],
   ['newkeys_3',['newKeys',['../structInput.html#a476aff184fa5d3d267b5a25d3b78d168',1,'Input']]],
   ['newlinedelay_4',['newlineDelay',['../structTextRender.html#a71a6bdfa115ef69fe9c80c2ab4737149',1,'TextRender']]],

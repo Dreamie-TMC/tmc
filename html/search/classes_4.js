@@ -15,5 +15,6 @@ var searchData=
   ['eyegoreentity_12',['EyegoreEntity',['../structEyegoreEntity.html',1,'']]],
   ['eyeswitchentity_13',['EyeSwitchEntity',['../structEyeSwitchEntity.html',1,'']]],
   ['ezlocapentity_14',['EzloCapEntity',['../structEzloCapEntity.html',1,'']]],
-  ['ezlohintmanager_15',['EzloHintManager',['../structEzloHintManager.html',1,'']]]
+  ['ezlocapflyingentity_15',['EzloCapFlyingEntity',['../structEzloCapFlyingEntity.html',1,'']]],
+  ['ezlohintmanager_16',['EzloHintManager',['../structEzloHintManager.html',1,'']]]
 ];

@@ -1,9 +1,9 @@
 <map id="src/object/object37.c" name="src/object/object37.c">
-<area shape="rect" id="node1" title=" " alt="" coords="535,5,678,32"/>
+<area shape="rect" id="node1" title="Object37 object." alt="" coords="535,5,678,32"/>
 <area shape="rect" id="node2" href="$entity_8h.html" title=" " alt="" coords="506,304,569,331"/>
 <area shape="rect" id="node17" href="$functions_8h.html" title=" " alt="" coords="317,80,403,107"/>
-<area shape="rect" id="node28" href="$save_8h.html" title=" " alt="" coords="618,80,678,107"/>
-<area shape="rect" id="node29" href="$item_8h.html" title=" " alt="" coords="819,155,877,181"/>
+<area shape="rect" id="node28" href="$item_8h.html" title=" " alt="" coords="819,155,877,181"/>
+<area shape="rect" id="node29" href="$save_8h.html" title=" " alt="" coords="618,80,678,107"/>
 <area shape="rect" id="node3" href="$global_8h.html" title=" " alt="" coords="359,453,425,480"/>
 <area shape="rect" id="node15" href="$color_8h.html" title=" " alt="" coords="430,379,490,405"/>
 <area shape="rect" id="node16" href="$sprite_8h.html" title=" " alt="" coords="515,379,579,405"/>
@@ -25,7 +25,7 @@
 <area shape="rect" id="node23" href="$structures_8h.html" title=" " alt="" coords="603,155,693,181"/>
 <area shape="rect" id="node24" href="$script_8h.html" title=" " alt="" coords="363,155,427,181"/>
 <area shape="rect" id="node25" href="$map_8h.html" title=" " alt="" coords="77,229,134,256"/>
-<area shape="rect" id="node22" href="$droptables_8h.html" title=" " alt="" coords="329,304,421,331"/>
+<area shape="rect" id="node22" href="$droptables_8h.html" title=" " alt="" coords="379,304,471,331"/>
 <area shape="rect" id="node26" href="$screen_8h.html" title=" " alt="" coords="94,304,165,331"/>
 <area shape="rect" id="node27" href="$fade_8h.html" title=" " alt="" coords="94,379,151,405"/>
 </map>

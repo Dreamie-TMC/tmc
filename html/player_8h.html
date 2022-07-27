@@ -118,6 +118,10 @@ $(function() {
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structChargeState.html">ChargeState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPlayerMacroEntry.html">PlayerMacroEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPlayerInput.html">PlayerInput</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPlayerState.html">PlayerState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStats.html">Stats</a></td></tr>
@@ -131,7 +135,7 @@ Macros</h2></td></tr>
 <tr class="separator:a829cf124b498b50e0b8bd5a29bf6c6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0274f68e3b0d4dead38d4305098a29c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a0274f68e3b0d4dead38d4305098a29c0">SLOT_B</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a0274f68e3b0d4dead38d4305098a29c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a580768feff78726dc7f34831cb97dc1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a580768feff78726dc7f34831cb97dc1c">COPY_FLAG_FROM_TO</a>(base,  <a class="el" href="interrupts_8c.html#a80137d3ab97c22dd4f02fe0a0765ee51">src</a>,  <a class="el" href="interrupts_8c.html#ab349f6d5ffc5d38939e54e9c13eddc90">dest</a>)&#160;&#160;&#160;(base) = ((base) &amp; ~(<a class="el" href="interrupts_8c.html#ab349f6d5ffc5d38939e54e9c13eddc90">dest</a>)) | (((<a class="el" href="interrupts_8c.html#ab349f6d5ffc5d38939e54e9c13eddc90">dest</a>) * ((base) &amp; (<a class="el" href="interrupts_8c.html#a80137d3ab97c22dd4f02fe0a0765ee51">src</a>))) / <a class="el" href="interrupts_8c.html#a80137d3ab97c22dd4f02fe0a0765ee51">src</a>)</td></tr>
+<tr class="memitem:a580768feff78726dc7f34831cb97dc1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#a580768feff78726dc7f34831cb97dc1c">COPY_FLAG_FROM_TO</a>(base,  src,  dest)&#160;&#160;&#160;(base) = ((base) &amp; ~(dest)) | (((dest) * ((base) &amp; (src))) / src)</td></tr>
 <tr class="separator:a580768feff78726dc7f34831cb97dc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -400,6 +404,27 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:acdd367725f2f66f6f0574bb9fa47023b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaec3367963f0dd9dc0d5f8fe69589e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6">PlayerInputState</a> { <br />
+&#160;&#160;<a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6aae018eabb9a8a5bc933710d0d7902ae9">PLAYER_INPUT_1</a> = 0x1
+, <a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6ab56f182a955452312e851625c1d2102f">PLAYER_INPUT_2</a> = 0x2
+, <a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6a6a2500cbaeed71f5b28bce3bba2a0e03">PLAYER_INPUT_8</a> = 0x8
+, <a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6ae464553fb99b009f1ebee4cbf0ec5982">PLAYER_INPUT_10</a> = 0x10
+, <br />
+&#160;&#160;<a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6afaccb4647dcdbfb03f4caa5c5d84205b">PLAYER_INPUT_20</a> = 0x20
+, <a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6a1e3c96d5ef8d3f74024b310bd2d79771">PLAYER_INPUT_40</a> = 0x40
+, <a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6a3c0390d0950fa2d603f74c3d5abc75ef">PLAYER_INPUT_80</a> = 0x80
+, <a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6a9c07b070d4eeb80768a4d33a21ce47fe">PLAYER_INPUT_RIGHT</a> = 0x100
+, <br />
+&#160;&#160;<a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6a93d30b95ad6482ffafffbeee3a2ea8bd">PLAYER_INPUT_LEFT</a> = 0x200
+, <a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6afe439582aec7a9cfed59e45939672e2e">PLAYER_INPUT_UP</a> = 0x400
+, <a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6a1179df6065ff93f0e7d724d325be6e74">PLAYER_INPUT_DOWN</a> = 0x800
+, <a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6a71b117e47e924f5f404052202f4815b1">PLAYER_INPUT_ANY_DIRECTION</a> = 0xf00
+, <br />
+&#160;&#160;<a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6ac2861702e83a34007868d0d18a647bda">PLAYER_INPUT_1000</a> = 0x1000
+, <a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6aff89985f1c3ae8168ab6471681029192">PLAYER_INPUT_8000</a> = 0x8000
+<br />
+ }</td></tr>
+<tr class="separator:afaec3367963f0dd9dc0d5f8fe69589e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -676,18 +701,18 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="interrupts_8c.html#a80137d3ab97c22dd4f02fe0a0765ee51">src</a>, </td>
+          <td class="paramname">src, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="interrupts_8c.html#ab349f6d5ffc5d38939e54e9c13eddc90">dest</a>&#160;</td>
+          <td class="paramname">dest&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(base) = ((base) &amp; ~(<a class="el" href="interrupts_8c.html#ab349f6d5ffc5d38939e54e9c13eddc90">dest</a>)) | (((<a class="el" href="interrupts_8c.html#ab349f6d5ffc5d38939e54e9c13eddc90">dest</a>) * ((base) &amp; (<a class="el" href="interrupts_8c.html#a80137d3ab97c22dd4f02fe0a0765ee51">src</a>))) / <a class="el" href="interrupts_8c.html#a80137d3ab97c22dd4f02fe0a0765ee51">src</a>)</td>
+          <td></td><td>&#160;&#160;&#160;(base) = ((base) &amp; ~(dest)) | (((dest) * ((base) &amp; (src))) / src)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -877,6 +902,36 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a85ef46a238763a39f0621916d98e1a22a2396216501caaa7bd71074d1c566b128" name="a85ef46a238763a39f0621916d98e1a22a2396216501caaa7bd71074d1c566b128"></a>PL_STATE_PULL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a85ef46a238763a39f0621916d98e1a22adaa417edf27dda5b9e44fc8072e98bbc" name="a85ef46a238763a39f0621916d98e1a22adaa417edf27dda5b9e44fc8072e98bbc"></a>PL_STATE_1B&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a85ef46a238763a39f0621916d98e1a22a70fe369b8c23f40a9b913a65234477b3" name="a85ef46a238763a39f0621916d98e1a22a70fe369b8c23f40a9b913a65234477b3"></a>PL_STATE_STAIRS&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="afaec3367963f0dd9dc0d5f8fe69589e6" name="afaec3367963f0dd9dc0d5f8fe69589e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaec3367963f0dd9dc0d5f8fe69589e6">&#9670;&nbsp;</a></span>PlayerInputState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="player_8h.html#afaec3367963f0dd9dc0d5f8fe69589e6">PlayerInputState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6aae018eabb9a8a5bc933710d0d7902ae9" name="afaec3367963f0dd9dc0d5f8fe69589e6aae018eabb9a8a5bc933710d0d7902ae9"></a>PLAYER_INPUT_1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6ab56f182a955452312e851625c1d2102f" name="afaec3367963f0dd9dc0d5f8fe69589e6ab56f182a955452312e851625c1d2102f"></a>PLAYER_INPUT_2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6a6a2500cbaeed71f5b28bce3bba2a0e03" name="afaec3367963f0dd9dc0d5f8fe69589e6a6a2500cbaeed71f5b28bce3bba2a0e03"></a>PLAYER_INPUT_8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6ae464553fb99b009f1ebee4cbf0ec5982" name="afaec3367963f0dd9dc0d5f8fe69589e6ae464553fb99b009f1ebee4cbf0ec5982"></a>PLAYER_INPUT_10&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6afaccb4647dcdbfb03f4caa5c5d84205b" name="afaec3367963f0dd9dc0d5f8fe69589e6afaccb4647dcdbfb03f4caa5c5d84205b"></a>PLAYER_INPUT_20&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6a1e3c96d5ef8d3f74024b310bd2d79771" name="afaec3367963f0dd9dc0d5f8fe69589e6a1e3c96d5ef8d3f74024b310bd2d79771"></a>PLAYER_INPUT_40&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6a3c0390d0950fa2d603f74c3d5abc75ef" name="afaec3367963f0dd9dc0d5f8fe69589e6a3c0390d0950fa2d603f74c3d5abc75ef"></a>PLAYER_INPUT_80&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6a9c07b070d4eeb80768a4d33a21ce47fe" name="afaec3367963f0dd9dc0d5f8fe69589e6a9c07b070d4eeb80768a4d33a21ce47fe"></a>PLAYER_INPUT_RIGHT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6a93d30b95ad6482ffafffbeee3a2ea8bd" name="afaec3367963f0dd9dc0d5f8fe69589e6a93d30b95ad6482ffafffbeee3a2ea8bd"></a>PLAYER_INPUT_LEFT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6afe439582aec7a9cfed59e45939672e2e" name="afaec3367963f0dd9dc0d5f8fe69589e6afe439582aec7a9cfed59e45939672e2e"></a>PLAYER_INPUT_UP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6a1179df6065ff93f0e7d724d325be6e74" name="afaec3367963f0dd9dc0d5f8fe69589e6a1179df6065ff93f0e7d724d325be6e74"></a>PLAYER_INPUT_DOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6a71b117e47e924f5f404052202f4815b1" name="afaec3367963f0dd9dc0d5f8fe69589e6a71b117e47e924f5f404052202f4815b1"></a>PLAYER_INPUT_ANY_DIRECTION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6ac2861702e83a34007868d0d18a647bda" name="afaec3367963f0dd9dc0d5f8fe69589e6ac2861702e83a34007868d0d18a647bda"></a>PLAYER_INPUT_1000&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afaec3367963f0dd9dc0d5f8fe69589e6aff89985f1c3ae8168ab6471681029192" name="afaec3367963f0dd9dc0d5f8fe69589e6aff89985f1c3ae8168ab6471681029192"></a>PLAYER_INPUT_8000&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

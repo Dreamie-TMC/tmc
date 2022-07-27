@@ -1,8 +1,8 @@
 <map id="src/object/eyeSwitch.c" name="src/object/eyeSwitch.c">
-<area shape="rect" id="node1" title=" " alt="" coords="117,5,270,32"/>
+<area shape="rect" id="node1" title="EyeSwitch object." alt="" coords="117,5,270,32"/>
 <area shape="rect" id="node2" href="$entity_8h.html" title=" " alt="" coords="49,155,111,181"/>
-<area shape="rect" id="node17" href="$hitbox_8h.html" title=" " alt="" coords="117,80,184,107"/>
-<area shape="rect" id="node18" href="$flags_8h.html" title=" " alt="" coords="208,80,267,107"/>
+<area shape="rect" id="node17" href="$flags_8h.html" title=" " alt="" coords="208,80,267,107"/>
+<area shape="rect" id="node18" href="$hitbox_8h.html" title=" " alt="" coords="117,80,184,107"/>
 <area shape="rect" id="node19" href="$sound_8h.html" title=" " alt="" coords="273,155,340,181"/>
 <area shape="rect" id="node3" href="$global_8h.html" title=" " alt="" coords="133,304,200,331"/>
 <area shape="rect" id="node15" href="$color_8h.html" title=" " alt="" coords="50,229,110,256"/>

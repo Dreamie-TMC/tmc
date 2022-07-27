@@ -1,5 +1,5 @@
 <map id="src/object/smoke.c" name="src/object/smoke.c">
-<area shape="rect" id="node1" title=" " alt="" coords="239,5,371,32"/>
+<area shape="rect" id="node1" title="Smoke object." alt="" coords="239,5,371,32"/>
 <area shape="rect" id="node2" href="$object_8h.html" title=" " alt="" coords="272,80,339,107"/>
 <area shape="rect" id="node3" href="$global_8h.html" title=" " alt="" coords="320,379,387,405"/>
 <area shape="rect" id="node15" href="$asm_8h.html" title=" " alt="" coords="38,304,95,331"/>

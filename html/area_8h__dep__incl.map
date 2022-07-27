@@ -37,16 +37,16 @@
 <area shape="rect" id="node38" href="$vaati3BackgroundManager_8c.html" title="Scrolling background during Vaati 3." alt="" coords="5469,80,5672,121"/>
 <area shape="rect" id="node39" href="$vaati3StartManager_8c.html" title="Manages the transition to and start of Vaati3." alt="" coords="5696,87,5917,114"/>
 <area shape="rect" id="node40" href="$weatherChangeManager_8c.html" title="Weather change on top of Mount Crenel." alt="" coords="5942,80,6130,121"/>
-<area shape="rect" id="node41" href="$gyorgBossObject_8c.html" title=" " alt="" coords="6155,87,6347,114"/>
-<area shape="rect" id="node42" href="$jarPortal_8c.html" title=" " alt="" coords="6371,87,6512,114"/>
-<area shape="rect" id="node43" href="$lilypadLarge_8c.html" title="Large Lilypad object." alt="" coords="6536,87,6699,114"/>
-<area shape="rect" id="node44" href="$macroMushroomStalks_8c.html" title=" " alt="" coords="6723,80,6903,121"/>
-<area shape="rect" id="node45" href="$macroPlayer_8c.html" title=" " alt="" coords="6928,87,7093,114"/>
-<area shape="rect" id="node46" href="$object1E_8c.html" title="Object1E object." alt="" coords="7118,87,7261,114"/>
-<area shape="rect" id="node47" href="$object3D_8c.html" title="Object3D object." alt="" coords="7285,87,7429,114"/>
-<area shape="rect" id="node48" href="$object6A_8c.html" title=" " alt="" coords="7453,87,7597,114"/>
-<area shape="rect" id="node49" href="$whirlwind_8c.html" title="Whirlwind object." alt="" coords="7621,87,7768,114"/>
-<area shape="rect" id="node50" href="$physics_8c.html" title=" " alt="" coords="7792,87,7891,114"/>
+<area shape="rect" id="node41" href="$cutsceneMiscObject_8c.html" title="Cutscene Misc object." alt="" coords="6154,87,6366,114"/>
+<area shape="rect" id="node42" href="$gyorgBossObject_8c.html" title="Gyorg Boss object." alt="" coords="6391,87,6583,114"/>
+<area shape="rect" id="node43" href="$jarPortal_8c.html" title="Jar Portal object." alt="" coords="6607,87,6748,114"/>
+<area shape="rect" id="node44" href="$lilypadLarge_8c.html" title="Large Lilypad object." alt="" coords="6772,87,6935,114"/>
+<area shape="rect" id="node45" href="$macroMushroomStalk_8c.html" title="Macro Mushroom Stalk object." alt="" coords="6959,80,7139,121"/>
+<area shape="rect" id="node46" href="$macroPlayer_8c.html" title="Macro Player object." alt="" coords="7164,87,7329,114"/>
+<area shape="rect" id="node47" href="$minishPortalCloseup_8c.html" title="Minish Portal Closeup object." alt="" coords="7353,87,7565,114"/>
+<area shape="rect" id="node48" href="$moleMittsParticle_8c.html" title="Mole Mitts Particle object." alt="" coords="7589,87,7784,114"/>
+<area shape="rect" id="node49" href="$whirlwind_8c.html" title="Whirlwind object." alt="" coords="7808,87,7955,114"/>
+<area shape="rect" id="node50" href="$physics_8c.html" title=" " alt="" coords="7979,87,8077,114"/>
 <area shape="rect" id="node3" href="$beanstalkSubtask_8c.html" title=" " alt="" coords="1081,177,1239,203"/>
 <area shape="rect" id="node4" href="$collision_8c.html" title=" " alt="" coords="1264,177,1365,203"/>
 </map>

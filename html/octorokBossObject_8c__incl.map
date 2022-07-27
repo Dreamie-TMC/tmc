@@ -1,14 +1,14 @@
 <map id="src/object/octorokBossObject.c" name="src/object/octorokBossObject.c">
-<area shape="rect" id="node1" title=" " alt="" coords="757,5,961,32"/>
+<area shape="rect" id="node1" title="Octorok Boss Object object." alt="" coords="796,5,1000,32"/>
 <area shape="rect" id="node2" href="$functions_8h.html" title=" " alt="" coords="360,80,446,107"/>
-<area shape="rect" id="node28" href="$object_8h.html" title=" " alt="" coords="826,155,892,181"/>
-<area shape="rect" id="node34" href="$game_8h.html" title=" " alt="" coords="1163,229,1227,256"/>
+<area shape="rect" id="node28" href="$game_8h.html" title=" " alt="" coords="1163,229,1227,256"/>
+<area shape="rect" id="node32" href="$object_8h.html" title=" " alt="" coords="864,155,931,181"/>
 <area shape="rect" id="node3" href="$global_8h.html" title=" " alt="" coords="626,453,692,480"/>
 <area shape="rect" id="node15" href="$entity_8h.html" title=" " alt="" coords="424,304,486,331"/>
-<area shape="rect" id="node18" href="$manager_8h.html" title=" " alt="" coords="758,229,840,256"/>
+<area shape="rect" id="node18" href="$manager_8h.html" title=" " alt="" coords="622,229,704,256"/>
 <area shape="rect" id="node19" href="$physics_8h.html" title=" " alt="" coords="273,229,349,256"/>
 <area shape="rect" id="node20" href="$player_8h.html" title=" " alt="" coords="182,229,248,256"/>
-<area shape="rect" id="node21" href="$room_8h.html" title=" " alt="" coords="672,229,734,256"/>
+<area shape="rect" id="node21" href="$room_8h.html" title=" " alt="" coords="728,229,790,256"/>
 <area shape="rect" id="node23" href="$structures_8h.html" title=" " alt="" coords="119,155,210,181"/>
 <area shape="rect" id="node24" href="$script_8h.html" title=" " alt="" coords="336,155,400,181"/>
 <area shape="rect" id="node25" href="$map_8h.html" title=" " alt="" coords="49,229,106,256"/>
@@ -28,12 +28,12 @@
 <area shape="rect" id="node22" href="$droptables_8h.html" title=" " alt="" coords="697,304,789,331"/>
 <area shape="rect" id="node26" href="$screen_8h.html" title=" " alt="" coords="188,304,258,331"/>
 <area shape="rect" id="node27" href="$fade_8h.html" title=" " alt="" coords="238,379,296,405"/>
-<area shape="rect" id="node29" href="$asm_8h.html" title=" " alt="" coords="1100,304,1157,331"/>
-<area shape="rect" id="node30" href="$common_8h.html" title=" " alt="" coords="798,379,880,405"/>
-<area shape="rect" id="node31" href="$sound_8h.html" title=" " alt="" coords="904,379,971,405"/>
-<area shape="rect" id="node32" href="$flags_8h.html" title=" " alt="" coords="966,304,1024,331"/>
-<area shape="rect" id="node33" href="$effects_8h.html" title=" " alt="" coords="476,229,546,256"/>
-<area shape="rect" id="node35" href="$area_8h.html" title=" " alt="" coords="1233,304,1290,331"/>
-<area shape="rect" id="node36" href="$transitions_8h.html" title=" " alt="" coords="1284,379,1376,405"/>
-<area shape="rect" id="node37" href="$roomid_8h.html" title=" " alt="" coords="1294,453,1365,480"/>
+<area shape="rect" id="node29" href="$area_8h.html" title=" " alt="" coords="1233,304,1290,331"/>
+<area shape="rect" id="node30" href="$transitions_8h.html" title=" " alt="" coords="1284,379,1376,405"/>
+<area shape="rect" id="node31" href="$roomid_8h.html" title=" " alt="" coords="1294,453,1365,480"/>
+<area shape="rect" id="node33" href="$asm_8h.html" title=" " alt="" coords="1100,304,1157,331"/>
+<area shape="rect" id="node34" href="$common_8h.html" title=" " alt="" coords="798,379,880,405"/>
+<area shape="rect" id="node35" href="$sound_8h.html" title=" " alt="" coords="904,379,971,405"/>
+<area shape="rect" id="node36" href="$flags_8h.html" title=" " alt="" coords="966,304,1024,331"/>
+<area shape="rect" id="node37" href="$effects_8h.html" title=" " alt="" coords="476,229,546,256"/>
 </map>
