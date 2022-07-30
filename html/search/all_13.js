@@ -5423,7 +5423,7 @@ var searchData=
   ['sub_5f0807bfa8_5420',['sub_0807BFA8',['../playerUtils_8c.html#aa51b7bd424696c3fac9638af28501c4c',1,'playerUtils.c']]],
   ['sub_5f0807bfd0_5421',['sub_0807BFD0',['../beanstalkSubtask_8c.html#afd63758b87bb81ecc76d01e88bd3fb0c',1,'sub_0807BFD0(void):&#160;playerUtils.c'],['../playerUtils_8c.html#a93ade390c9c3549b2f90de22206fb5b8',1,'sub_0807BFD0(void):&#160;playerUtils.c']]],
   ['sub_5f0807c460_5422',['sub_0807C460',['../playerUtils_8c.html#ac62d8b16612a68736128d7b06e3355a0',1,'playerUtils.c']]],
-  ['sub_5f0807c4f8_5423',['sub_0807C4F8',['../playerUtils_8c.html#ab4b561b07c0432b10d404149720506bb',1,'sub_0807C4F8()) void sub_0807C5B0(void):&#160;playerUtils.c'],['../beanstalkSubtask_8c.html#a6bc184c3e5258a0426c10de370654a85',1,'sub_0807C4F8(void):&#160;playerUtils.c']]],
+  ['sub_5f0807c4f8_5423',['sub_0807C4F8',['../playerUtils_8c.html#a6bc184c3e5258a0426c10de370654a85',1,'sub_0807C4F8(void):&#160;playerUtils.c'],['../beanstalkSubtask_8c.html#a6bc184c3e5258a0426c10de370654a85',1,'sub_0807C4F8(void):&#160;playerUtils.c']]],
   ['sub_5f0807c5b0_5424',['sub_0807C5B0',['../playerUtils_8c.html#a499c323d90dd4ff5181b86590fae027e',1,'playerUtils.c']]],
   ['sub_5f0807c5f4_5425',['sub_0807C5F4',['../playerUtils_8c.html#ac6aa51e1b03e292165ad7e04ebe4a40d',1,'playerUtils.c']]],
   ['sub_5f0807c69c_5426',['sub_0807C69C',['../playerUtils_8c.html#a4e3e702e10c72420daf8a19d7fa036ae',1,'playerUtils.c']]],
