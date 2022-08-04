@@ -88,6 +88,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="area_8h_source.html">area.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="object_8h_source.html">object.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="room_8h_source.html">room.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="asm_8h_source.html">asm.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for houseSignManager.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -95,37 +96,37 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="houseSignManager_8c__incl.png" border="0" usemap="#asrc_2manager_2houseSignManager_8c" alt=""/></div>
 <map name="asrc_2manager_2houseSignManager_8c" id="asrc_2manager_2houseSignManager_8c">
-<area shape="rect" title="Keeps track in its bitfield of whether 0x10 x 0x10 rects at certain positions are on the screen." alt="" coords="589,5,808,32"/>
-<area shape="rect" href="houseSignManager_8h.html" title=" " alt="" coords="668,80,865,107"/>
-<area shape="rect" href="area_8h.html" title=" " alt="" coords="874,229,931,256"/>
-<area shape="rect" href="object_8h.html" title=" " alt="" coords="286,80,353,107"/>
-<area shape="rect" href="room_8h.html" title=" " alt="" coords="618,155,680,181"/>
-<area shape="rect" href="manager_8h.html" title=" " alt="" coords="725,155,808,181"/>
-<area shape="rect" href="global_8h.html" title=" " alt="" coords="409,379,476,405"/>
-<area shape="rect" href="entity_8h.html" title=" " alt="" coords="459,229,522,256"/>
-<area shape="rect" href="gba_8h.html" title=" " alt="" coords="551,453,630,480"/>
-<area shape="rect" title=" " alt="" coords="261,528,325,555"/>
-<area shape="rect" href="defines_8h.html" title=" " alt="" coords="910,528,983,555"/>
-<area shape="rect" href="io__reg_8h.html" title=" " alt="" coords="650,528,717,555"/>
-<area shape="rect" href="types_8h.html" title=" " alt="" coords="756,603,819,629"/>
-<area shape="rect" href="multi__boot_8h.html" title=" " alt="" coords="742,528,834,555"/>
-<area shape="rect" href="syscall_8h.html" title=" " alt="" coords="554,528,626,555"/>
-<area shape="rect" href="macro_8h.html" title=" " alt="" coords="350,528,418,555"/>
-<area shape="rect" href="isagbprint_8h.html" title=" " alt="" coords="442,528,530,555"/>
-<area shape="rect" title=" " alt="" coords="912,603,980,629"/>
-<area shape="rect" title=" " alt="" coords="756,677,820,704"/>
-<area shape="rect" href="color_8h.html" title=" " alt="" coords="412,304,472,331"/>
-<area shape="rect" href="sprite_8h.html" title=" " alt="" coords="497,304,561,331"/>
-<area shape="rect" href="transitions_8h.html" title=" " alt="" coords="906,304,998,331"/>
-<area shape="rect" href="roomid_8h.html" title=" " alt="" coords="916,379,987,405"/>
-<area shape="rect" href="asm_8h.html" title=" " alt="" coords="28,229,86,256"/>
-<area shape="rect" href="common_8h.html" title=" " alt="" coords="62,304,145,331"/>
-<area shape="rect" href="sound_8h.html" title=" " alt="" coords="169,304,236,331"/>
-<area shape="rect" href="flags_8h.html" title=" " alt="" coords="228,229,286,256"/>
-<area shape="rect" href="effects_8h.html" title=" " alt="" coords="382,155,452,181"/>
-<area shape="rect" href="physics_8h.html" title=" " alt="" coords="282,155,358,181"/>
-<area shape="rect" href="player_8h.html" title=" " alt="" coords="528,155,594,181"/>
-<area shape="rect" href="droptables_8h.html" title=" " alt="" coords="687,229,779,256"/>
+<area shape="rect" title="Keeps track in its bitfield of whether 0x10 x 0x10 rects at certain positions are on the screen." alt="" coords="591,5,810,32"/>
+<area shape="rect" href="houseSignManager_8h.html" title=" " alt="" coords="602,80,799,107"/>
+<area shape="rect" href="area_8h.html" title=" " alt="" coords="875,229,932,256"/>
+<area shape="rect" href="object_8h.html" title=" " alt="" coords="478,80,545,107"/>
+<area shape="rect" href="asm_8h.html" title=" " alt="" coords="808,155,865,181"/>
+<area shape="rect" href="room_8h.html" title=" " alt="" coords="74,155,135,181"/>
+<area shape="rect" href="manager_8h.html" title=" " alt="" coords="701,155,783,181"/>
+<area shape="rect" href="global_8h.html" title=" " alt="" coords="478,379,545,405"/>
+<area shape="rect" href="entity_8h.html" title=" " alt="" coords="243,229,305,256"/>
+<area shape="rect" href="gba_8h.html" title=" " alt="" coords="623,453,701,480"/>
+<area shape="rect" title=" " alt="" coords="327,528,391,555"/>
+<area shape="rect" href="defines_8h.html" title=" " alt="" coords="975,528,1048,555"/>
+<area shape="rect" href="io__reg_8h.html" title=" " alt="" coords="883,528,950,555"/>
+<area shape="rect" href="types_8h.html" title=" " alt="" coords="527,603,589,629"/>
+<area shape="rect" href="multi__boot_8h.html" title=" " alt="" coords="512,528,604,555"/>
+<area shape="rect" href="syscall_8h.html" title=" " alt="" coords="415,528,487,555"/>
+<area shape="rect" href="macro_8h.html" title=" " alt="" coords="628,528,696,555"/>
+<area shape="rect" href="isagbprint_8h.html" title=" " alt="" coords="721,528,809,555"/>
+<area shape="rect" title=" " alt="" coords="977,603,1045,629"/>
+<area shape="rect" title=" " alt="" coords="526,677,590,704"/>
+<area shape="rect" href="color_8h.html" title=" " alt="" coords="312,304,372,331"/>
+<area shape="rect" href="sprite_8h.html" title=" " alt="" coords="173,304,237,331"/>
+<area shape="rect" href="transitions_8h.html" title=" " alt="" coords="925,304,1017,331"/>
+<area shape="rect" href="roomid_8h.html" title=" " alt="" coords="936,379,1007,405"/>
+<area shape="rect" href="common_8h.html" title=" " alt="" coords="549,304,631,331"/>
+<area shape="rect" href="sound_8h.html" title=" " alt="" coords="599,229,666,256"/>
+<area shape="rect" href="flags_8h.html" title=" " alt="" coords="690,229,749,256"/>
+<area shape="rect" href="effects_8h.html" title=" " alt="" coords="160,155,231,181"/>
+<area shape="rect" href="physics_8h.html" title=" " alt="" coords="307,155,383,181"/>
+<area shape="rect" href="player_8h.html" title=" " alt="" coords="407,155,474,181"/>
+<area shape="rect" href="droptables_8h.html" title=" " alt="" coords="5,304,97,331"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -136,8 +137,6 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6d8096822cdfdd1982ef2fcdc8f0f099"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="houseSignManager_8c.html#a6d8096822cdfdd1982ef2fcdc8f0f099">CheckRectOnScreen</a> (<a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>, <a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>)</td></tr>
-<tr class="separator:a6d8096822cdfdd1982ef2fcdc8f0f099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a155a8a11eb44b1f5a6c6bcd8d1edeffe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="houseSignManager_8c.html#a155a8a11eb44b1f5a6c6bcd8d1edeffe">HouseSignManager_Main</a> (<a class="el" href="structHouseSignManager.html">HouseSignManager</a> *this)</td></tr>
 <tr class="separator:a155a8a11eb44b1f5a6c6bcd8d1edeffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -145,46 +144,6 @@ Functions</h2></td></tr>
 <div class="textblock"><p >Keeps track in its bitfield of whether 0x10 x 0x10 rects at certain positions are on the screen. </p>
 <p >Spawns HOUSE_SIGN objects that check this and unsets the value in the bitfield. Creates the signs on the houses in hyrule town. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a6d8096822cdfdd1982ef2fcdc8f0f099" name="a6d8096822cdfdd1982ef2fcdc8f0f099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d8096822cdfdd1982ef2fcdc8f0f099">&#9670;&nbsp;</a></span>CheckRectOnScreen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> CheckRectOnScreen </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a155a8a11eb44b1f5a6c6bcd8d1edeffe" name="a155a8a11eb44b1f5a6c6bcd8d1edeffe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a155a8a11eb44b1f5a6c6bcd8d1edeffe">&#9670;&nbsp;</a></span>HouseSignManager_Main()</h2>
 
