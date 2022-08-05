@@ -1,7 +1,6 @@
 <map id="FrozenWaterElementEntity" name="FrozenWaterElementEntity">
-<area shape="rect" id="node1" title=" " alt="" coords="51,331,225,357"/>
-<area shape="rect" id="node2" href="$structEntity.html" title="Container for instantiable behavior." alt="" coords="111,241,165,268"/>
-<area shape="rect" id="node3" href="$unionSplitWord.html" title=" " alt="" coords="5,5,84,32"/>
-<area shape="rect" id="node4" href="$structHitbox.html" title="Hitbox structure." alt="" coords="109,5,167,32"/>
-<area shape="rect" id="node5" href="$unionSplitHWord.html" title=" " alt="" coords="191,5,279,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,213,180,240"/>
+<area shape="rect" id="node2" href="$structEntity.html" title="Container for instantiable behavior." alt="" coords="65,124,120,151"/>
+<area shape="rect" id="node3" href="$unionSplitWord.html" title=" " alt="" coords="7,5,85,32"/>
+<area shape="rect" id="node4" href="$structHitbox.html" title="Hitbox structure." alt="" coords="110,5,169,32"/>
 </map>

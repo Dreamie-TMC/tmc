@@ -1,8 +1,8 @@
 <map id="ChuchuBossEntity" name="ChuchuBossEntity">
-<area shape="rect" id="node1" title=" " alt="" coords="242,333,370,360"/>
-<area shape="rect" id="node2" href="$structEntity.html" title="Container for instantiable behavior." alt="" coords="153,243,208,269"/>
+<area shape="rect" id="node1" title=" " alt="" coords="139,231,267,257"/>
+<area shape="rect" id="node2" href="$structEntity.html" title="Container for instantiable behavior." alt="" coords="112,125,167,152"/>
 <area shape="rect" id="node3" href="$unionSplitWord.html" title=" " alt="" coords="5,5,84,32"/>
-<area shape="rect" id="node4" href="$structHitbox.html" title="Hitbox structure." alt="" coords="130,5,189,32"/>
-<area shape="rect" id="node5" href="$unionSplitHWord.html" title=" " alt="" coords="247,5,335,32"/>
-<area shape="rect" id="node6" href="$structHelper.html" title=" " alt="" coords="397,243,457,269"/>
+<area shape="rect" id="node4" href="$structHitbox.html" title="Hitbox structure." alt="" coords="110,5,169,32"/>
+<area shape="rect" id="node5" href="$unionSplitHWord.html" title=" " alt="" coords="191,125,279,152"/>
+<area shape="rect" id="node6" href="$structHelper.html" title=" " alt="" coords="304,125,364,152"/>
 </map>

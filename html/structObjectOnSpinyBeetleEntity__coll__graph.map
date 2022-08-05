@@ -1,7 +1,6 @@
 <map id="ObjectOnSpinyBeetleEntity" name="ObjectOnSpinyBeetleEntity">
-<area shape="rect" id="node1" title=" " alt="" coords="49,331,227,357"/>
-<area shape="rect" id="node2" href="$structEntity.html" title="Container for instantiable behavior." alt="" coords="111,241,165,268"/>
-<area shape="rect" id="node3" href="$unionSplitWord.html" title=" " alt="" coords="5,5,84,32"/>
-<area shape="rect" id="node4" href="$structHitbox.html" title="Hitbox structure." alt="" coords="109,5,167,32"/>
-<area shape="rect" id="node5" href="$unionSplitHWord.html" title=" " alt="" coords="191,5,279,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,213,184,240"/>
+<area shape="rect" id="node2" href="$structEntity.html" title="Container for instantiable behavior." alt="" coords="67,124,122,151"/>
+<area shape="rect" id="node3" href="$unionSplitWord.html" title=" " alt="" coords="9,5,87,32"/>
+<area shape="rect" id="node4" href="$structHitbox.html" title="Hitbox structure." alt="" coords="112,5,171,32"/>
 </map>

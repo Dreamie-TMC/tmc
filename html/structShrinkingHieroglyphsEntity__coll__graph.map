@@ -1,7 +1,6 @@
 <map id="ShrinkingHieroglyphsEntity" name="ShrinkingHieroglyphsEntity">
-<area shape="rect" id="node1" title=" " alt="" coords="5,331,181,357"/>
-<area shape="rect" id="node2" href="$structEntity.html" title="Container for instantiable behavior." alt="" coords="139,241,194,268"/>
-<area shape="rect" id="node3" href="$unionSplitWord.html" title=" " alt="" coords="37,5,115,32"/>
-<area shape="rect" id="node4" href="$structHitbox.html" title="Hitbox structure." alt="" coords="161,5,220,32"/>
-<area shape="rect" id="node5" href="$unionSplitHWord.html" title=" " alt="" coords="244,5,332,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,213,181,240"/>
+<area shape="rect" id="node2" href="$structEntity.html" title="Container for instantiable behavior." alt="" coords="122,124,177,151"/>
+<area shape="rect" id="node3" href="$unionSplitWord.html" title=" " alt="" coords="21,5,99,32"/>
+<area shape="rect" id="node4" href="$structHitbox.html" title="Hitbox structure." alt="" coords="124,5,183,32"/>
 </map>

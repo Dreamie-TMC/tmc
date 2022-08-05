@@ -130,6 +130,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEntity.html">Entity</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for instantiable behavior.  <a href="structEntity.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGenericEntityData.html">GenericEntityData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGenericEntity.html">GenericEntity</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLinkedList.html">LinkedList</a></td></tr>
@@ -142,6 +144,8 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a0b7e155f796ed5e7b49b0f44867135ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a0b7e155f796ed5e7b49b0f44867135ee">MAX_ENTITIES</a>&#160;&#160;&#160;71</td></tr>
 <tr class="separator:a0b7e155f796ed5e7b49b0f44867135ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b212c7fc367ebb8c70f1c699d776bc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a0b212c7fc367ebb8c70f1c699d776bc0">GENERIC_ENTITY_FIELDS</a></td></tr>
+<tr class="separator:a0b212c7fc367ebb8c70f1c699d776bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0513c45f45481e4c6869a4a15abc1e56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a0513c45f45481e4c6869a4a15abc1e56">COLLISION_OFF</a>(<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>)&#160;&#160;&#160;((<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>)-&gt;flags &amp;= ~<a class="el" href="entity_8h.html#acda3452546886b2b713c62c4a07fd52aa2edec0173a1f1a4c4294f5e10b06414f">ENT_COLLIDE</a>)</td></tr>
 <tr class="separator:a0513c45f45481e4c6869a4a15abc1e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af91636a019ea07083622b01913f2bafa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#af91636a019ea07083622b01913f2bafa">COLLISION_ON</a>(<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>)&#160;&#160;&#160;((<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>)-&gt;flags |= <a class="el" href="entity_8h.html#acda3452546886b2b713c62c4a07fd52aa2edec0173a1f1a4c4294f5e10b06414f">ENT_COLLIDE</a>)</td></tr>
@@ -839,6 +843,36 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a0b212c7fc367ebb8c70f1c699d776bc0" name="a0b212c7fc367ebb8c70f1c699d776bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b212c7fc367ebb8c70f1c699d776bc0">&#9670;&nbsp;</a></span>GENERIC_ENTITY_FIELDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERIC_ENTITY_FIELDS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="comment">/*0x68*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> field_0x68; \</div>
+<div class="line">    <span class="comment">/*0x6a*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> field_0x6a;  \</div>
+<div class="line">    <span class="comment">/*0x6c*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> field_0x6c;  \</div>
+<div class="line">    <span class="comment">/*0x6e*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> field_0x6e;  \</div>
+<div class="line">    <span class="comment">/*0x70*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitWord.html">SplitWord</a> field_0x70;   \</div>
+<div class="line">    <span class="comment">/*0x74*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> field_0x74;  \</div>
+<div class="line">    <span class="comment">/*0x76*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> field_0x76;  \</div>
+<div class="line">    <span class="comment">/*0x78*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> field_0x78;  \</div>
+<div class="line">    <span class="comment">/*0x7a*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> field_0x7a;  \</div>
+<div class="line">    <span class="comment">/*0x7c*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitWord.html">SplitWord</a> field_0x7c;   \</div>
+<div class="line">    <span class="comment">/*0x80*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> field_0x80;  \</div>
+<div class="line">    <span class="comment">/*0x82*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> field_0x82;  \</div>
+<div class="line">    <span class="comment">/*0x84*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> cutsceneBeh; \</div>
+<div class="line">    <span class="comment">/*0x86*/</span> <span class="keyword">union </span><a class="code hl_union" href="unionSplitHWord.html">SplitHWord</a> field_0x86;</div>
+<div class="ttc" id="aunionSplitHWord_html"><div class="ttname"><a href="unionSplitHWord.html">SplitHWord</a></div><div class="ttdef"><b>Definition:</b> global.h:116</div></div>
+<div class="ttc" id="aunionSplitWord_html"><div class="ttname"><a href="unionSplitWord.html">SplitWord</a></div><div class="ttdef"><b>Definition:</b> global.h:102</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0b7e155f796ed5e7b49b0f44867135ee" name="a0b7e155f796ed5e7b49b0f44867135ee"></a>

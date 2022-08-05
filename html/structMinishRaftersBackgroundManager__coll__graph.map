@@ -1,8 +1,7 @@
 <map id="MinishRaftersBackgroundManager" name="MinishRaftersBackgroundManager">
-<area shape="rect" id="node1" title=" " alt="" coords="27,437,249,464"/>
-<area shape="rect" id="node2" href="$structManager.html" title=" " alt="" coords="102,347,174,373"/>
-<area shape="rect" id="node3" href="$structEntity.html" title="Container for instantiable behavior." alt="" coords="111,241,165,268"/>
-<area shape="rect" id="node4" href="$unionSplitWord.html" title=" " alt="" coords="5,5,84,32"/>
-<area shape="rect" id="node5" href="$structHitbox.html" title="Hitbox structure." alt="" coords="109,5,167,32"/>
-<area shape="rect" id="node6" href="$unionSplitHWord.html" title=" " alt="" coords="191,5,279,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,320,227,347"/>
+<area shape="rect" id="node2" href="$structManager.html" title=" " alt="" coords="80,229,152,256"/>
+<area shape="rect" id="node3" href="$structEntity.html" title="Container for instantiable behavior." alt="" coords="89,124,143,151"/>
+<area shape="rect" id="node4" href="$unionSplitWord.html" title=" " alt="" coords="30,5,109,32"/>
+<area shape="rect" id="node5" href="$structHitbox.html" title="Hitbox structure." alt="" coords="133,5,192,32"/>
 </map>
