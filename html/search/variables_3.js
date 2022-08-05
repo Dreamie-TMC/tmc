@@ -48,7 +48,7 @@ var searchData=
   ['control_45',['control',['../structDMARegisters.html#af2903edabe68555afc61e86698931d3b',1,'DMARegisters::control()'],['../structBgSettings.html#a1a841a4964122ea50479f18dd28d4197',1,'BgSettings::control()'],['../structBgAffSettings.html#a2016a48e0512b4a021667e219ca027f2',1,'BgAffSettings::control()']]],
   ['controlmode_46',['controlMode',['../structUI.html#ab481f98a2a246df4891e080f4ee50860',1,'UI::controlMode()'],['../structPlayerState.html#a7b66a5d0f7bf7832d57c858bf19378b9',1,'PlayerState::controlMode()']]],
   ['controls_47',['controls',['../structScreen.html#a3fc717d71bd00cd680fba7525597d5e1',1,'Screen']]],
-  ['count_48',['count',['../structFlashSector.html#a7b29e153db250bbf60db9f0fbd2fb83b',1,'FlashSector::count()'],['../vram_8c.html#a2420db3642b59da2c5994511b8ac6398',1,'count():&#160;vram.c'],['../structCarriedEntity.html#a53e6e560c4b424d0f8edc7608c7ae545',1,'CarriedEntity::count()'],['../structSoundChannel.html#a3562ee7420e44a6261b7e40559c4b346',1,'SoundChannel::count()']]],
+  ['count_48',['count',['../structFlashSector.html#a7b29e153db250bbf60db9f0fbd2fb83b',1,'FlashSector::count()'],['../vram_8c.html#ae11b3deb3de3df7dc48e439074023e35',1,'count():&#160;vram.c'],['../structCarriedEntity.html#a53e6e560c4b424d0f8edc7608c7ae545',1,'CarriedEntity::count()'],['../structSoundChannel.html#a3562ee7420e44a6261b7e40559c4b346',1,'SoundChannel::count()']]],
   ['counter_49',['counter',['../structIntroState.html#a8f554638703cadccc2c3451cfd8850af',1,'IntroState']]],
   ['crow_5ffunctions_50',['Crow_Functions',['../crow_8c.html#a30215eccb5cc080af5db9c922a2e0586',1,'crow.c']]],
   ['ctsenable_51',['ctsEnable',['../structSioUartCnt.html#a335a8e49a4c749baca2e4eb4fb046fa3',1,'SioUartCnt']]],
