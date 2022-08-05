@@ -88,6 +88,7 @@ $(function() {
 <li>Talon()&#160;:&#160;<a class="el" href="talon_8c.html#a8ade177c48a68e77a0c2fd78fd58e9fa">talon.c</a>, <a class="el" href="npc_8h.html#a3110b8a9eb85cbb2b3dc60623085621d">npc.h</a></li>
 <li>Talon_Fusion()&#160;:&#160;<a class="el" href="talon_8c.html#aec2de37827bf49fce15bc399aef3e419">talon.c</a>, <a class="el" href="npc_8h.html#a093e08c1195e3ea9d74079fc2302b87d">npc.h</a></li>
 <li>Talon_Head()&#160;:&#160;<a class="el" href="talon_8c.html#aa980edffce95209de247c3b675bcc093">talon.c</a>, <a class="el" href="npc_8h.html#a540d6f29cce177927f300af032312bf0">npc.h</a></li>
+<li>targetIndex&#160;:&#160;<a class="el" href="vram_8c.html#af8f806029143f41972fe1254e1545bd4">vram.c</a></li>
 <li>Task&#160;:&#160;<a class="el" href="main_8h.html#a8564c478026655cd8718601a4514e1b7">main.h</a></li>
 <li>TASK_DEBUG&#160;:&#160;<a class="el" href="main_8h.html#a8564c478026655cd8718601a4514e1b7aa73fd4733185806ec190b7585205b55b">main.h</a></li>
 <li>TASK_FILE_SELECT&#160;:&#160;<a class="el" href="main_8h.html#a8564c478026655cd8718601a4514e1b7a4b5805396ab9b7cd58f8dba1f18b1277">main.h</a></li>
@@ -98,13 +99,12 @@ $(function() {
 <li>TATEKAKE_HOUSE&#160;:&#160;<a class="el" href="flags_8h.html#a3f3de3e0d751949b8d0b60ffb302944aa22061a539736510e2ffc72ff8d55dd67">flags.h</a></li>
 <li>TATEKAKE_TOCHU&#160;:&#160;<a class="el" href="flags_8h.html#a3f3de3e0d751949b8d0b60ffb302944aaff347c412d5815150f8f34392a4a7df3">flags.h</a></li>
 <li>TATSUMAKI&#160;:&#160;<a class="el" href="flags_8h.html#a3f3de3e0d751949b8d0b60ffb302944aa5b622093a410575ea35db41fa30d48e0">flags.h</a></li>
-<li>Teachers()&#160;:&#160;<a class="el" href="npc_8h.html#a9b5d3de0436de87eb272fa81d03d6240">npc.h</a></li>
 <li>TEACHERS&#160;:&#160;<a class="el" href="npc_8h.html#ab86484a9fbeb0e4494cb75cadb5f4cf3a805210e49f5a024117995f0ca30c328f">npc.h</a></li>
-<li>Teachers()&#160;:&#160;<a class="el" href="teachers_8c.html#a32389d09b84bc7539daa21af0ad74308">teachers.c</a></li>
+<li>Teachers()&#160;:&#160;<a class="el" href="teachers_8c.html#a32389d09b84bc7539daa21af0ad74308">teachers.c</a>, <a class="el" href="npc_8h.html#a9b5d3de0436de87eb272fa81d03d6240">npc.h</a></li>
 <li>Teachers_Fusion()&#160;:&#160;<a class="el" href="teachers_8c.html#a43a441993895fbf2ce9d0d5739844dd9">teachers.c</a>, <a class="el" href="npc_8h.html#a6eb9275a0f1ff27eaef37d2047744c40">npc.h</a></li>
 <li>Teachers_Head()&#160;:&#160;<a class="el" href="teachers_8c.html#a0f6bdf2bf5cf6d5871fa6857d39a5aac">teachers.c</a>, <a class="el" href="npc_8h.html#a1cdb7548da8f5cbc82f36ef5498e571b">npc.h</a></li>
-<li>Tektite()&#160;:&#160;<a class="el" href="tektite_8c.html#ad173f8a3af4ead784122fc982ae6fc52">tektite.c</a>, <a class="el" href="enemy_8h.html#a75170ff4b9b8f5d45d63fd502bea847b">enemy.h</a></li>
 <li>TEKTITE&#160;:&#160;<a class="el" href="enemy_8h.html#aea93ec65ac90bcf874dde349967f08aba725744647ee79194d178057fe2092210">enemy.h</a></li>
+<li>Tektite()&#160;:&#160;<a class="el" href="enemy_8h.html#a75170ff4b9b8f5d45d63fd502bea847b">enemy.h</a>, <a class="el" href="tektite_8c.html#ad173f8a3af4ead784122fc982ae6fc52">tektite.c</a></li>
 <li>Tektite_Functions&#160;:&#160;<a class="el" href="tektite_8c.html#ad3d94adc72af5685db140d939f45af8d">tektite.c</a></li>
 <li>TEKTITE_GOLDEN&#160;:&#160;<a class="el" href="enemy_8h.html#aea93ec65ac90bcf874dde349967f08aba9b8164910292171806f81cece345a54b">enemy.h</a></li>
 <li>Tektite_OnCollision()&#160;:&#160;<a class="el" href="tektite_8c.html#a8c8abb53cb13edff51b81373080c4480">tektite.c</a></li>
@@ -240,17 +240,18 @@ $(function() {
 <li>TextUIElement()&#160;:&#160;<a class="el" href="ui_8c.html#a4593f0a21617c4a95d04f34189d549ff">ui.c</a></li>
 <li>thing&#160;:&#160;<a class="el" href="eeprom_8c.html#accd683e30335c5557cefaa17088ebeae">eeprom.c</a></li>
 <li>THOUGHT_BUBBLE&#160;:&#160;<a class="el" href="object_8h.html#a0b29a1e1c76a85a0dbaa7c34a9d2874aa208430df59eceabaef20d5f009cbb564">object.h</a></li>
-<li>ThoughtBubble()&#160;:&#160;<a class="el" href="thoughtBubble_8c.html#a7e36d6fab9ebb74bb0acb2c19afa3b2a">thoughtBubble.c</a>, <a class="el" href="object_8h.html#a9e7a6da4e1693c0f1191192fdeceae49">object.h</a></li>
+<li>ThoughtBubble()&#160;:&#160;<a class="el" href="object_8h.html#a9e7a6da4e1693c0f1191192fdeceae49">object.h</a>, <a class="el" href="thoughtBubble_8c.html#a7e36d6fab9ebb74bb0acb2c19afa3b2a">thoughtBubble.c</a></li>
 <li>ThoughtBubble_Init()&#160;:&#160;<a class="el" href="thoughtBubble_8c.html#a5941f1928f9b364cbc652de15101212e">thoughtBubble.c</a></li>
 <li>ThoughtBubble_SFX&#160;:&#160;<a class="el" href="thoughtBubble_8c.html#a92fbc3c741c5c4916db0c386f5aef9e6">thoughtBubble.c</a></li>
 <li>ThoughtBubble_Update()&#160;:&#160;<a class="el" href="thoughtBubble_8c.html#aec2ffc19b42df110c0a83e4d93f49efd">thoughtBubble.c</a></li>
-<li>Thunderbold()&#160;:&#160;<a class="el" href="object_8h.html#a85907fdcdef4bfb316632fea3ffd5d9e">object.h</a>, <a class="el" href="thunderbold_8c.html#ad0d66f02344b040f1f31ee74e048a6a5">thunderbold.c</a></li>
+<li>Thunderbold()&#160;:&#160;<a class="el" href="thunderbold_8c.html#ad0d66f02344b040f1f31ee74e048a6a5">thunderbold.c</a></li>
 <li>THUNDERBOLD&#160;:&#160;<a class="el" href="object_8h.html#a0b29a1e1c76a85a0dbaa7c34a9d2874aa0bba2fbeddf5165fd0492b606a88bbcc">object.h</a></li>
+<li>Thunderbold()&#160;:&#160;<a class="el" href="object_8h.html#a85907fdcdef4bfb316632fea3ffd5d9e">object.h</a></li>
 <li>Thunderbold_Action1()&#160;:&#160;<a class="el" href="thunderbold_8c.html#a5781c797d8113ea49e9a5229cf77311a">thunderbold.c</a></li>
 <li>Thunderbold_Init()&#160;:&#160;<a class="el" href="thunderbold_8c.html#a0bcd7a2fa9dce2a0890806f8072994be">thunderbold.c</a></li>
+<li>TILE&#160;:&#160;<a class="el" href="entity_8h.html#a1c90f4f786ae8c749d2b50a6c7686b96">entity.h</a></li>
 <li>Tile&#160;:&#160;<a class="el" href="tiles_8h.html#acd2017d946fd818c3b8ca377bc4006c7">tiles.h</a></li>
 <li>tile&#160;:&#160;<a class="el" href="beanstalkSubtask_8c.html#a9739dc8e2f05bf198c3af9aa272593fa">beanstalkSubtask.c</a></li>
-<li>TILE&#160;:&#160;<a class="el" href="entity_8h.html#a1c90f4f786ae8c749d2b50a6c7686b96">entity.h</a></li>
 <li>TILE_CHANGE_OBSERVE_MANAGER&#160;:&#160;<a class="el" href="manager_8h.html#aba358ebafc57f67fb3857896d466026ea999f2a75eb3547af52403f01ba072685">manager.h</a></li>
 <li>TILE_ENTITY_8&#160;:&#160;<a class="el" href="room_8h.html#a88b930e1434992042a6c78203f58b442af96d53d22e1901788179087c9b964746">room.h</a></li>
 <li>TILE_ENTITY_D&#160;:&#160;<a class="el" href="room_8h.html#a88b930e1434992042a6c78203f58b442af3f2b27f4daedd20681ef5203785b073">room.h</a></li>
@@ -261,7 +262,7 @@ $(function() {
 <li>TILE_POS&#160;:&#160;<a class="el" href="entity_8h.html#acf1fece7e6eba5f984da82d0b0d6921c">entity.h</a></li>
 <li>TILE_POS_X_COMPONENT&#160;:&#160;<a class="el" href="entity_8h.html#aea6aeab771b5c0ae685d9f197a3be683">entity.h</a></li>
 <li>TILE_POS_Y_COMPONENT&#160;:&#160;<a class="el" href="entity_8h.html#a62d7ebe34b495c6503d36d0eacfa9119">entity.h</a></li>
-<li>TILE_PUSHED&#160;:&#160;<a class="el" href="bigPushableLever_8c.html#a2d9d7c3e6feb029a82c9a87e7ea186bc">bigPushableLever.c</a>, <a class="el" href="pushableLever_8c.html#a2d9d7c3e6feb029a82c9a87e7ea186bc">pushableLever.c</a></li>
+<li>TILE_PUSHED&#160;:&#160;<a class="el" href="pushableLever_8c.html#a2d9d7c3e6feb029a82c9a87e7ea186bc">pushableLever.c</a>, <a class="el" href="bigPushableLever_8c.html#a2d9d7c3e6feb029a82c9a87e7ea186bc">bigPushableLever.c</a></li>
 <li>TILE_PUZZLE_MANAGER&#160;:&#160;<a class="el" href="manager_8h.html#aba358ebafc57f67fb3857896d466026ead3c17bd7435e61ef1161a8adc086f070">manager.h</a></li>
 <li>TILE_SIZE_4BPP&#160;:&#160;<a class="el" href="defines_8h.html#a6a73662cc354d156570fdff67f922726">defines.h</a></li>
 <li>TILE_SIZE_8BPP&#160;:&#160;<a class="el" href="defines_8h.html#a93efa256c064d294ecdc712292a160ba">defines.h</a></li>
@@ -281,7 +282,7 @@ $(function() {
 <li>TileCollisionFunction9()&#160;:&#160;<a class="el" href="movement_8c.html#acdea3cc0abfc51b787445f7b69963c5b">movement.c</a></li>
 <li>TileEntityType&#160;:&#160;<a class="el" href="room_8h.html#a88b930e1434992042a6c78203f58b442">room.h</a></li>
 <li>TileFilled&#160;:&#160;<a class="el" href="movement_8c.html#a7e034c51a395dc81dafe280e699d1482">movement.c</a></li>
-<li>TilePuzzleManager_Main()&#160;:&#160;<a class="el" href="tilePuzzleManager_8c.html#af9f0a76fff04005497c53ece28d6b25a">tilePuzzleManager.c</a>, <a class="el" href="manager_8h.html#aa9dda91df4efc0be9c28fcc10bb5a26a">manager.h</a></li>
+<li>TilePuzzleManager_Main()&#160;:&#160;<a class="el" href="manager_8h.html#aa9dda91df4efc0be9c28fcc10bb5a26a">manager.h</a>, <a class="el" href="tilePuzzleManager_8c.html#af9f0a76fff04005497c53ece28d6b25a">tilePuzzleManager.c</a></li>
 <li>TIMER_1024CLK&#160;:&#160;<a class="el" href="io__reg_8h.html#ad18ecd28e09f93fb36757fb9e7acdeb1">io_reg.h</a></li>
 <li>TIMER_1CLK&#160;:&#160;<a class="el" href="io__reg_8h.html#aff371b7ba16cddc9a3c4fdba1a4f8bb3">io_reg.h</a></li>
 <li>TIMER_256CLK&#160;:&#160;<a class="el" href="io__reg_8h.html#aa68efb45c2b9b214abfb0bd1c423d082">io_reg.h</a></li>
@@ -300,7 +301,7 @@ $(function() {
 <li>TitleScreenObject_Type0()&#160;:&#160;<a class="el" href="titleScreenObject_8c.html#a2c6f1002ef2606f9855d4f49f94ebdad">titleScreenObject.c</a></li>
 <li>TitleScreenObject_Type1()&#160;:&#160;<a class="el" href="titleScreenObject_8c.html#a0b19bb74124b5fb680339cb8cbd54648">titleScreenObject.c</a></li>
 <li>TitleScreenObject_Type4()&#160;:&#160;<a class="el" href="titleScreenObject_8c.html#ab1d59832a71b6129036787c07377399b">titleScreenObject.c</a></li>
-<li>TitleTask()&#160;:&#160;<a class="el" href="main_8h.html#a5acf6fd2b22609d2b382f370c30cc5fa">main.h</a>, <a class="el" href="title_8c.html#a5acf6fd2b22609d2b382f370c30cc5fa">title.c</a></li>
+<li>TitleTask()&#160;:&#160;<a class="el" href="title_8c.html#a5acf6fd2b22609d2b382f370c30cc5fa">title.c</a>, <a class="el" href="main_8h.html#a5acf6fd2b22609d2b382f370c30cc5fa">main.h</a></li>
 <li>TMP&#160;:&#160;<a class="el" href="furniture_8c.html#a6cace5f5662950ff02a32861ae8051d7abdc64cbbe44e7cbaed05a8d7772f87d5">furniture.c</a></li>
 <li>TONEDATA_P_S_PAM&#160;:&#160;<a class="el" href="m4a_8h.html#a1f976f94f332cf9858e7f94e2e03db44">m4a.h</a></li>
 <li>TONEDATA_P_S_PAN&#160;:&#160;<a class="el" href="m4a_8h.html#a8a176d51683d6832dc83d9088b81fb02">m4a.h</a></li>
@@ -326,7 +327,7 @@ $(function() {
 <li>TownMinish()&#160;:&#160;<a class="el" href="townMinish_8c.html#a3e26b7a65d92bc0e482eb85bc6534f3c">townMinish.c</a>, <a class="el" href="npc_8h.html#a8162171bb56acc2872802edea14f9950">npc.h</a></li>
 <li>TownMinish_Fusion()&#160;:&#160;<a class="el" href="townMinish_8c.html#aa61d530c33be595c0f5191e0fdf92e8e">townMinish.c</a>, <a class="el" href="npc_8h.html#a7472d02cc1fd1749827fc6a73f9c5907">npc.h</a></li>
 <li>TownMinish_Head()&#160;:&#160;<a class="el" href="townMinish_8c.html#ab1fb4e77e05d8d5c206a2db21ca3abf2">townMinish.c</a>, <a class="el" href="npc_8h.html#a3a2c5feb3a8f28c654fa55e3f45f2b96">npc.h</a></li>
-<li>Townsperson()&#160;:&#160;<a class="el" href="townsperson_8c.html#ad8ccce170ea131f1d18559f05f70b41b">townsperson.c</a>, <a class="el" href="npc_8h.html#a08f8c53ad5ec0954c0db7b7fcb55884b">npc.h</a></li>
+<li>Townsperson()&#160;:&#160;<a class="el" href="npc_8h.html#a08f8c53ad5ec0954c0db7b7fcb55884b">npc.h</a>, <a class="el" href="townsperson_8c.html#ad8ccce170ea131f1d18559f05f70b41b">townsperson.c</a></li>
 <li>Townsperson_Fusion()&#160;:&#160;<a class="el" href="townsperson_8c.html#a4bc78a1277d6b7882b1b90a810f2d6b9">townsperson.c</a>, <a class="el" href="npc_8h.html#abe565c9e93c223b5dc4934866eb291df">npc.h</a></li>
 <li>Townsperson_Head()&#160;:&#160;<a class="el" href="townsperson_8c.html#a924fe9ffee5889e41184ce192ed691ed">townsperson.c</a>, <a class="el" href="npc_8h.html#aa826c4a65dfa51a9ad5b3ae72392d854">npc.h</a></li>
 <li>TPWNSPERSON&#160;:&#160;<a class="el" href="npc_8h.html#ab86484a9fbeb0e4494cb75cadb5f4cf3a0cffc780bc6ab96c7fd8c5da47cb612e">npc.h</a></li>
@@ -372,7 +373,7 @@ $(function() {
 <li>TreeHidingPortal_Action2()&#160;:&#160;<a class="el" href="treeHidingPortal_8c.html#a0dcbc4912e2cd2bb5a5464143e8841f1">treeHidingPortal.c</a></li>
 <li>TreeHidingPortal_Action3()&#160;:&#160;<a class="el" href="treeHidingPortal_8c.html#a51a84a4ab9928c0c2b485bd237b16c87">treeHidingPortal.c</a></li>
 <li>TreeHidingPortal_Init()&#160;:&#160;<a class="el" href="treeHidingPortal_8c.html#a9524c969b63a4254d6d98639a0878341">treeHidingPortal.c</a></li>
-<li>TreeItem()&#160;:&#160;<a class="el" href="treeItem_8c.html#acb444935394757b146b1ba3ba08ac02a">treeItem.c</a>, <a class="el" href="enemy_8h.html#a235e9d9473b158eb2f55665040ba1de7">enemy.h</a></li>
+<li>TreeItem()&#160;:&#160;<a class="el" href="enemy_8h.html#a235e9d9473b158eb2f55665040ba1de7">enemy.h</a>, <a class="el" href="treeItem_8c.html#acb444935394757b146b1ba3ba08ac02a">treeItem.c</a></li>
 <li>TreeThorns()&#160;:&#160;<a class="el" href="treeThorns_8c.html#a0b77c1c2861facbb5722b8056196c107">treeThorns.c</a>, <a class="el" href="object_8h.html#a790a66469c3b06dacaa4b596ad059a75">object.h</a></li>
 <li>TrkVolPitSet()&#160;:&#160;<a class="el" href="m4a_8c.html#ac2b3ffd13edb49c3d9429698edd7ff02">m4a.c</a></li>
 <li>TRUE&#160;:&#160;<a class="el" href="defines_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">defines.h</a>, <a class="el" href="vram_8c.html#a834713a9a17ec303f21e3dc4ecbe9161">vram.c</a></li>
