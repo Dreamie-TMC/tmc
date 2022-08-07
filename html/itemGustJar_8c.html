@@ -85,6 +85,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="entity_8h_source.html">entity.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="item_8h_source.html">item.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="functions_8h_source.html">functions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="playeritem_8h_source.html">playeritem.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for itemGustJar.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -92,11 +93,12 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="itemGustJar_8c__incl.png" border="0" usemap="#asrc_2item_2itemGustJar_8c" alt=""/></div>
 <map name="asrc_2item_2itemGustJar_8c" id="asrc_2item_2itemGustJar_8c">
-<area shape="rect" title=" " alt="" coords="208,5,363,32"/>
+<area shape="rect" title=" " alt="" coords="269,5,424,32"/>
 <area shape="rect" href="global_8h.html" title=" " alt="" coords="503,453,569,480"/>
 <area shape="rect" href="entity_8h.html" title=" " alt="" coords="369,304,431,331"/>
 <area shape="rect" href="item_8h.html" title=" " alt="" coords="81,155,138,181"/>
-<area shape="rect" href="functions_8h.html" title=" " alt="" coords="468,80,553,107"/>
+<area shape="rect" href="functions_8h.html" title=" " alt="" coords="443,80,528,107"/>
+<area shape="rect" href="playeritem_8h.html" title=" " alt="" coords="552,80,643,107"/>
 <area shape="rect" href="gba_8h.html" title=" " alt="" coords="638,528,717,555"/>
 <area shape="rect" title=" " alt="" coords="363,603,427,629"/>
 <area shape="rect" href="defines_8h.html" title=" " alt="" coords="921,603,994,629"/>
@@ -314,10 +316,10 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_function" href="itemGustJar_8c.html#acbc429c8a38903df01083fba2c8e26cf">sub_08076EC8</a>,</div>
 <div class="line">    <a class="code hl_function" href="itemGustJar_8c.html#a0b4cf1b34e4eefb7de2e83f9fd2d77b2">sub_08076F64</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aitemGustJar_8c_html_a0b4cf1b34e4eefb7de2e83f9fd2d77b2"><div class="ttname"><a href="itemGustJar_8c.html#a0b4cf1b34e4eefb7de2e83f9fd2d77b2">sub_08076F64</a></div><div class="ttdeci">void sub_08076F64(ItemBehavior *this, u32 idx)</div><div class="ttdef"><b>Definition:</b> itemGustJar.c:87</div></div>
-<div class="ttc" id="aitemGustJar_8c_html_a8200c79267fafb2d83c8786203140ce2"><div class="ttname"><a href="itemGustJar_8c.html#a8200c79267fafb2d83c8786203140ce2">sub_08076DF4</a></div><div class="ttdeci">void sub_08076DF4(ItemBehavior *this, u32 idx)</div><div class="ttdef"><b>Definition:</b> itemGustJar.c:13</div></div>
-<div class="ttc" id="aitemGustJar_8c_html_aabc19090ffcefff7e23c474bd9b937e1"><div class="ttname"><a href="itemGustJar_8c.html#aabc19090ffcefff7e23c474bd9b937e1">sub_08076E60</a></div><div class="ttdeci">void sub_08076E60(ItemBehavior *this, u32 idx)</div><div class="ttdef"><b>Definition:</b> itemGustJar.c:30</div></div>
-<div class="ttc" id="aitemGustJar_8c_html_acbc429c8a38903df01083fba2c8e26cf"><div class="ttname"><a href="itemGustJar_8c.html#acbc429c8a38903df01083fba2c8e26cf">sub_08076EC8</a></div><div class="ttdeci">void sub_08076EC8(ItemBehavior *this, u32 idx)</div><div class="ttdef"><b>Definition:</b> itemGustJar.c:49</div></div>
+<div class="ttc" id="aitemGustJar_8c_html_a0b4cf1b34e4eefb7de2e83f9fd2d77b2"><div class="ttname"><a href="itemGustJar_8c.html#a0b4cf1b34e4eefb7de2e83f9fd2d77b2">sub_08076F64</a></div><div class="ttdeci">void sub_08076F64(ItemBehavior *this, u32 idx)</div><div class="ttdef"><b>Definition:</b> itemGustJar.c:88</div></div>
+<div class="ttc" id="aitemGustJar_8c_html_a8200c79267fafb2d83c8786203140ce2"><div class="ttname"><a href="itemGustJar_8c.html#a8200c79267fafb2d83c8786203140ce2">sub_08076DF4</a></div><div class="ttdeci">void sub_08076DF4(ItemBehavior *this, u32 idx)</div><div class="ttdef"><b>Definition:</b> itemGustJar.c:14</div></div>
+<div class="ttc" id="aitemGustJar_8c_html_aabc19090ffcefff7e23c474bd9b937e1"><div class="ttname"><a href="itemGustJar_8c.html#aabc19090ffcefff7e23c474bd9b937e1">sub_08076E60</a></div><div class="ttdeci">void sub_08076E60(ItemBehavior *this, u32 idx)</div><div class="ttdef"><b>Definition:</b> itemGustJar.c:31</div></div>
+<div class="ttc" id="aitemGustJar_8c_html_acbc429c8a38903df01083fba2c8e26cf"><div class="ttname"><a href="itemGustJar_8c.html#acbc429c8a38903df01083fba2c8e26cf">sub_08076EC8</a></div><div class="ttdeci">void sub_08076EC8(ItemBehavior *this, u32 idx)</div><div class="ttdef"><b>Definition:</b> itemGustJar.c:50</div></div>
 </div><!-- fragment -->
 </div>
 </div>

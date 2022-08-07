@@ -88,6 +88,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="functions_8h_source.html">functions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="asm_8h_source.html">asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="item_8h_source.html">item.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="object_8h_source.html">object.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for playerItemBomb.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -95,35 +96,40 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="playerItemBomb_8c__incl.png" border="0" usemap="#asrc_2playerItem_2playerItemBomb_8c" alt=""/></div>
 <map name="asrc_2playerItem_2playerItemBomb_8c" id="asrc_2playerItem_2playerItemBomb_8c">
-<area shape="rect" title=" " alt="" coords="118,5,286,47"/>
-<area shape="rect" href="entity_8h.html" title=" " alt="" coords="297,319,360,345"/>
-<area shape="rect" href="player_8h.html" title=" " alt="" coords="71,244,138,271"/>
-<area shape="rect" href="functions_8h.html" title=" " alt="" coords="438,95,523,121"/>
-<area shape="rect" href="asm_8h.html" title=" " alt="" coords="749,95,807,121"/>
-<area shape="rect" href="item_8h.html" title=" " alt="" coords="5,169,63,196"/>
-<area shape="rect" href="global_8h.html" title=" " alt="" coords="469,468,535,495"/>
-<area shape="rect" href="color_8h.html" title=" " alt="" coords="215,393,275,420"/>
-<area shape="rect" href="sprite_8h.html" title=" " alt="" coords="299,393,363,420"/>
-<area shape="rect" href="gba_8h.html" title=" " alt="" coords="611,543,689,569"/>
-<area shape="rect" title=" " alt="" coords="321,617,385,644"/>
-<area shape="rect" href="defines_8h.html" title=" " alt="" coords="969,617,1043,644"/>
-<area shape="rect" href="io__reg_8h.html" title=" " alt="" coords="710,617,777,644"/>
-<area shape="rect" href="types_8h.html" title=" " alt="" coords="816,692,879,719"/>
-<area shape="rect" href="multi__boot_8h.html" title=" " alt="" coords="801,617,893,644"/>
-<area shape="rect" href="syscall_8h.html" title=" " alt="" coords="614,617,686,644"/>
-<area shape="rect" href="macro_8h.html" title=" " alt="" coords="409,617,477,644"/>
-<area shape="rect" href="isagbprint_8h.html" title=" " alt="" coords="502,617,590,644"/>
-<area shape="rect" title=" " alt="" coords="972,692,1040,719"/>
-<area shape="rect" title=" " alt="" coords="815,767,879,793"/>
-<area shape="rect" href="manager_8h.html" title=" " alt="" coords="415,244,498,271"/>
-<area shape="rect" href="physics_8h.html" title=" " alt="" coords="523,244,599,271"/>
-<area shape="rect" href="room_8h.html" title=" " alt="" coords="757,244,818,271"/>
-<area shape="rect" href="structures_8h.html" title=" " alt="" coords="239,169,330,196"/>
-<area shape="rect" href="script_8h.html" title=" " alt="" coords="354,169,418,196"/>
-<area shape="rect" href="map_8h.html" title=" " alt="" coords="675,244,732,271"/>
-<area shape="rect" href="droptables_8h.html" title=" " alt="" coords="825,319,917,345"/>
-<area shape="rect" href="screen_8h.html" title=" " alt="" coords="628,319,699,345"/>
-<area shape="rect" href="fade_8h.html" title=" " alt="" coords="591,393,648,420"/>
+<area shape="rect" title=" " alt="" coords="556,5,724,47"/>
+<area shape="rect" href="entity_8h.html" title=" " alt="" coords="542,319,605,345"/>
+<area shape="rect" href="player_8h.html" title=" " alt="" coords="333,244,400,271"/>
+<area shape="rect" href="functions_8h.html" title=" " alt="" coords="436,95,521,121"/>
+<area shape="rect" href="asm_8h.html" title=" " alt="" coords="1215,244,1273,271"/>
+<area shape="rect" href="item_8h.html" title=" " alt="" coords="149,169,206,196"/>
+<area shape="rect" href="object_8h.html" title=" " alt="" coords="915,169,981,196"/>
+<area shape="rect" href="global_8h.html" title=" " alt="" coords="523,468,589,495"/>
+<area shape="rect" href="color_8h.html" title=" " alt="" coords="526,393,586,420"/>
+<area shape="rect" href="sprite_8h.html" title=" " alt="" coords="611,393,675,420"/>
+<area shape="rect" href="gba_8h.html" title=" " alt="" coords="658,543,737,569"/>
+<area shape="rect" title=" " alt="" coords="383,617,447,644"/>
+<area shape="rect" href="defines_8h.html" title=" " alt="" coords="941,617,1014,644"/>
+<area shape="rect" href="io__reg_8h.html" title=" " alt="" coords="1039,617,1105,644"/>
+<area shape="rect" href="types_8h.html" title=" " alt="" coords="593,692,655,719"/>
+<area shape="rect" href="multi__boot_8h.html" title=" " alt="" coords="471,617,563,644"/>
+<area shape="rect" href="syscall_8h.html" title=" " alt="" coords="588,617,660,644"/>
+<area shape="rect" href="macro_8h.html" title=" " alt="" coords="735,617,803,644"/>
+<area shape="rect" href="isagbprint_8h.html" title=" " alt="" coords="828,617,916,644"/>
+<area shape="rect" title=" " alt="" coords="943,692,1011,719"/>
+<area shape="rect" title=" " alt="" coords="592,767,656,793"/>
+<area shape="rect" href="manager_8h.html" title=" " alt="" coords="227,244,309,271"/>
+<area shape="rect" href="physics_8h.html" title=" " alt="" coords="910,244,986,271"/>
+<area shape="rect" href="room_8h.html" title=" " alt="" coords="824,244,885,271"/>
+<area shape="rect" href="structures_8h.html" title=" " alt="" coords="383,169,473,196"/>
+<area shape="rect" href="script_8h.html" title=" " alt="" coords="497,169,561,196"/>
+<area shape="rect" href="map_8h.html" title=" " alt="" coords="94,244,151,271"/>
+<area shape="rect" href="droptables_8h.html" title=" " alt="" coords="699,393,791,420"/>
+<area shape="rect" href="screen_8h.html" title=" " alt="" coords="117,319,187,345"/>
+<area shape="rect" href="fade_8h.html" title=" " alt="" coords="190,393,247,420"/>
+<area shape="rect" href="common_8h.html" title=" " alt="" coords="968,319,1051,345"/>
+<area shape="rect" href="sound_8h.html" title=" " alt="" coords="1075,319,1141,345"/>
+<area shape="rect" href="flags_8h.html" title=" " alt="" coords="1128,393,1187,420"/>
+<area shape="rect" href="effects_8h.html" title=" " alt="" coords="729,244,799,271"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -437,10 +443,10 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_function" href="playerItemBomb_8c.html#ace3e88d4eb0d8ad356292bf9a5d56090">sub_0801B318</a>,</div>
 <div class="line">    <a class="code hl_function" href="playerItemBomb_8c.html#a536c868b9243f75dbebfbfbea40e9a1e">sub_0801B38C</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aplayerItemBomb_8c_html_a2c74969b01ade6bc92542de7fc0a4536"><div class="ttname"><a href="playerItemBomb_8c.html#a2c74969b01ade6bc92542de7fc0a4536">sub_0801B2CC</a></div><div class="ttdeci">void sub_0801B2CC(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:100</div></div>
-<div class="ttc" id="aplayerItemBomb_8c_html_a536c868b9243f75dbebfbfbea40e9a1e"><div class="ttname"><a href="playerItemBomb_8c.html#a536c868b9243f75dbebfbfbea40e9a1e">sub_0801B38C</a></div><div class="ttdeci">void sub_0801B38C(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:152</div></div>
-<div class="ttc" id="aplayerItemBomb_8c_html_abc43bf10721388719d6e744f7c0bcee7"><div class="ttname"><a href="playerItemBomb_8c.html#abc43bf10721388719d6e744f7c0bcee7">sub_0801B250</a></div><div class="ttdeci">void sub_0801B250(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:78</div></div>
-<div class="ttc" id="aplayerItemBomb_8c_html_ace3e88d4eb0d8ad356292bf9a5d56090"><div class="ttname"><a href="playerItemBomb_8c.html#ace3e88d4eb0d8ad356292bf9a5d56090">sub_0801B318</a></div><div class="ttdeci">void sub_0801B318(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:123</div></div>
+<div class="ttc" id="aplayerItemBomb_8c_html_a2c74969b01ade6bc92542de7fc0a4536"><div class="ttname"><a href="playerItemBomb_8c.html#a2c74969b01ade6bc92542de7fc0a4536">sub_0801B2CC</a></div><div class="ttdeci">void sub_0801B2CC(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:101</div></div>
+<div class="ttc" id="aplayerItemBomb_8c_html_a536c868b9243f75dbebfbfbea40e9a1e"><div class="ttname"><a href="playerItemBomb_8c.html#a536c868b9243f75dbebfbfbea40e9a1e">sub_0801B38C</a></div><div class="ttdeci">void sub_0801B38C(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:153</div></div>
+<div class="ttc" id="aplayerItemBomb_8c_html_abc43bf10721388719d6e744f7c0bcee7"><div class="ttname"><a href="playerItemBomb_8c.html#abc43bf10721388719d6e744f7c0bcee7">sub_0801B250</a></div><div class="ttdeci">void sub_0801B250(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:79</div></div>
+<div class="ttc" id="aplayerItemBomb_8c_html_ace3e88d4eb0d8ad356292bf9a5d56090"><div class="ttname"><a href="playerItemBomb_8c.html#ace3e88d4eb0d8ad356292bf9a5d56090">sub_0801B318</a></div><div class="ttdeci">void sub_0801B318(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:124</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -492,11 +498,11 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">    <a class="code hl_function" href="playerItemBomb_8c.html#af88b74ffa233a492f475d986f9d64f5a">sub_0801B330</a>, <a class="code hl_function" href="playerItemBomb_8c.html#a57650566511db7f090c00a01e719cdd2">sub_0801B340</a>, <a class="code hl_function" href="playerItemBomb_8c.html#aa821e5d0930ee1846aa7ec01d1ce0817">sub_0801B354</a>, <a class="code hl_function" href="playerItemBomb_8c.html#ae732669f2bdde12fdaf2bc74a6bce232">sub_0801B368</a>, <a class="code hl_function" href="playerItemBomb_8c.html#a8c532002c25e2f61a02bb7d61f765f32">sub_0801B384</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aplayerItemBomb_8c_html_a57650566511db7f090c00a01e719cdd2"><div class="ttname"><a href="playerItemBomb_8c.html#a57650566511db7f090c00a01e719cdd2">sub_0801B340</a></div><div class="ttdeci">void sub_0801B340(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:132</div></div>
-<div class="ttc" id="aplayerItemBomb_8c_html_a8c532002c25e2f61a02bb7d61f765f32"><div class="ttname"><a href="playerItemBomb_8c.html#a8c532002c25e2f61a02bb7d61f765f32">sub_0801B384</a></div><div class="ttdeci">void sub_0801B384(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:148</div></div>
-<div class="ttc" id="aplayerItemBomb_8c_html_aa821e5d0930ee1846aa7ec01d1ce0817"><div class="ttname"><a href="playerItemBomb_8c.html#aa821e5d0930ee1846aa7ec01d1ce0817">sub_0801B354</a></div><div class="ttdeci">void sub_0801B354(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:136</div></div>
-<div class="ttc" id="aplayerItemBomb_8c_html_ae732669f2bdde12fdaf2bc74a6bce232"><div class="ttname"><a href="playerItemBomb_8c.html#ae732669f2bdde12fdaf2bc74a6bce232">sub_0801B368</a></div><div class="ttdeci">void sub_0801B368(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:140</div></div>
-<div class="ttc" id="aplayerItemBomb_8c_html_af88b74ffa233a492f475d986f9d64f5a"><div class="ttname"><a href="playerItemBomb_8c.html#af88b74ffa233a492f475d986f9d64f5a">sub_0801B330</a></div><div class="ttdeci">void sub_0801B330(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:127</div></div>
+<div class="ttc" id="aplayerItemBomb_8c_html_a57650566511db7f090c00a01e719cdd2"><div class="ttname"><a href="playerItemBomb_8c.html#a57650566511db7f090c00a01e719cdd2">sub_0801B340</a></div><div class="ttdeci">void sub_0801B340(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:133</div></div>
+<div class="ttc" id="aplayerItemBomb_8c_html_a8c532002c25e2f61a02bb7d61f765f32"><div class="ttname"><a href="playerItemBomb_8c.html#a8c532002c25e2f61a02bb7d61f765f32">sub_0801B384</a></div><div class="ttdeci">void sub_0801B384(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:149</div></div>
+<div class="ttc" id="aplayerItemBomb_8c_html_aa821e5d0930ee1846aa7ec01d1ce0817"><div class="ttname"><a href="playerItemBomb_8c.html#aa821e5d0930ee1846aa7ec01d1ce0817">sub_0801B354</a></div><div class="ttdeci">void sub_0801B354(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:137</div></div>
+<div class="ttc" id="aplayerItemBomb_8c_html_ae732669f2bdde12fdaf2bc74a6bce232"><div class="ttname"><a href="playerItemBomb_8c.html#ae732669f2bdde12fdaf2bc74a6bce232">sub_0801B368</a></div><div class="ttdeci">void sub_0801B368(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:141</div></div>
+<div class="ttc" id="aplayerItemBomb_8c_html_af88b74ffa233a492f475d986f9d64f5a"><div class="ttname"><a href="playerItemBomb_8c.html#af88b74ffa233a492f475d986f9d64f5a">sub_0801B330</a></div><div class="ttdeci">void sub_0801B330(PlayerItemBombEntity *)</div><div class="ttdef"><b>Definition:</b> playerItemBomb.c:128</div></div>
 </div><!-- fragment -->
 </div>
 </div>
