@@ -17,7 +17,7 @@ var searchData=
   ['beetle_5ffunctions_14',['Beetle_Functions',['../beetle_8c.html#a805f157d89ade10b66ed6f5536103655',1,'beetle.c']]],
   ['before_15',['before',['../structModifiedParentEntity.html#ab20d66c76fa63ba98ba6add667f1a1d7',1,'ModifiedParentEntity']]],
   ['begintiles_16',['beginTiles',['../structTextRender.html#a34eb174da1968d3e9bfb0320a360a405',1,'TextRender']]],
-  ['behaviorid_17',['behaviorID',['../structItemBehavior.html#a1c6db461f885239a45086cbfb5862b83',1,'ItemBehavior']]],
+  ['behaviorid_17',['behaviorId',['../structItemBehavior.html#ab65b949fb0df4bbe7bcf6a19c1880bba',1,'ItemBehavior']]],
   ['bend_18',['bend',['../structMusicPlayerTrack.html#a7504c488df592c421f4275b1431f9df4',1,'MusicPlayerTrack']]],
   ['bendrange_19',['bendRange',['../structMusicPlayerTrack.html#a4d6ddc8da07820ca2c7a1211d87f41b5',1,'MusicPlayerTrack']]],
   ['bg0_20',['bg0',['../structScreen.html#a1d151b6a9d2ab4e74fff2ede75e860fe',1,'Screen']]],
@@ -132,6 +132,6 @@ var searchData=
   ['byte1_129',['byte1',['../unionSplitWord.html#af11d0b1c275fbfe088fe00092ce0f5b9',1,'SplitWord']]],
   ['byte2_130',['byte2',['../unionSplitWord.html#a0e3a4d08fd7efb183686017700e291f0',1,'SplitWord']]],
   ['byte3_131',['byte3',['../unionSplitWord.html#ac6f8877b963f4ed29d53e0e8822a9d27',1,'SplitWord']]],
-  ['bytes_132',['BYTES',['../unionSplitWord.html#a2dffeab04935de640951418f65e3ba7c',1,'SplitWord']]],
-  ['bytes_133',['bytes',['../structTextRender.html#a7b8828b99b5bf54a11a1c2895f08bbad',1,'TextRender::bytes()'],['../structGfxItem.html#aafdfb418d33590bf37e1d9831ed74a78',1,'GfxItem::bytes()']]]
+  ['bytes_132',['bytes',['../structTextRender.html#a7b8828b99b5bf54a11a1c2895f08bbad',1,'TextRender::bytes()'],['../structGfxItem.html#aafdfb418d33590bf37e1d9831ed74a78',1,'GfxItem::bytes()']]],
+  ['bytes_133',['BYTES',['../unionSplitWord.html#a2dffeab04935de640951418f65e3ba7c',1,'SplitWord']]]
 ];

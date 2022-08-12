@@ -7,5 +7,6 @@ var searchData=
   ['sleepstatus_4',['SleepStatus',['../main_8h.html#a6c08197a075fbd066c74761d15126d3b',1,'main.h']]],
   ['sound_5',['Sound',['../sound_8h.html#a78d488655886fd6a1355b1162fba927f',1,'sound.h']]],
   ['sprites_6',['Sprites',['../definitions_8h.html#a43a1d9bb6b7a9c2b888825997e1658e8',1,'definitions.h']]],
-  ['surfacetype_7',['SurfaceType',['../player_8h.html#a24dfdcf13ae4e2b7985a3868a1b5169f',1,'player.h']]]
+  ['surfacetype_7',['SurfaceType',['../player_8h.html#a24dfdcf13ae4e2b7985a3868a1b5169f',1,'player.h']]],
+  ['swordmove_8',['SwordMove',['../player_8h.html#a7987933819c94e64977954410ee60a36',1,'player.h']]]
 ];

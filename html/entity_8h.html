@@ -150,7 +150,7 @@ Macros</h2></td></tr>
 <tr class="separator:a0513c45f45481e4c6869a4a15abc1e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af91636a019ea07083622b01913f2bafa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#af91636a019ea07083622b01913f2bafa">COLLISION_ON</a>(<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>)&#160;&#160;&#160;((<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>)-&gt;flags |= <a class="el" href="entity_8h.html#acda3452546886b2b713c62c4a07fd52aa2edec0173a1f1a4c4294f5e10b06414f">ENT_COLLIDE</a>)</td></tr>
 <tr class="separator:af91636a019ea07083622b01913f2bafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2b0dbe2042c8f30eb9c22747fb8e01a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#ac2b0dbe2042c8f30eb9c22747fb8e01a">ANIM_DONE</a>&#160;&#160;&#160;(1 &lt;&lt; 7) /* invalid <a class="el" href="playerUtils_8c.html#a943f49763dd36e31fc7ea8604fcad789">frame</a> index */</td></tr>
+<tr class="memitem:ac2b0dbe2042c8f30eb9c22747fb8e01a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#ac2b0dbe2042c8f30eb9c22747fb8e01a">ANIM_DONE</a>&#160;&#160;&#160;(1 &lt;&lt; 7) /* invalid <a class="el" href="playerUtils_8c.html#a943f49763dd36e31fc7ea8604fcad789">frame</a> <a class="el" href="itemTryPickupObject_8c.html#a355234d6a61ed497fca496e2287c8a64">index</a> */</td></tr>
 <tr class="separator:ac2b0dbe2042c8f30eb9c22747fb8e01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Tile Macros</div></td></tr>
 <tr class="memitem:a1c90f4f786ae8c749d2b50a6c7686b96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a1c90f4f786ae8c749d2b50a6c7686b96">TILE</a>(x,  y)&#160;&#160;&#160;(((((x)-gRoomControls.origin_x) &gt;&gt; 4) &amp; 0x3F) | ((((y)-gRoomControls.origin_y) &gt;&gt; 4) &amp; 0x3F) &lt;&lt; 6)</td></tr>
@@ -278,18 +278,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a47b87f3d3ffbdf7d8093c4896a85ff92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a47b87f3d3ffbdf7d8093c4896a85ff92">DrawEntity</a> (<a class="el" href="structEntity.html">Entity</a> *<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>)</td></tr>
 <tr class="memdesc:a47b87f3d3ffbdf7d8093c4896a85ff92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw an <a class="el" href="structEntity.html" title="Container for instantiable behavior.">Entity</a>.  <a href="entity_8h.html#a47b87f3d3ffbdf7d8093c4896a85ff92">More...</a><br /></td></tr>
 <tr class="separator:a47b87f3d3ffbdf7d8093c4896a85ff92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a197d21670383b3f4424f6c7fcb240254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a197d21670383b3f4424f6c7fcb240254">InitializeAnimation</a> (<a class="el" href="structEntity.html">Entity</a> *, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>)</td></tr>
-<tr class="separator:a197d21670383b3f4424f6c7fcb240254"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52c228b65688bddf3cc04d360941a8b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a52c228b65688bddf3cc04d360941a8b8">InitAnimationForceUpdate</a> (<a class="el" href="structEntity.html">Entity</a> *, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>)</td></tr>
-<tr class="separator:a52c228b65688bddf3cc04d360941a8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25d3ba654b1da04b4683a83d7242fa21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a25d3ba654b1da04b4683a83d7242fa21">UpdateAnimationSingleFrame</a> (<a class="el" href="structEntity.html">Entity</a> *)</td></tr>
-<tr class="separator:a25d3ba654b1da04b4683a83d7242fa21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6701c1d2162f15aa33672c71812d19a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#aa6701c1d2162f15aa33672c71812d19a">UpdateSpriteForCollisionLayer</a> (<a class="el" href="structEntity.html">Entity</a> *)</td></tr>
-<tr class="separator:aa6701c1d2162f15aa33672c71812d19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a737c7be056794ddd76207c013175a921"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a737c7be056794ddd76207c013175a921">GetNextFrame</a> (<a class="el" href="structEntity.html">Entity</a> *)</td></tr>
-<tr class="separator:a737c7be056794ddd76207c013175a921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a431399466f1dd786ad6c2da6687a669a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a431399466f1dd786ad6c2da6687a669a">LoadExtraSpriteData</a> (<a class="el" href="structEntity.html">Entity</a> *, const <a class="el" href="structSpriteLoadData.html">SpriteLoadData</a> *)</td></tr>
-<tr class="separator:a431399466f1dd786ad6c2da6687a669a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954786995c81749b2d1758bbd2f1f4da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a954786995c81749b2d1758bbd2f1f4da">InitializeAnimation</a> (<a class="el" href="structEntity.html">Entity</a> *<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> animIndex)</td></tr>
+<tr class="separator:a954786995c81749b2d1758bbd2f1f4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8adce57e369472559c0745df2c33ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a3b8adce57e369472559c0745df2c33ff">InitAnimationForceUpdate</a> (<a class="el" href="structEntity.html">Entity</a> *<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> animIndex)</td></tr>
+<tr class="separator:a3b8adce57e369472559c0745df2c33ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ab882e5169e637f7c25a0d452fdb33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#aa4ab882e5169e637f7c25a0d452fdb33">UpdateAnimationSingleFrame</a> (<a class="el" href="structEntity.html">Entity</a> *<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>)</td></tr>
+<tr class="separator:aa4ab882e5169e637f7c25a0d452fdb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12923d074b01304b0ad0b4a143a0277d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a12923d074b01304b0ad0b4a143a0277d">UpdateSpriteForCollisionLayer</a> (<a class="el" href="structEntity.html">Entity</a> *<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>)</td></tr>
+<tr class="separator:a12923d074b01304b0ad0b4a143a0277d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503a5799a5df14613bd637aa3bb819ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a503a5799a5df14613bd637aa3bb819ba">GetNextFrame</a> (<a class="el" href="structEntity.html">Entity</a> *<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>)</td></tr>
+<tr class="separator:a503a5799a5df14613bd637aa3bb819ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf3b76b99daf7b9f6668c0f1f261a4ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#acf3b76b99daf7b9f6668c0f1f261a4ba">LoadExtraSpriteData</a> (<a class="el" href="structEntity.html">Entity</a> *<a class="el" href="zeldaFollower_8c.html#a89252e8fb26c4149b9d982d7a8bd35c3">entity</a>, const <a class="el" href="structSpriteLoadData.html">SpriteLoadData</a> *spriteData)</td></tr>
+<tr class="separator:acf3b76b99daf7b9f6668c0f1f261a4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18fef98085079e635759fbab2b8be2e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a18fef98085079e635759fbab2b8be2e1">SetExtraSpriteFrame</a> (<a class="el" href="structEntity.html">Entity</a> *, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>)</td></tr>
 <tr class="separator:a18fef98085079e635759fbab2b8be2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe98cca692589afc0c4c06c497331fd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#abe98cca692589afc0c4c06c497331fd1">SetSpriteSubEntryOffsetData1</a> (<a class="el" href="structEntity.html">Entity</a> *, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>)</td></tr>
@@ -444,7 +444,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ANIM_DONE&#160;&#160;&#160;(1 &lt;&lt; 7) /* invalid <a class="el" href="playerUtils_8c.html#a943f49763dd36e31fc7ea8604fcad789">frame</a> index */</td>
+          <td class="memname">#define ANIM_DONE&#160;&#160;&#160;(1 &lt;&lt; 7) /* invalid <a class="el" href="playerUtils_8c.html#a943f49763dd36e31fc7ea8604fcad789">frame</a> <a class="el" href="itemTryPickupObject_8c.html#a355234d6a61ed497fca496e2287c8a64">index</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1835,8 +1835,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a737c7be056794ddd76207c013175a921" name="a737c7be056794ddd76207c013175a921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a737c7be056794ddd76207c013175a921">&#9670;&nbsp;</a></span>GetNextFrame()</h2>
+<a id="a503a5799a5df14613bd637aa3bb819ba" name="a503a5799a5df14613bd637aa3bb819ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503a5799a5df14613bd637aa3bb819ba">&#9670;&nbsp;</a></span>GetNextFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1845,7 +1845,7 @@ Variables</h2></td></tr>
           <td class="memname">void GetNextFrame </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1881,8 +1881,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a52c228b65688bddf3cc04d360941a8b8" name="a52c228b65688bddf3cc04d360941a8b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52c228b65688bddf3cc04d360941a8b8">&#9670;&nbsp;</a></span>InitAnimationForceUpdate()</h2>
+<a id="a3b8adce57e369472559c0745df2c33ff" name="a3b8adce57e369472559c0745df2c33ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b8adce57e369472559c0745df2c33ff">&#9670;&nbsp;</a></span>InitAnimationForceUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1891,13 +1891,13 @@ Variables</h2></td></tr>
           <td class="memname">void InitAnimationForceUpdate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>entity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>animIndex</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1909,8 +1909,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a197d21670383b3f4424f6c7fcb240254" name="a197d21670383b3f4424f6c7fcb240254"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a197d21670383b3f4424f6c7fcb240254">&#9670;&nbsp;</a></span>InitializeAnimation()</h2>
+<a id="a954786995c81749b2d1758bbd2f1f4da" name="a954786995c81749b2d1758bbd2f1f4da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954786995c81749b2d1758bbd2f1f4da">&#9670;&nbsp;</a></span>InitializeAnimation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1919,13 +1919,13 @@ Variables</h2></td></tr>
           <td class="memname">void InitializeAnimation </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>entity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>animIndex</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1937,8 +1937,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a431399466f1dd786ad6c2da6687a669a" name="a431399466f1dd786ad6c2da6687a669a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a431399466f1dd786ad6c2da6687a669a">&#9670;&nbsp;</a></span>LoadExtraSpriteData()</h2>
+<a id="acf3b76b99daf7b9f6668c0f1f261a4ba" name="acf3b76b99daf7b9f6668c0f1f261a4ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf3b76b99daf7b9f6668c0f1f261a4ba">&#9670;&nbsp;</a></span>LoadExtraSpriteData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1947,13 +1947,13 @@ Variables</h2></td></tr>
           <td class="memname"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> LoadExtraSpriteData </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname"><em>ent</em>, </td>
+          <td class="paramname"><em>entity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structSpriteLoadData.html">SpriteLoadData</a> *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
+          <td class="paramname"><em>spriteData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2531,8 +2531,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a25d3ba654b1da04b4683a83d7242fa21" name="a25d3ba654b1da04b4683a83d7242fa21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25d3ba654b1da04b4683a83d7242fa21">&#9670;&nbsp;</a></span>UpdateAnimationSingleFrame()</h2>
+<a id="aa4ab882e5169e637f7c25a0d452fdb33" name="aa4ab882e5169e637f7c25a0d452fdb33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ab882e5169e637f7c25a0d452fdb33">&#9670;&nbsp;</a></span>UpdateAnimationSingleFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2541,7 +2541,7 @@ Variables</h2></td></tr>
           <td class="memname">void UpdateAnimationSingleFrame </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2591,8 +2591,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa6701c1d2162f15aa33672c71812d19a" name="aa6701c1d2162f15aa33672c71812d19a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6701c1d2162f15aa33672c71812d19a">&#9670;&nbsp;</a></span>UpdateSpriteForCollisionLayer()</h2>
+<a id="a12923d074b01304b0ad0b4a143a0277d" name="a12923d074b01304b0ad0b4a143a0277d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12923d074b01304b0ad0b4a143a0277d">&#9670;&nbsp;</a></span>UpdateSpriteForCollisionLayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2601,7 +2601,7 @@ Variables</h2></td></tr>
           <td class="memname">void UpdateSpriteForCollisionLayer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -15,7 +15,7 @@ var searchData=
   ['keystealingtakkuri_5ftype4_5factions_12',['KeyStealingTakkuri_Type4_Actions',['../keyStealingTakkuri_8c.html#a3fabb80f88c62539e57178339db6ff33',1,'keyStealingTakkuri.c']]],
   ['keystealingtakkuri_5ftype5_5factions_13',['KeyStealingTakkuri_Type5_Actions',['../keyStealingTakkuri_8c.html#a8f41ea0230fecc42b41ce4be6fbd4029',1,'keyStealingTakkuri.c']]],
   ['keystealingtakkuri_5ftypes_14',['KeyStealingTakkuri_Types',['../keyStealingTakkuri_8c.html#aabe0b7bba72f0679831c26aa9cf7fe4d',1,'keyStealingTakkuri.c']]],
-  ['kind_15',['kind',['../structEntityData.html#a7c4d74dd8c153637a61649630a371997',1,'EntityData::kind()'],['../structManager.html#af749479d997755ed0e7738409e82016c',1,'Manager::kind()'],['../structEntity.html#a38690d6874070b16c7741a7626e2fdfb',1,'Entity::kind()']]],
+  ['kind_15',['kind',['../structEntityData.html#a7c4d74dd8c153637a61649630a371997',1,'EntityData::kind()'],['../structManager.html#af749479d997755ed0e7738409e82016c',1,'Manager::kind()'],['../structEntity.html#a38690d6874070b16c7741a7626e2fdfb',1,'Entity::kind()'],['../structData.html#ae41c95778517660f1200d64631f43010',1,'Data::kind()']]],
   ['kinstoneblue_16',['kinstoneBlue',['../unionDroptable.html#a7810964c538cf2b54e5eede765f81e7d',1,'Droptable']]],
   ['kinstonegreen_17',['kinstoneGreen',['../unionDroptable.html#a4c0ca324d6b2183717bfc08683c39e24',1,'Droptable']]],
   ['kinstonemenu_5ftype0_18',['KinstoneMenu_Type0',['../kinstone__menu_8c.html#a85c0464c70754316c59fa9716c6b5857',1,'kinstone_menu.c']]],

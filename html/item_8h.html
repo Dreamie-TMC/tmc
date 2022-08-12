@@ -149,7 +149,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="item_8h.html#a9933216bbddb97e671cd515e268dfa42ae8673f96a6717a7751a6cdb5c8eacac0">ITEM_ORB_GREEN</a>
 , <a class="el" href="item_8h.html#a9933216bbddb97e671cd515e268dfa42a2efbd3c0a9ae5455f3a59e0a9107e445">ITEM_ORB_BLUE</a>
 , <a class="el" href="item_8h.html#a9933216bbddb97e671cd515e268dfa42aba47570a016e3950bcb120f848e99657">ITEM_ORB_RED</a>
-, <a class="el" href="item_8h.html#a9933216bbddb97e671cd515e268dfa42a91cfcfa80db2603913763c4d5c926817">ITEM_TRAP</a>
+, <a class="el" href="item_8h.html#a9933216bbddb97e671cd515e268dfa42a1f489649d3d86383cafc7c38e941294a">ITEM_TRY_PICKUP_OBJECT</a>
 , <br />
 &#160;&#160;<a class="el" href="item_8h.html#a9933216bbddb97e671cd515e268dfa42abc88396b1f6f1aeee635978ae07663af">ITEM_BOTTLE1</a>
 , <a class="el" href="item_8h.html#a9933216bbddb97e671cd515e268dfa42a2586b6fdf0be18adbc616c928c5eb157">ITEM_BOTTLE2</a>
@@ -271,6 +271,24 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a9933216bbddb97e671cd515e268dfa42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e64738dd17353d58cb9cf9b455e5ea3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="item_8h.html#a0e64738dd17353d58cb9cf9b455e5ea3">EquipSlot</a> { <a class="el" href="item_8h.html#a0e64738dd17353d58cb9cf9b455e5ea3a4ed2f412e5a2ddd350c73a68747a0f78">EQUIP_SLOT_A</a>
+, <a class="el" href="item_8h.html#a0e64738dd17353d58cb9cf9b455e5ea3ae6bfac2799b38cbaaad2732dae2bd340">EQUIP_SLOT_B</a>
+, <a class="el" href="item_8h.html#a0e64738dd17353d58cb9cf9b455e5ea3aa04cb40334d86da617aa7423bf768b60">EQUIP_SLOT_NONE</a>
+ }</td></tr>
+<tr class="memdesc:a0e64738dd17353d58cb9cf9b455e5ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot that the item is equipped in.  <a href="item_8h.html#a0e64738dd17353d58cb9cf9b455e5ea3">More...</a><br /></td></tr>
+<tr class="separator:a0e64738dd17353d58cb9cf9b455e5ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e43df168664f12c33c49af7e99b2f70"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="item_8h.html#a7e43df168664f12c33c49af7e99b2f70">CreateItemFunc</a> { <br />
+&#160;&#160;<a class="el" href="item_8h.html#a7e43df168664f12c33c49af7e99b2f70a3d538820fbe59bd5ca6cd2c229fcf1be">CREATE_ITEM_0</a>
+, <a class="el" href="item_8h.html#a7e43df168664f12c33c49af7e99b2f70a064521c85dbbd06c39107dfcb5608ccb">CREATE_ITEM_1</a>
+, <a class="el" href="item_8h.html#a7e43df168664f12c33c49af7e99b2f70a2ff127f8aab0d97842ef2db134a903f8">CREATE_ITEM_2</a>
+, <a class="el" href="item_8h.html#a7e43df168664f12c33c49af7e99b2f70a1f5f3f8a453dd7923d50d4875dbf81e6">CREATE_ITEM_3</a>
+, <br />
+&#160;&#160;<a class="el" href="item_8h.html#a7e43df168664f12c33c49af7e99b2f70a93d1b4639c3cab1150aaf379cfe66321">CREATE_ITEM_4</a>
+, <a class="el" href="item_8h.html#a7e43df168664f12c33c49af7e99b2f70afab2bd0298c8bb32cb06908b9a2fb682">CREATE_ITEM_5</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a7e43df168664f12c33c49af7e99b2f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function used to create the item.  <a href="item_8h.html#a7e43df168664f12c33c49af7e99b2f70">More...</a><br /></td></tr>
+<tr class="separator:a7e43df168664f12c33c49af7e99b2f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -278,6 +296,8 @@ Functions</h2></td></tr>
 <tr class="separator:a522be895dbf29d16bc1390a6b5f4dc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cb7577c554658b66e524495af818dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="item_8h.html#a7cb7577c554658b66e524495af818dcc">sub_08081404</a> (<a class="el" href="structEntity.html">Entity</a> *, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>)</td></tr>
 <tr class="separator:a7cb7577c554658b66e524495af818dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1aa61687de8d0790fdc81c62444f60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="item_8h.html#a4e1aa61687de8d0790fdc81c62444f60">ExecuteItemFunction</a> (<a class="el" href="structItemBehavior.html">ItemBehavior</a> *this, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="el" href="itemTryPickupObject_8c.html#a355234d6a61ed497fca496e2287c8a64">index</a>)</td></tr>
+<tr class="separator:a4e1aa61687de8d0790fdc81c62444f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdd012c7bae6b59577243aa5a080a000"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="item_8h.html#abdd012c7bae6b59577243aa5a080a000">ItemDebug</a> (<a class="el" href="structItemBehavior.html">ItemBehavior</a> *, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>)</td></tr>
 <tr class="separator:abdd012c7bae6b59577243aa5a080a000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ec15e3baf8259b81bcb20b502852b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="item_8h.html#a77ec15e3baf8259b81bcb20b502852b1">ItemSword</a> (<a class="el" href="structItemBehavior.html">ItemBehavior</a> *, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>)</td></tr>
@@ -310,6 +330,51 @@ Functions</h2></td></tr>
 <tr class="separator:aafabf75a150fd0d3add22de41ceb9a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a7e43df168664f12c33c49af7e99b2f70" name="a7e43df168664f12c33c49af7e99b2f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e43df168664f12c33c49af7e99b2f70">&#9670;&nbsp;</a></span>CreateItemFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="item_8h.html#a7e43df168664f12c33c49af7e99b2f70">CreateItemFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function used to create the item. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7e43df168664f12c33c49af7e99b2f70a3d538820fbe59bd5ca6cd2c229fcf1be" name="a7e43df168664f12c33c49af7e99b2f70a3d538820fbe59bd5ca6cd2c229fcf1be"></a>CREATE_ITEM_0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7e43df168664f12c33c49af7e99b2f70a064521c85dbbd06c39107dfcb5608ccb" name="a7e43df168664f12c33c49af7e99b2f70a064521c85dbbd06c39107dfcb5608ccb"></a>CREATE_ITEM_1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7e43df168664f12c33c49af7e99b2f70a2ff127f8aab0d97842ef2db134a903f8" name="a7e43df168664f12c33c49af7e99b2f70a2ff127f8aab0d97842ef2db134a903f8"></a>CREATE_ITEM_2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7e43df168664f12c33c49af7e99b2f70a1f5f3f8a453dd7923d50d4875dbf81e6" name="a7e43df168664f12c33c49af7e99b2f70a1f5f3f8a453dd7923d50d4875dbf81e6"></a>CREATE_ITEM_3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7e43df168664f12c33c49af7e99b2f70a93d1b4639c3cab1150aaf379cfe66321" name="a7e43df168664f12c33c49af7e99b2f70a93d1b4639c3cab1150aaf379cfe66321"></a>CREATE_ITEM_4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7e43df168664f12c33c49af7e99b2f70afab2bd0298c8bb32cb06908b9a2fb682" name="a7e43df168664f12c33c49af7e99b2f70afab2bd0298c8bb32cb06908b9a2fb682"></a>CREATE_ITEM_5&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0e64738dd17353d58cb9cf9b455e5ea3" name="a0e64738dd17353d58cb9cf9b455e5ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e64738dd17353d58cb9cf9b455e5ea3">&#9670;&nbsp;</a></span>EquipSlot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="item_8h.html#a0e64738dd17353d58cb9cf9b455e5ea3">EquipSlot</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Slot that the item is equipped in. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0e64738dd17353d58cb9cf9b455e5ea3a4ed2f412e5a2ddd350c73a68747a0f78" name="a0e64738dd17353d58cb9cf9b455e5ea3a4ed2f412e5a2ddd350c73a68747a0f78"></a>EQUIP_SLOT_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e64738dd17353d58cb9cf9b455e5ea3ae6bfac2799b38cbaaad2732dae2bd340" name="a0e64738dd17353d58cb9cf9b455e5ea3ae6bfac2799b38cbaaad2732dae2bd340"></a>EQUIP_SLOT_B&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0e64738dd17353d58cb9cf9b455e5ea3aa04cb40334d86da617aa7423bf768b60" name="a0e64738dd17353d58cb9cf9b455e5ea3aa04cb40334d86da617aa7423bf768b60"></a>EQUIP_SLOT_NONE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a9933216bbddb97e671cd515e268dfa42" name="a9933216bbddb97e671cd515e268dfa42"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9933216bbddb97e671cd515e268dfa42">&#9670;&nbsp;</a></span>Item</h2>
 
@@ -349,7 +414,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a9933216bbddb97e671cd515e268dfa42ae8673f96a6717a7751a6cdb5c8eacac0" name="a9933216bbddb97e671cd515e268dfa42ae8673f96a6717a7751a6cdb5c8eacac0"></a>ITEM_ORB_GREEN&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9933216bbddb97e671cd515e268dfa42a2efbd3c0a9ae5455f3a59e0a9107e445" name="a9933216bbddb97e671cd515e268dfa42a2efbd3c0a9ae5455f3a59e0a9107e445"></a>ITEM_ORB_BLUE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9933216bbddb97e671cd515e268dfa42aba47570a016e3950bcb120f848e99657" name="a9933216bbddb97e671cd515e268dfa42aba47570a016e3950bcb120f848e99657"></a>ITEM_ORB_RED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9933216bbddb97e671cd515e268dfa42a91cfcfa80db2603913763c4d5c926817" name="a9933216bbddb97e671cd515e268dfa42a91cfcfa80db2603913763c4d5c926817"></a>ITEM_TRAP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9933216bbddb97e671cd515e268dfa42a1f489649d3d86383cafc7c38e941294a" name="a9933216bbddb97e671cd515e268dfa42a1f489649d3d86383cafc7c38e941294a"></a>ITEM_TRY_PICKUP_OBJECT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9933216bbddb97e671cd515e268dfa42abc88396b1f6f1aeee635978ae07663af" name="a9933216bbddb97e671cd515e268dfa42abc88396b1f6f1aeee635978ae07663af"></a>ITEM_BOTTLE1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9933216bbddb97e671cd515e268dfa42a2586b6fdf0be18adbc616c928c5eb157" name="a9933216bbddb97e671cd515e268dfa42a2586b6fdf0be18adbc616c928c5eb157"></a>ITEM_BOTTLE2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9933216bbddb97e671cd515e268dfa42a2ccf4bcd14c0b14b63f2c7a12bc5f6f8" name="a9933216bbddb97e671cd515e268dfa42a2ccf4bcd14c0b14b63f2c7a12bc5f6f8"></a>ITEM_BOTTLE3&#160;</td><td class="fielddoc"></td></tr>
@@ -483,6 +548,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4e1aa61687de8d0790fdc81c62444f60" name="a4e1aa61687de8d0790fdc81c62444f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1aa61687de8d0790fdc81c62444f60">&#9670;&nbsp;</a></span>ExecuteItemFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ExecuteItemFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structItemBehavior.html">ItemBehavior</a> *&#160;</td>
+          <td class="paramname"><em>this</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a54964fa6e65fd5c42d481e1d800ac502" name="a54964fa6e65fd5c42d481e1d800ac502"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54964fa6e65fd5c42d481e1d800ac502">&#9670;&nbsp;</a></span>ItemBomb()</h2>
 
@@ -499,7 +592,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -527,7 +620,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -555,7 +648,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -577,13 +670,13 @@ Functions</h2></td></tr>
           <td class="memname">void ItemDebug </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structItemBehavior.html">ItemBehavior</a> *&#160;</td>
-          <td class="paramname"><em>beh</em>, </td>
+          <td class="paramname"><em>this</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -611,7 +704,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -639,7 +732,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -667,7 +760,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -695,7 +788,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -723,7 +816,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -745,13 +838,13 @@ Functions</h2></td></tr>
           <td class="memname">void ItemPacciCane </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structItemBehavior.html">ItemBehavior</a> *&#160;</td>
-          <td class="paramname"><em>beh</em>, </td>
+          <td class="paramname"><em>this</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -779,7 +872,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -807,7 +900,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>arg1</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -829,13 +922,13 @@ Functions</h2></td></tr>
           <td class="memname">void ItemShield </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structItemBehavior.html">ItemBehavior</a> *&#160;</td>
-          <td class="paramname"><em>beh</em>, </td>
+          <td class="paramname"><em>this</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -863,7 +956,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -891,7 +984,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

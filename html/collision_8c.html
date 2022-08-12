@@ -78,21 +78,24 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">collision.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="asm_8h_source.html">asm.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="asm_8h_source.html">asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="collision_8h_source.html">collision.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="enemy_8h_source.html">enemy.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="entity_8h_source.html">entity.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="functions_8h_source.html">functions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="game_8h_source.html">game.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="item_8h_source.html">item.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="object_8h_source.html">object.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="player_8h_source.html">player.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="save_8h_source.html">save.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="functions_8h_source.html">functions.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="enemy_8h_source.html">enemy.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="object_8h_source.html">object.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="game_8h_source.html">game.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for collision.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -100,46 +103,48 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="collision_8c__incl.png" border="0" usemap="#asrc_2collision_8c" alt=""/></div>
 <map name="asrc_2collision_8c" id="asrc_2collision_8c">
-<area shape="rect" title=" " alt="" coords="1103,5,1205,32"/>
-<area shape="rect" href="global_8h.html" title=" " alt="" coords="779,453,846,480"/>
-<area shape="rect" href="asm_8h.html" title=" " alt="" coords="1457,229,1515,256"/>
-<area shape="rect" href="entity_8h.html" title=" " alt="" coords="621,304,684,331"/>
-<area shape="rect" href="player_8h.html" title=" " alt="" coords="598,229,665,256"/>
-<area shape="rect" href="save_8h.html" title=" " alt="" coords="808,80,868,107"/>
-<area shape="rect" href="common_8h.html" title=" " alt="" coords="1539,229,1622,256"/>
-<area shape="rect" href="functions_8h.html" title=" " alt="" coords="374,80,459,107"/>
-<area shape="rect" href="enemy_8h.html" title=" " alt="" coords="1204,155,1275,181"/>
-<area shape="rect" href="object_8h.html" title=" " alt="" coords="979,155,1046,181"/>
-<area shape="rect" href="game_8h.html" title=" " alt="" coords="1697,229,1761,256"/>
-<area shape="rect" href="gba_8h.html" title=" " alt="" coords="924,528,1003,555"/>
-<area shape="rect" title=" " alt="" coords="629,603,693,629"/>
-<area shape="rect" href="defines_8h.html" title=" " alt="" coords="1276,603,1349,629"/>
-<area shape="rect" href="io__reg_8h.html" title=" " alt="" coords="1185,603,1251,629"/>
-<area shape="rect" href="types_8h.html" title=" " alt="" coords="828,677,891,704"/>
-<area shape="rect" href="multi__boot_8h.html" title=" " alt="" coords="813,603,905,629"/>
-<area shape="rect" href="syscall_8h.html" title=" " alt="" coords="717,603,789,629"/>
-<area shape="rect" href="macro_8h.html" title=" " alt="" coords="929,603,997,629"/>
-<area shape="rect" href="isagbprint_8h.html" title=" " alt="" coords="1022,603,1110,629"/>
-<area shape="rect" title=" " alt="" coords="1279,677,1347,704"/>
-<area shape="rect" title=" " alt="" coords="827,752,891,779"/>
-<area shape="rect" href="color_8h.html" title=" " alt="" coords="551,379,611,405"/>
-<area shape="rect" href="sprite_8h.html" title=" " alt="" coords="635,379,699,405"/>
-<area shape="rect" href="structures_8h.html" title=" " alt="" coords="507,155,598,181"/>
-<area shape="rect" href="room_8h.html" title=" " alt="" coords="739,229,801,256"/>
-<area shape="rect" href="droptables_8h.html" title=" " alt="" coords="708,304,800,331"/>
-<area shape="rect" href="manager_8h.html" title=" " alt="" coords="187,229,270,256"/>
-<area shape="rect" href="physics_8h.html" title=" " alt="" coords="345,229,421,256"/>
-<area shape="rect" href="script_8h.html" title=" " alt="" coords="419,155,483,181"/>
-<area shape="rect" href="map_8h.html" title=" " alt="" coords="55,229,112,256"/>
-<area shape="rect" href="screen_8h.html" title=" " alt="" coords="12,304,83,331"/>
-<area shape="rect" href="fade_8h.html" title=" " alt="" coords="25,379,83,405"/>
-<area shape="rect" href="sound_8h.html" title=" " alt="" coords="1206,229,1273,256"/>
-<area shape="rect" href="effects_8h.html" title=" " alt="" coords="977,229,1048,256"/>
-<area shape="rect" href="flags_8h.html" title=" " alt="" coords="1123,229,1182,256"/>
-<area shape="rect" href="projectile_8h.html" title=" " alt="" coords="1297,229,1381,256"/>
-<area shape="rect" href="area_8h.html" title=" " alt="" coords="1717,304,1775,331"/>
-<area shape="rect" href="transitions_8h.html" title=" " alt="" coords="1768,379,1860,405"/>
-<area shape="rect" href="roomid_8h.html" title=" " alt="" coords="1779,453,1849,480"/>
+<area shape="rect" title=" " alt="" coords="950,5,1051,32"/>
+<area shape="rect" href="asm_8h.html" title=" " alt="" coords="5,229,63,256"/>
+<area shape="rect" href="global_8h.html" title=" " alt="" coords="1263,453,1330,480"/>
+<area shape="rect" href="collision_8h.html" title=" " alt="" coords="139,229,217,256"/>
+<area shape="rect" href="entity_8h.html" title=" " alt="" coords="1004,304,1067,331"/>
+<area shape="rect" href="common_8h.html" title=" " alt="" coords="575,229,658,256"/>
+<area shape="rect" href="enemy_8h.html" title=" " alt="" coords="420,155,491,181"/>
+<area shape="rect" href="functions_8h.html" title=" " alt="" coords="1230,80,1315,107"/>
+<area shape="rect" href="player_8h.html" title=" " alt="" coords="1426,229,1493,256"/>
+<area shape="rect" href="game_8h.html" title=" " alt="" coords="1805,229,1869,256"/>
+<area shape="rect" href="item_8h.html" title=" " alt="" coords="1152,155,1209,181"/>
+<area shape="rect" href="object_8h.html" title=" " alt="" coords="758,155,825,181"/>
+<area shape="rect" href="save_8h.html" title=" " alt="" coords="1572,80,1632,107"/>
+<area shape="rect" href="gba_8h.html" title=" " alt="" coords="1385,528,1464,555"/>
+<area shape="rect" title=" " alt="" coords="1137,603,1201,629"/>
+<area shape="rect" href="defines_8h.html" title=" " alt="" coords="1784,603,1857,629"/>
+<area shape="rect" href="io__reg_8h.html" title=" " alt="" coords="1225,603,1291,629"/>
+<area shape="rect" href="types_8h.html" title=" " alt="" coords="1393,677,1456,704"/>
+<area shape="rect" href="multi__boot_8h.html" title=" " alt="" coords="1463,603,1555,629"/>
+<area shape="rect" href="syscall_8h.html" title=" " alt="" coords="1315,603,1387,629"/>
+<area shape="rect" href="macro_8h.html" title=" " alt="" coords="1579,603,1647,629"/>
+<area shape="rect" href="isagbprint_8h.html" title=" " alt="" coords="1671,603,1759,629"/>
+<area shape="rect" title=" " alt="" coords="1787,677,1855,704"/>
+<area shape="rect" title=" " alt="" coords="1393,752,1457,779"/>
+<area shape="rect" href="color_8h.html" title=" " alt="" coords="1073,379,1133,405"/>
+<area shape="rect" href="sprite_8h.html" title=" " alt="" coords="934,379,998,405"/>
+<area shape="rect" href="sound_8h.html" title=" " alt="" coords="242,229,309,256"/>
+<area shape="rect" href="effects_8h.html" title=" " alt="" coords="683,229,753,256"/>
+<area shape="rect" href="flags_8h.html" title=" " alt="" coords="493,229,551,256"/>
+<area shape="rect" href="projectile_8h.html" title=" " alt="" coords="333,229,417,256"/>
+<area shape="rect" href="manager_8h.html" title=" " alt="" coords="1319,229,1402,256"/>
+<area shape="rect" href="physics_8h.html" title=" " alt="" coords="829,229,905,256"/>
+<area shape="rect" href="room_8h.html" title=" " alt="" coords="1234,229,1295,256"/>
+<area shape="rect" href="structures_8h.html" title=" " alt="" coords="1639,155,1730,181"/>
+<area shape="rect" href="script_8h.html" title=" " alt="" coords="1013,155,1077,181"/>
+<area shape="rect" href="map_8h.html" title=" " alt="" coords="1619,229,1676,256"/>
+<area shape="rect" href="droptables_8h.html" title=" " alt="" coords="1200,304,1292,331"/>
+<area shape="rect" href="screen_8h.html" title=" " alt="" coords="1608,304,1679,331"/>
+<area shape="rect" href="fade_8h.html" title=" " alt="" coords="1621,379,1679,405"/>
+<area shape="rect" href="area_8h.html" title=" " alt="" coords="1856,304,1913,331"/>
+<area shape="rect" href="transitions_8h.html" title=" " alt="" coords="1989,379,2081,405"/>
+<area shape="rect" href="roomid_8h.html" title=" " alt="" coords="2000,453,2071,480"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -152,8 +157,17 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:add8c87e3f62d025f4fa27092f3b313b4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#add8c87e3f62d025f4fa27092f3b313b4">CollisionHandler</a>) (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:add8c87e3f62d025f4fa27092f3b313b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0cdfb0aca5893ea2727aab9353d2205"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#af0cdfb0aca5893ea2727aab9353d2205">CollisionHandler</a>) (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:af0cdfb0aca5893ea2727aab9353d2205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a01bba2252fafcf37e2d89e1f750662e1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a01bba2252fafcf37e2d89e1f750662e1">ColSettingsFlags</a> { <a class="el" href="collision_8c.html#a01bba2252fafcf37e2d89e1f750662e1a9fc9b5cb681d9071448748192a84ef76">COL_FLAG_1</a> = 1
+, <a class="el" href="collision_8c.html#a01bba2252fafcf37e2d89e1f750662e1ac9deb7b8042eac8bcbb2a54d49c513c8">COL_FLAG_2</a> = 2
+, <a class="el" href="collision_8c.html#a01bba2252fafcf37e2d89e1f750662e1a8e596c391de59c7dad7cfb126edb1915">COL_FLAG_4</a> = 4
+, <a class="el" href="collision_8c.html#a01bba2252fafcf37e2d89e1f750662e1a8d9516fe73ea43199b09da701febdf0f">COL_FLAG_8</a> = 8
+ }</td></tr>
+<tr class="separator:a01bba2252fafcf37e2d89e1f750662e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -163,14 +177,10 @@ Functions</h2></td></tr>
 <tr class="separator:a4bf6a8123de50f80e72493ab3c6c51e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4204f66be78789900b4bf7ac8b4aa335"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a4204f66be78789900b4bf7ac8b4aa335">SoundReqClipped</a> (<a class="el" href="structEntity.html">Entity</a> *, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>)</td></tr>
 <tr class="separator:a4204f66be78789900b4bf7ac8b4aa335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19ae7273ff867fb4deb86f86a93ccaef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a19ae7273ff867fb4deb86f86a93ccaef">sub_08018308</a> (<a class="el" href="structEntity.html">Entity</a> *, <a class="el" href="structEntity.html">Entity</a> *, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>, <a class="el" href="structColSettings.html">ColSettings</a> *)</td></tr>
-<tr class="separator:a19ae7273ff867fb4deb86f86a93ccaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a039ffc3144b76ace035bc9fed76622c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a039ffc3144b76ace035bc9fed76622c5">sub_08079D84</a> (void)</td></tr>
 <tr class="separator:a039ffc3144b76ace035bc9fed76622c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74da87f78816f1c2434738310c046e0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a74da87f78816f1c2434738310c046e0f">sub_080180BC</a> (<a class="el" href="structEntity.html">Entity</a> *, <a class="el" href="structEntity.html">Entity</a> *)</td></tr>
 <tr class="separator:a74da87f78816f1c2434738310c046e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ca137f902af10ad3bff6389bac9eaf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a8ca137f902af10ad3bff6389bac9eaf3">sub_0807AFE8</a> (void)</td></tr>
-<tr class="separator:a8ca137f902af10ad3bff6389bac9eaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a559f6291951a54f21b7e3627d2c0a3a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a559f6291951a54f21b7e3627d2c0a3a3">ClearHitboxList</a> (void)</td></tr>
 <tr class="separator:a559f6291951a54f21b7e3627d2c0a3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7823bc93f76396a6668a52c8b2a4c50c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a7823bc93f76396a6668a52c8b2a4c50c">CollisionMain</a> (void)</td></tr>
@@ -187,56 +197,58 @@ Functions</h2></td></tr>
 <tr class="separator:ae149386c7546742991438f590788455e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05a9b3a0640d1a02877e6ac5e22a0672"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aa638bcc74cb6bf3765b8cbd0167fceae">bool32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a05a9b3a0640d1a02877e6ac5e22a0672">IsCollidingPlayer</a> (<a class="el" href="structEntity.html">Entity</a> *this)</td></tr>
 <tr class="separator:a05a9b3a0640d1a02877e6ac5e22a0672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0af6de008a34c66426327385e27222c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a0af6de008a34c66426327385e27222c8">sub_08017874</a> (<a class="el" href="structEntity.html">Entity</a> *a, <a class="el" href="structEntity.html">Entity</a> *b)</td></tr>
-<tr class="separator:a0af6de008a34c66426327385e27222c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e9196247505390ca458c8297fd33f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a87e9196247505390ca458c8297fd33f7">CalculateDamage</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt)</td></tr>
+<tr class="separator:a87e9196247505390ca458c8297fd33f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada3e457dbaa62698494bb404b985da36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ada3e457dbaa62698494bb404b985da36">sub_08017940</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt)</td></tr>
 <tr class="separator:ada3e457dbaa62698494bb404b985da36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af82f021e322d1ddfb447c58f394a6634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#af82f021e322d1ddfb447c58f394a6634">sub_080179EC</a> (<a class="el" href="structEntity.html">Entity</a> *a1, <a class="el" href="structEntity.html">Entity</a> *a2)</td></tr>
 <tr class="separator:af82f021e322d1ddfb447c58f394a6634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae17da39e3d67648af3db7d8a8824daf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ae17da39e3d67648af3db7d8a8824daf8">sub_08017A90</a> (<a class="el" href="structEntity.html">Entity</a> *a1, <a class="el" href="structEntity.html">Entity</a> *parent)</td></tr>
 <tr class="separator:ae17da39e3d67648af3db7d8a8824daf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39cc7f9185aae47c716237e5e64c5e6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a39cc7f9185aae47c716237e5e64c5e6a">CollisionNoOp</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a39cc7f9185aae47c716237e5e64c5e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0887c44b9db3b983112a6bbbf00bd58b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a0887c44b9db3b983112a6bbbf00bd58b">CollisionGroundItem</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a0887c44b9db3b983112a6bbbf00bd58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40e0db46dabe891eef6bca690a642ffe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a40e0db46dabe891eef6bca690a642ffe">sub_08017B58</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a40e0db46dabe891eef6bca690a642ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6e9e1cffafde1e5b46273bf39a29a65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ac6e9e1cffafde1e5b46273bf39a29a65">sub_08017EB0</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:ac6e9e1cffafde1e5b46273bf39a29a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6377cbfc83ac1dfdaa88e9048a4afc6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a6377cbfc83ac1dfdaa88e9048a4afc6b">sub_08017F3C</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a6377cbfc83ac1dfdaa88e9048a4afc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad36577951b6f4b0ba3e6759305856eb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ad36577951b6f4b0ba3e6759305856eb5">sub_08017F40</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:ad36577951b6f4b0ba3e6759305856eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ba72e566f837c2c95f66feda678fec9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a3ba72e566f837c2c95f66feda678fec9">sub_0801802C</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a3ba72e566f837c2c95f66feda678fec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28d05c8c807baae9f98544169ff5ca10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a28d05c8c807baae9f98544169ff5ca10">sub_08017DD4</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a28d05c8c807baae9f98544169ff5ca10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2d17578f5ce1da27cda8044c587228b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ad2d17578f5ce1da27cda8044c587228b">sub_080180E8</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:ad2d17578f5ce1da27cda8044c587228b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab62c9a7fcae48f5b306e108b74c66a1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ab62c9a7fcae48f5b306e108b74c66a1f">sub_08017BBC</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:ab62c9a7fcae48f5b306e108b74c66a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af36f3b13f327cba1ba4ea06866db4c65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#af36f3b13f327cba1ba4ea06866db4c65">sub_08017C40</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:af36f3b13f327cba1ba4ea06866db4c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78fa50bdbb7c7a585c815f2b109aca10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a78fa50bdbb7c7a585c815f2b109aca10">sub_08017D6C</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a78fa50bdbb7c7a585c815f2b109aca10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934281d1038330f791b4cbefe2c29486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a934281d1038330f791b4cbefe2c29486">sub_08017D28</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a934281d1038330f791b4cbefe2c29486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30ed928409216ace9d11190551ca893f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a30ed928409216ace9d11190551ca893f">sub_08018168</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a30ed928409216ace9d11190551ca893f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab90eff21c06103866c11d61bfca62293"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ab90eff21c06103866c11d61bfca62293">sub_08018228</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:ab90eff21c06103866c11d61bfca62293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4362745ca7fa5329b21cf15a5ccf263e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a4362745ca7fa5329b21cf15a5ccf263e">sub_08018250</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a4362745ca7fa5329b21cf15a5ccf263e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98449ce2b0f8e1fc8e8c792e46d26af0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a98449ce2b0f8e1fc8e8c792e46d26af0">sub_08018288</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a98449ce2b0f8e1fc8e8c792e46d26af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a77ee2f21bcbc968742cc16f51984bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a3a77ee2f21bcbc968742cc16f51984bf">sub_080182A8</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a3a77ee2f21bcbc968742cc16f51984bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace68e8b407c62d666cefbe1d22259d59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ace68e8b407c62d666cefbe1d22259d59">sub_08017B1C</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:ace68e8b407c62d666cefbe1d22259d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f8bb71955dee04634fa938463d22dd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a3f8bb71955dee04634fa938463d22dd4">sub_08017CBC</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:a3f8bb71955dee04634fa938463d22dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab508e9ace05914ee1337581bedc3ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#acab508e9ace05914ee1337581bedc3ac">sub_08017E88</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
-<tr class="separator:acab508e9ace05914ee1337581bedc3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79141010763b261d2d17aa94b67c56c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#af79141010763b261d2d17aa94b67c56c">CollisionDefault</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:af79141010763b261d2d17aa94b67c56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb917d4e39049f32fe0e466829900de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a8fb917d4e39049f32fe0e466829900de">CollisionNoOp</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a8fb917d4e39049f32fe0e466829900de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67a7f2cc72f5ca4c444a7a6baf61446"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ac67a7f2cc72f5ca4c444a7a6baf61446">CollisionGroundItem</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:ac67a7f2cc72f5ca4c444a7a6baf61446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cd5cb1dcde0da595bd7a478d556aad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a14cd5cb1dcde0da595bd7a478d556aad">sub_08017B58</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a14cd5cb1dcde0da595bd7a478d556aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9f5027fe5ea20ca5b8622fcdd3c857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a5b9f5027fe5ea20ca5b8622fcdd3c857">sub_08017EB0</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a5b9f5027fe5ea20ca5b8622fcdd3c857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1b1ccaed2d5fa62f45217bbf822177"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a7b1b1ccaed2d5fa62f45217bbf822177">sub_08017F3C</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a7b1b1ccaed2d5fa62f45217bbf822177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb08294f1c7f9ff4ac07044f733a6bbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#adb08294f1c7f9ff4ac07044f733a6bbf">sub_08017F40</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:adb08294f1c7f9ff4ac07044f733a6bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb0d294310d100cbf18ebead1e241d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a1bb0d294310d100cbf18ebead1e241d6">sub_0801802C</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a1bb0d294310d100cbf18ebead1e241d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a515f00f5964db39e19fdc1c6d1eb7838"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a515f00f5964db39e19fdc1c6d1eb7838">sub_08017DD4</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a515f00f5964db39e19fdc1c6d1eb7838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9cdfd534ff6b4923477635c6f513c7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#aa9cdfd534ff6b4923477635c6f513c7e">sub_080180E8</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:aa9cdfd534ff6b4923477635c6f513c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbe290533c73d6cad14e45723e57c3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a2dbe290533c73d6cad14e45723e57c3f">sub_08017BBC</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a2dbe290533c73d6cad14e45723e57c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d78739debdb8273b245a38562e852d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a5d78739debdb8273b245a38562e852d7">sub_08017C40</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a5d78739debdb8273b245a38562e852d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498cd6d6996582f9cad30778ec36b268"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a498cd6d6996582f9cad30778ec36b268">sub_08017D6C</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a498cd6d6996582f9cad30778ec36b268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839fb190988506fefb6245e2cbbd9d27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a839fb190988506fefb6245e2cbbd9d27">sub_08017D28</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a839fb190988506fefb6245e2cbbd9d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d49760fc03583ac24a1a6cd031b013b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a2d49760fc03583ac24a1a6cd031b013b">sub_08018168</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a2d49760fc03583ac24a1a6cd031b013b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e2bd40a9c37c22a91e62fe26df3e18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a97e2bd40a9c37c22a91e62fe26df3e18">sub_08018228</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a97e2bd40a9c37c22a91e62fe26df3e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0296c08952cd75cc7979109eefb85bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ac0296c08952cd75cc7979109eefb85bb">sub_08018250</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:ac0296c08952cd75cc7979109eefb85bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ca9a0b8ceaa5b6a6ee107ef700c2cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ae7ca9a0b8ceaa5b6a6ee107ef700c2cc">CollisionMazaalShrinkRay</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:ae7ca9a0b8ceaa5b6a6ee107ef700c2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75103e4a95a5c25991ab9feab6b2b08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ac75103e4a95a5c25991ab9feab6b2b08">sub_080182A8</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:ac75103e4a95a5c25991ab9feab6b2b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cab26f6936e7b219b73a1364c26d3e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a4cab26f6936e7b219b73a1364c26d3e2">sub_08017B1C</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a4cab26f6936e7b219b73a1364c26d3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb38481c16421580bdbe785262ac91a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#abeb38481c16421580bdbe785262ac91a">sub_08017CBC</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:abeb38481c16421580bdbe785262ac91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3059afc92249b8a07a7b11169e38b070"><td class="memItemLeft" align="right" valign="top"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a3059afc92249b8a07a7b11169e38b070">sub_08017E88</a> (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td></tr>
+<tr class="separator:a3059afc92249b8a07a7b11169e38b070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -250,25 +262,74 @@ Variables</h2></td></tr>
 <tr class="separator:ab05601c3b0c986dd87c8012f37b6706a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fcac4439e18867f442e039252a5e597"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLinkedList2.html">LinkedList2</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#a7fcac4439e18867f442e039252a5e597">gUnk_02018EA0</a></td></tr>
 <tr class="separator:a7fcac4439e18867f442e039252a5e597"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5c5c197c6c6c1320ad44da6de3417c8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="collision_8c.html#add8c87e3f62d025f4fa27092f3b313b4">CollisionHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#ad5c5c197c6c6c1320ad44da6de3417c8">gUnk_080B3744</a> []</td></tr>
-<tr class="separator:ad5c5c197c6c6c1320ad44da6de3417c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0cd067574e02c43af9d1a409f5f5d94"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="collision_8c.html#af0cdfb0aca5893ea2727aab9353d2205">CollisionHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="collision_8c.html#af0cd067574e02c43af9d1a409f5f5d94">gCollisionHandlers</a> []</td></tr>
+<tr class="separator:af0cd067574e02c43af9d1a409f5f5d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="add8c87e3f62d025f4fa27092f3b313b4" name="add8c87e3f62d025f4fa27092f3b313b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add8c87e3f62d025f4fa27092f3b313b4">&#9670;&nbsp;</a></span>CollisionHandler</h2>
+<a id="af0cdfb0aca5893ea2727aab9353d2205" name="af0cdfb0aca5893ea2727aab9353d2205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0cdfb0aca5893ea2727aab9353d2205">&#9670;&nbsp;</a></span>CollisionHandler</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>(* CollisionHandler) (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td>
+          <td class="memname">typedef <a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a>(* CollisionHandler) (<a class="el" href="structEntity.html">Entity</a> *org, <a class="el" href="structEntity.html">Entity</a> *tgt, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> direction, <a class="el" href="structColSettings.html">ColSettings</a> *settings)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a01bba2252fafcf37e2d89e1f750662e1" name="a01bba2252fafcf37e2d89e1f750662e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01bba2252fafcf37e2d89e1f750662e1">&#9670;&nbsp;</a></span>ColSettingsFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="collision_8c.html#a01bba2252fafcf37e2d89e1f750662e1">ColSettingsFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a01bba2252fafcf37e2d89e1f750662e1a9fc9b5cb681d9071448748192a84ef76" name="a01bba2252fafcf37e2d89e1f750662e1a9fc9b5cb681d9071448748192a84ef76"></a>COL_FLAG_1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a01bba2252fafcf37e2d89e1f750662e1ac9deb7b8042eac8bcbb2a54d49c513c8" name="a01bba2252fafcf37e2d89e1f750662e1ac9deb7b8042eac8bcbb2a54d49c513c8"></a>COL_FLAG_2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a01bba2252fafcf37e2d89e1f750662e1a8e596c391de59c7dad7cfb126edb1915" name="a01bba2252fafcf37e2d89e1f750662e1a8e596c391de59c7dad7cfb126edb1915"></a>COL_FLAG_4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a01bba2252fafcf37e2d89e1f750662e1a8d9516fe73ea43199b09da701febdf0f" name="a01bba2252fafcf37e2d89e1f750662e1a8d9516fe73ea43199b09da701febdf0f"></a>COL_FLAG_8&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a87e9196247505390ca458c8297fd33f7" name="a87e9196247505390ca458c8297fd33f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e9196247505390ca458c8297fd33f7">&#9670;&nbsp;</a></span>CalculateDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> CalculateDamage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
+          <td class="paramname"><em>org</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
+          <td class="paramname"><em>tgt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a559f6291951a54f21b7e3627d2c0a3a3" name="a559f6291951a54f21b7e3627d2c0a3a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a559f6291951a54f21b7e3627d2c0a3a3">&#9670;&nbsp;</a></span>ClearHitboxList()</h2>
 
@@ -287,14 +348,54 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0887c44b9db3b983112a6bbbf00bd58b" name="a0887c44b9db3b983112a6bbbf00bd58b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0887c44b9db3b983112a6bbbf00bd58b">&#9670;&nbsp;</a></span>CollisionGroundItem()</h2>
+<a id="af79141010763b261d2d17aa94b67c56c" name="af79141010763b261d2d17aa94b67c56c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af79141010763b261d2d17aa94b67c56c">&#9670;&nbsp;</a></span>CollisionDefault()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> CollisionGroundItem </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> CollisionDefault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
+          <td class="paramname"><em>org</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
+          <td class="paramname"><em>tgt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structColSettings.html">ColSettings</a> *&#160;</td>
+          <td class="paramname"><em>settings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac67a7f2cc72f5ca4c444a7a6baf61446" name="ac67a7f2cc72f5ca4c444a7a6baf61446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac67a7f2cc72f5ca4c444a7a6baf61446">&#9670;&nbsp;</a></span>CollisionGroundItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> CollisionGroundItem </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -345,14 +446,54 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a39cc7f9185aae47c716237e5e64c5e6a" name="a39cc7f9185aae47c716237e5e64c5e6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39cc7f9185aae47c716237e5e64c5e6a">&#9670;&nbsp;</a></span>CollisionNoOp()</h2>
+<a id="ae7ca9a0b8ceaa5b6a6ee107ef700c2cc" name="ae7ca9a0b8ceaa5b6a6ee107ef700c2cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ca9a0b8ceaa5b6a6ee107ef700c2cc">&#9670;&nbsp;</a></span>CollisionMazaalShrinkRay()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> CollisionNoOp </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> CollisionMazaalShrinkRay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
+          <td class="paramname"><em>org</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
+          <td class="paramname"><em>tgt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structColSettings.html">ColSettings</a> *&#160;</td>
+          <td class="paramname"><em>settings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fb917d4e39049f32fe0e466829900de" name="a8fb917d4e39049f32fe0e466829900de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb917d4e39049f32fe0e466829900de">&#9670;&nbsp;</a></span>CollisionNoOp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> CollisionNoOp </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -549,34 +690,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0af6de008a34c66426327385e27222c8" name="a0af6de008a34c66426327385e27222c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0af6de008a34c66426327385e27222c8">&#9670;&nbsp;</a></span>sub_08017874()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017874 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ada3e457dbaa62698494bb404b985da36" name="ada3e457dbaa62698494bb404b985da36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada3e457dbaa62698494bb404b985da36">&#9670;&nbsp;</a></span>sub_08017940()</h2>
 
@@ -661,14 +774,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ace68e8b407c62d666cefbe1d22259d59" name="ace68e8b407c62d666cefbe1d22259d59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace68e8b407c62d666cefbe1d22259d59">&#9670;&nbsp;</a></span>sub_08017B1C()</h2>
+<a id="a4cab26f6936e7b219b73a1364c26d3e2" name="a4cab26f6936e7b219b73a1364c26d3e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cab26f6936e7b219b73a1364c26d3e2">&#9670;&nbsp;</a></span>sub_08017B1C()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017B1C </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017B1C </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -701,14 +814,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a40e0db46dabe891eef6bca690a642ffe" name="a40e0db46dabe891eef6bca690a642ffe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40e0db46dabe891eef6bca690a642ffe">&#9670;&nbsp;</a></span>sub_08017B58()</h2>
+<a id="a14cd5cb1dcde0da595bd7a478d556aad" name="a14cd5cb1dcde0da595bd7a478d556aad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14cd5cb1dcde0da595bd7a478d556aad">&#9670;&nbsp;</a></span>sub_08017B58()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017B58 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017B58 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -741,14 +854,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab62c9a7fcae48f5b306e108b74c66a1f" name="ab62c9a7fcae48f5b306e108b74c66a1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab62c9a7fcae48f5b306e108b74c66a1f">&#9670;&nbsp;</a></span>sub_08017BBC()</h2>
+<a id="a2dbe290533c73d6cad14e45723e57c3f" name="a2dbe290533c73d6cad14e45723e57c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dbe290533c73d6cad14e45723e57c3f">&#9670;&nbsp;</a></span>sub_08017BBC()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017BBC </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017BBC </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -781,14 +894,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af36f3b13f327cba1ba4ea06866db4c65" name="af36f3b13f327cba1ba4ea06866db4c65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af36f3b13f327cba1ba4ea06866db4c65">&#9670;&nbsp;</a></span>sub_08017C40()</h2>
+<a id="a5d78739debdb8273b245a38562e852d7" name="a5d78739debdb8273b245a38562e852d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d78739debdb8273b245a38562e852d7">&#9670;&nbsp;</a></span>sub_08017C40()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017C40 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017C40 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -821,14 +934,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f8bb71955dee04634fa938463d22dd4" name="a3f8bb71955dee04634fa938463d22dd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f8bb71955dee04634fa938463d22dd4">&#9670;&nbsp;</a></span>sub_08017CBC()</h2>
+<a id="abeb38481c16421580bdbe785262ac91a" name="abeb38481c16421580bdbe785262ac91a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeb38481c16421580bdbe785262ac91a">&#9670;&nbsp;</a></span>sub_08017CBC()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017CBC </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017CBC </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -861,14 +974,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a934281d1038330f791b4cbefe2c29486" name="a934281d1038330f791b4cbefe2c29486"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a934281d1038330f791b4cbefe2c29486">&#9670;&nbsp;</a></span>sub_08017D28()</h2>
+<a id="a839fb190988506fefb6245e2cbbd9d27" name="a839fb190988506fefb6245e2cbbd9d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a839fb190988506fefb6245e2cbbd9d27">&#9670;&nbsp;</a></span>sub_08017D28()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017D28 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017D28 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -901,14 +1014,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a78fa50bdbb7c7a585c815f2b109aca10" name="a78fa50bdbb7c7a585c815f2b109aca10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78fa50bdbb7c7a585c815f2b109aca10">&#9670;&nbsp;</a></span>sub_08017D6C()</h2>
+<a id="a498cd6d6996582f9cad30778ec36b268" name="a498cd6d6996582f9cad30778ec36b268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a498cd6d6996582f9cad30778ec36b268">&#9670;&nbsp;</a></span>sub_08017D6C()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017D6C </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017D6C </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -941,14 +1054,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a28d05c8c807baae9f98544169ff5ca10" name="a28d05c8c807baae9f98544169ff5ca10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28d05c8c807baae9f98544169ff5ca10">&#9670;&nbsp;</a></span>sub_08017DD4()</h2>
+<a id="a515f00f5964db39e19fdc1c6d1eb7838" name="a515f00f5964db39e19fdc1c6d1eb7838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a515f00f5964db39e19fdc1c6d1eb7838">&#9670;&nbsp;</a></span>sub_08017DD4()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sub_08017DD4 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017DD4 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -981,14 +1094,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acab508e9ace05914ee1337581bedc3ac" name="acab508e9ace05914ee1337581bedc3ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acab508e9ace05914ee1337581bedc3ac">&#9670;&nbsp;</a></span>sub_08017E88()</h2>
+<a id="a3059afc92249b8a07a7b11169e38b070" name="a3059afc92249b8a07a7b11169e38b070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3059afc92249b8a07a7b11169e38b070">&#9670;&nbsp;</a></span>sub_08017E88()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017E88 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017E88 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -1021,14 +1134,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac6e9e1cffafde1e5b46273bf39a29a65" name="ac6e9e1cffafde1e5b46273bf39a29a65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6e9e1cffafde1e5b46273bf39a29a65">&#9670;&nbsp;</a></span>sub_08017EB0()</h2>
+<a id="a5b9f5027fe5ea20ca5b8622fcdd3c857" name="a5b9f5027fe5ea20ca5b8622fcdd3c857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b9f5027fe5ea20ca5b8622fcdd3c857">&#9670;&nbsp;</a></span>sub_08017EB0()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017EB0 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017EB0 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -1061,14 +1174,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6377cbfc83ac1dfdaa88e9048a4afc6b" name="a6377cbfc83ac1dfdaa88e9048a4afc6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6377cbfc83ac1dfdaa88e9048a4afc6b">&#9670;&nbsp;</a></span>sub_08017F3C()</h2>
+<a id="a7b1b1ccaed2d5fa62f45217bbf822177" name="a7b1b1ccaed2d5fa62f45217bbf822177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1b1ccaed2d5fa62f45217bbf822177">&#9670;&nbsp;</a></span>sub_08017F3C()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017F3C </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017F3C </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -1101,14 +1214,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad36577951b6f4b0ba3e6759305856eb5" name="ad36577951b6f4b0ba3e6759305856eb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad36577951b6f4b0ba3e6759305856eb5">&#9670;&nbsp;</a></span>sub_08017F40()</h2>
+<a id="adb08294f1c7f9ff4ac07044f733a6bbf" name="adb08294f1c7f9ff4ac07044f733a6bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb08294f1c7f9ff4ac07044f733a6bbf">&#9670;&nbsp;</a></span>sub_08017F40()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08017F40 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08017F40 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -1141,14 +1254,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3ba72e566f837c2c95f66feda678fec9" name="a3ba72e566f837c2c95f66feda678fec9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ba72e566f837c2c95f66feda678fec9">&#9670;&nbsp;</a></span>sub_0801802C()</h2>
+<a id="a1bb0d294310d100cbf18ebead1e241d6" name="a1bb0d294310d100cbf18ebead1e241d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb0d294310d100cbf18ebead1e241d6">&#9670;&nbsp;</a></span>sub_0801802C()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_0801802C </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_0801802C </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -1209,14 +1322,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad2d17578f5ce1da27cda8044c587228b" name="ad2d17578f5ce1da27cda8044c587228b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2d17578f5ce1da27cda8044c587228b">&#9670;&nbsp;</a></span>sub_080180E8()</h2>
+<a id="aa9cdfd534ff6b4923477635c6f513c7e" name="aa9cdfd534ff6b4923477635c6f513c7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9cdfd534ff6b4923477635c6f513c7e">&#9670;&nbsp;</a></span>sub_080180E8()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_080180E8 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_080180E8 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -1249,14 +1362,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a30ed928409216ace9d11190551ca893f" name="a30ed928409216ace9d11190551ca893f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30ed928409216ace9d11190551ca893f">&#9670;&nbsp;</a></span>sub_08018168()</h2>
+<a id="a2d49760fc03583ac24a1a6cd031b013b" name="a2d49760fc03583ac24a1a6cd031b013b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d49760fc03583ac24a1a6cd031b013b">&#9670;&nbsp;</a></span>sub_08018168()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08018168 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08018168 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -1289,14 +1402,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab90eff21c06103866c11d61bfca62293" name="ab90eff21c06103866c11d61bfca62293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab90eff21c06103866c11d61bfca62293">&#9670;&nbsp;</a></span>sub_08018228()</h2>
+<a id="a97e2bd40a9c37c22a91e62fe26df3e18" name="a97e2bd40a9c37c22a91e62fe26df3e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e2bd40a9c37c22a91e62fe26df3e18">&#9670;&nbsp;</a></span>sub_08018228()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08018228 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08018228 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -1329,14 +1442,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4362745ca7fa5329b21cf15a5ccf263e" name="a4362745ca7fa5329b21cf15a5ccf263e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4362745ca7fa5329b21cf15a5ccf263e">&#9670;&nbsp;</a></span>sub_08018250()</h2>
+<a id="ac0296c08952cd75cc7979109eefb85bb" name="ac0296c08952cd75cc7979109eefb85bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0296c08952cd75cc7979109eefb85bb">&#9670;&nbsp;</a></span>sub_08018250()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08018250 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_08018250 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -1369,94 +1482,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a98449ce2b0f8e1fc8e8c792e46d26af0" name="a98449ce2b0f8e1fc8e8c792e46d26af0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98449ce2b0f8e1fc8e8c792e46d26af0">&#9670;&nbsp;</a></span>sub_08018288()</h2>
+<a id="ac75103e4a95a5c25991ab9feab6b2b08" name="ac75103e4a95a5c25991ab9feab6b2b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75103e4a95a5c25991ab9feab6b2b08">&#9670;&nbsp;</a></span>sub_080182A8()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08018288 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname"><em>org</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname"><em>tgt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>direction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structColSettings.html">ColSettings</a> *&#160;</td>
-          <td class="paramname"><em>settings</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3a77ee2f21bcbc968742cc16f51984bf" name="a3a77ee2f21bcbc968742cc16f51984bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a77ee2f21bcbc968742cc16f51984bf">&#9670;&nbsp;</a></span>sub_080182A8()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_080182A8 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname"><em>org</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
-          <td class="paramname"><em>tgt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
-          <td class="paramname"><em>direction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structColSettings.html">ColSettings</a> *&#160;</td>
-          <td class="paramname"><em>settings</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a19ae7273ff867fb4deb86f86a93ccaef" name="a19ae7273ff867fb4deb86f86a93ccaef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19ae7273ff867fb4deb86f86a93ccaef">&#9670;&nbsp;</a></span>sub_08018308()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> sub_08018308 </td>
+          <td class="memname"><a class="el" href="collision_8h.html#afa53873975943a015e3dbe1683696ac4">CollisionResult</a> sub_080182A8 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structEntity.html">Entity</a> *&#160;</td>
           <td class="paramname"><em>org</em>, </td>
@@ -1507,24 +1540,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8ca137f902af10ad3bff6389bac9eaf3" name="a8ca137f902af10ad3bff6389bac9eaf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ca137f902af10ad3bff6389bac9eaf3">&#9670;&nbsp;</a></span>sub_0807AFE8()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sub_0807AFE8 </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4bf6a8123de50f80e72493ab3c6c51e0" name="a4bf6a8123de50f80e72493ab3c6c51e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bf6a8123de50f80e72493ab3c6c51e0">&#9670;&nbsp;</a></span>sub_08081420()</h2>
 
@@ -1564,6 +1579,67 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="af0cd067574e02c43af9d1a409f5f5d94" name="af0cd067574e02c43af9d1a409f5f5d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0cd067574e02c43af9d1a409f5f5d94">&#9670;&nbsp;</a></span>gCollisionHandlers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="collision_8c.html#af0cdfb0aca5893ea2727aab9353d2205">CollisionHandler</a> gCollisionHandlers[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#af79141010763b261d2d17aa94b67c56c">CollisionDefault</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a8fb917d4e39049f32fe0e466829900de">CollisionNoOp</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a8fb917d4e39049f32fe0e466829900de">CollisionNoOp</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#ac67a7f2cc72f5ca4c444a7a6baf61446">CollisionGroundItem</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a14cd5cb1dcde0da595bd7a478d556aad">sub_08017B58</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a5b9f5027fe5ea20ca5b8622fcdd3c857">sub_08017EB0</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a7b1b1ccaed2d5fa62f45217bbf822177">sub_08017F3C</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#adb08294f1c7f9ff4ac07044f733a6bbf">sub_08017F40</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a1bb0d294310d100cbf18ebead1e241d6">sub_0801802C</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a515f00f5964db39e19fdc1c6d1eb7838">sub_08017DD4</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#aa9cdfd534ff6b4923477635c6f513c7e">sub_080180E8</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a2dbe290533c73d6cad14e45723e57c3f">sub_08017BBC</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a5d78739debdb8273b245a38562e852d7">sub_08017C40</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a498cd6d6996582f9cad30778ec36b268">sub_08017D6C</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a839fb190988506fefb6245e2cbbd9d27">sub_08017D28</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a2d49760fc03583ac24a1a6cd031b013b">sub_08018168</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a97e2bd40a9c37c22a91e62fe26df3e18">sub_08018228</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#ac0296c08952cd75cc7979109eefb85bb">sub_08018250</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#ae7ca9a0b8ceaa5b6a6ee107ef700c2cc">CollisionMazaalShrinkRay</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#ac75103e4a95a5c25991ab9feab6b2b08">sub_080182A8</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a4cab26f6936e7b219b73a1364c26d3e2">sub_08017B1C</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#abeb38481c16421580bdbe785262ac91a">sub_08017CBC</a>,</div>
+<div class="line">    <a class="code hl_function" href="collision_8c.html#a3059afc92249b8a07a7b11169e38b070">sub_08017E88</a>,</div>
+<div class="line">}</div>
+<div class="ttc" id="acollision_8c_html_a14cd5cb1dcde0da595bd7a478d556aad"><div class="ttname"><a href="collision_8c.html#a14cd5cb1dcde0da595bd7a478d556aad">sub_08017B58</a></div><div class="ttdeci">CollisionResult sub_08017B58(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:391</div></div>
+<div class="ttc" id="acollision_8c_html_a1bb0d294310d100cbf18ebead1e241d6"><div class="ttname"><a href="collision_8c.html#a1bb0d294310d100cbf18ebead1e241d6">sub_0801802C</a></div><div class="ttdeci">CollisionResult sub_0801802C(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:588</div></div>
+<div class="ttc" id="acollision_8c_html_a2d49760fc03583ac24a1a6cd031b013b"><div class="ttname"><a href="collision_8c.html#a2d49760fc03583ac24a1a6cd031b013b">sub_08018168</a></div><div class="ttdeci">CollisionResult sub_08018168(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:647</div></div>
+<div class="ttc" id="acollision_8c_html_a2dbe290533c73d6cad14e45723e57c3f"><div class="ttname"><a href="collision_8c.html#a2dbe290533c73d6cad14e45723e57c3f">sub_08017BBC</a></div><div class="ttdeci">CollisionResult sub_08017BBC(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:410</div></div>
+<div class="ttc" id="acollision_8c_html_a3059afc92249b8a07a7b11169e38b070"><div class="ttname"><a href="collision_8c.html#a3059afc92249b8a07a7b11169e38b070">sub_08017E88</a></div><div class="ttdeci">CollisionResult sub_08017E88(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:517</div></div>
+<div class="ttc" id="acollision_8c_html_a498cd6d6996582f9cad30778ec36b268"><div class="ttname"><a href="collision_8c.html#a498cd6d6996582f9cad30778ec36b268">sub_08017D6C</a></div><div class="ttdeci">CollisionResult sub_08017D6C(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:475</div></div>
+<div class="ttc" id="acollision_8c_html_a4cab26f6936e7b219b73a1364c26d3e2"><div class="ttname"><a href="collision_8c.html#a4cab26f6936e7b219b73a1364c26d3e2">sub_08017B1C</a></div><div class="ttdeci">CollisionResult sub_08017B1C(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:380</div></div>
+<div class="ttc" id="acollision_8c_html_a515f00f5964db39e19fdc1c6d1eb7838"><div class="ttname"><a href="collision_8c.html#a515f00f5964db39e19fdc1c6d1eb7838">sub_08017DD4</a></div><div class="ttdeci">CollisionResult sub_08017DD4(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:494</div></div>
+<div class="ttc" id="acollision_8c_html_a5b9f5027fe5ea20ca5b8622fcdd3c857"><div class="ttname"><a href="collision_8c.html#a5b9f5027fe5ea20ca5b8622fcdd3c857">sub_08017EB0</a></div><div class="ttdeci">CollisionResult sub_08017EB0(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:525</div></div>
+<div class="ttc" id="acollision_8c_html_a5d78739debdb8273b245a38562e852d7"><div class="ttname"><a href="collision_8c.html#a5d78739debdb8273b245a38562e852d7">sub_08017C40</a></div><div class="ttdeci">CollisionResult sub_08017C40(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:429</div></div>
+<div class="ttc" id="acollision_8c_html_a7b1b1ccaed2d5fa62f45217bbf822177"><div class="ttname"><a href="collision_8c.html#a7b1b1ccaed2d5fa62f45217bbf822177">sub_08017F3C</a></div><div class="ttdeci">CollisionResult sub_08017F3C(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:547</div></div>
+<div class="ttc" id="acollision_8c_html_a839fb190988506fefb6245e2cbbd9d27"><div class="ttname"><a href="collision_8c.html#a839fb190988506fefb6245e2cbbd9d27">sub_08017D28</a></div><div class="ttdeci">CollisionResult sub_08017D28(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:464</div></div>
+<div class="ttc" id="acollision_8c_html_a8fb917d4e39049f32fe0e466829900de"><div class="ttname"><a href="collision_8c.html#a8fb917d4e39049f32fe0e466829900de">CollisionNoOp</a></div><div class="ttdeci">CollisionResult CollisionNoOp(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:366</div></div>
+<div class="ttc" id="acollision_8c_html_a97e2bd40a9c37c22a91e62fe26df3e18"><div class="ttname"><a href="collision_8c.html#a97e2bd40a9c37c22a91e62fe26df3e18">sub_08018228</a></div><div class="ttdeci">CollisionResult sub_08018228(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:678</div></div>
+<div class="ttc" id="acollision_8c_html_aa9cdfd534ff6b4923477635c6f513c7e"><div class="ttname"><a href="collision_8c.html#aa9cdfd534ff6b4923477635c6f513c7e">sub_080180E8</a></div><div class="ttdeci">CollisionResult sub_080180E8(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:628</div></div>
+<div class="ttc" id="acollision_8c_html_abeb38481c16421580bdbe785262ac91a"><div class="ttname"><a href="collision_8c.html#abeb38481c16421580bdbe785262ac91a">sub_08017CBC</a></div><div class="ttdeci">CollisionResult sub_08017CBC(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:447</div></div>
+<div class="ttc" id="acollision_8c_html_ac0296c08952cd75cc7979109eefb85bb"><div class="ttname"><a href="collision_8c.html#ac0296c08952cd75cc7979109eefb85bb">sub_08018250</a></div><div class="ttdeci">CollisionResult sub_08018250(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:684</div></div>
+<div class="ttc" id="acollision_8c_html_ac67a7f2cc72f5ca4c444a7a6baf61446"><div class="ttname"><a href="collision_8c.html#ac67a7f2cc72f5ca4c444a7a6baf61446">CollisionGroundItem</a></div><div class="ttdeci">CollisionResult CollisionGroundItem(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:372</div></div>
+<div class="ttc" id="acollision_8c_html_ac75103e4a95a5c25991ab9feab6b2b08"><div class="ttname"><a href="collision_8c.html#ac75103e4a95a5c25991ab9feab6b2b08">sub_080182A8</a></div><div class="ttdeci">CollisionResult sub_080182A8(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:703</div></div>
+<div class="ttc" id="acollision_8c_html_adb08294f1c7f9ff4ac07044f733a6bbf"><div class="ttname"><a href="collision_8c.html#adb08294f1c7f9ff4ac07044f733a6bbf">sub_08017F40</a></div><div class="ttdeci">CollisionResult sub_08017F40(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:551</div></div>
+<div class="ttc" id="acollision_8c_html_ae7ca9a0b8ceaa5b6a6ee107ef700c2cc"><div class="ttname"><a href="collision_8c.html#ae7ca9a0b8ceaa5b6a6ee107ef700c2cc">CollisionMazaalShrinkRay</a></div><div class="ttdeci">CollisionResult CollisionMazaalShrinkRay(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:695</div></div>
+<div class="ttc" id="acollision_8c_html_af79141010763b261d2d17aa94b67c56c"><div class="ttname"><a href="collision_8c.html#af79141010763b261d2d17aa94b67c56c">CollisionDefault</a></div><div class="ttdeci">CollisionResult CollisionDefault(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:716</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae896f309d88a45aadfed3213e169609d" name="ae896f309d88a45aadfed3213e169609d"></a>
@@ -1652,48 +1728,6 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ad5c5c197c6c6c1320ad44da6de3417c8" name="ad5c5c197c6c6c1320ad44da6de3417c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5c5c197c6c6c1320ad44da6de3417c8">&#9670;&nbsp;</a></span>gUnk_080B3744</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="collision_8c.html#add8c87e3f62d025f4fa27092f3b313b4">CollisionHandler</a> gUnk_080B3744[]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    <a class="code hl_function" href="collision_8c.html#a19ae7273ff867fb4deb86f86a93ccaef">sub_08018308</a>, <a class="code hl_function" href="collision_8c.html#a39cc7f9185aae47c716237e5e64c5e6a">CollisionNoOp</a>, <a class="code hl_function" href="collision_8c.html#a39cc7f9185aae47c716237e5e64c5e6a">CollisionNoOp</a>, <a class="code hl_function" href="collision_8c.html#a0887c44b9db3b983112a6bbbf00bd58b">CollisionGroundItem</a>, <a class="code hl_function" href="collision_8c.html#a40e0db46dabe891eef6bca690a642ffe">sub_08017B58</a>, <a class="code hl_function" href="collision_8c.html#ac6e9e1cffafde1e5b46273bf39a29a65">sub_08017EB0</a>,</div>
-<div class="line">    <a class="code hl_function" href="collision_8c.html#a6377cbfc83ac1dfdaa88e9048a4afc6b">sub_08017F3C</a>, <a class="code hl_function" href="collision_8c.html#ad36577951b6f4b0ba3e6759305856eb5">sub_08017F40</a>,  <a class="code hl_function" href="collision_8c.html#a3ba72e566f837c2c95f66feda678fec9">sub_0801802C</a>,  <a class="code hl_function" href="collision_8c.html#a28d05c8c807baae9f98544169ff5ca10">sub_08017DD4</a>,        <a class="code hl_function" href="collision_8c.html#ad2d17578f5ce1da27cda8044c587228b">sub_080180E8</a>, <a class="code hl_function" href="collision_8c.html#ab62c9a7fcae48f5b306e108b74c66a1f">sub_08017BBC</a>,</div>
-<div class="line">    <a class="code hl_function" href="collision_8c.html#af36f3b13f327cba1ba4ea06866db4c65">sub_08017C40</a>, <a class="code hl_function" href="collision_8c.html#a78fa50bdbb7c7a585c815f2b109aca10">sub_08017D6C</a>,  <a class="code hl_function" href="collision_8c.html#a934281d1038330f791b4cbefe2c29486">sub_08017D28</a>,  <a class="code hl_function" href="collision_8c.html#a30ed928409216ace9d11190551ca893f">sub_08018168</a>,        <a class="code hl_function" href="collision_8c.html#ab90eff21c06103866c11d61bfca62293">sub_08018228</a>, <a class="code hl_function" href="collision_8c.html#a4362745ca7fa5329b21cf15a5ccf263e">sub_08018250</a>,</div>
-<div class="line">    <a class="code hl_function" href="collision_8c.html#a98449ce2b0f8e1fc8e8c792e46d26af0">sub_08018288</a>, <a class="code hl_function" href="collision_8c.html#a3a77ee2f21bcbc968742cc16f51984bf">sub_080182A8</a>,  <a class="code hl_function" href="collision_8c.html#ace68e8b407c62d666cefbe1d22259d59">sub_08017B1C</a>,  <a class="code hl_function" href="collision_8c.html#a3f8bb71955dee04634fa938463d22dd4">sub_08017CBC</a>,        <a class="code hl_function" href="collision_8c.html#acab508e9ace05914ee1337581bedc3ac">sub_08017E88</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="acollision_8c_html_a0887c44b9db3b983112a6bbbf00bd58b"><div class="ttname"><a href="collision_8c.html#a0887c44b9db3b983112a6bbbf00bd58b">CollisionGroundItem</a></div><div class="ttdeci">s32 CollisionGroundItem(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:347</div></div>
-<div class="ttc" id="acollision_8c_html_a19ae7273ff867fb4deb86f86a93ccaef"><div class="ttname"><a href="collision_8c.html#a19ae7273ff867fb4deb86f86a93ccaef">sub_08018308</a></div><div class="ttdeci">s32 sub_08018308(Entity *, Entity *, u32, ColSettings *)</div><div class="ttdef"><b>Definition:</b> collision.c:691</div></div>
-<div class="ttc" id="acollision_8c_html_a28d05c8c807baae9f98544169ff5ca10"><div class="ttname"><a href="collision_8c.html#a28d05c8c807baae9f98544169ff5ca10">sub_08017DD4</a></div><div class="ttdeci">s32 sub_08017DD4(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:469</div></div>
-<div class="ttc" id="acollision_8c_html_a30ed928409216ace9d11190551ca893f"><div class="ttname"><a href="collision_8c.html#a30ed928409216ace9d11190551ca893f">sub_08018168</a></div><div class="ttdeci">s32 sub_08018168(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:622</div></div>
-<div class="ttc" id="acollision_8c_html_a39cc7f9185aae47c716237e5e64c5e6a"><div class="ttname"><a href="collision_8c.html#a39cc7f9185aae47c716237e5e64c5e6a">CollisionNoOp</a></div><div class="ttdeci">s32 CollisionNoOp(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:341</div></div>
-<div class="ttc" id="acollision_8c_html_a3a77ee2f21bcbc968742cc16f51984bf"><div class="ttname"><a href="collision_8c.html#a3a77ee2f21bcbc968742cc16f51984bf">sub_080182A8</a></div><div class="ttdeci">s32 sub_080182A8(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:678</div></div>
-<div class="ttc" id="acollision_8c_html_a3ba72e566f837c2c95f66feda678fec9"><div class="ttname"><a href="collision_8c.html#a3ba72e566f837c2c95f66feda678fec9">sub_0801802C</a></div><div class="ttdeci">s32 sub_0801802C(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:563</div></div>
-<div class="ttc" id="acollision_8c_html_a3f8bb71955dee04634fa938463d22dd4"><div class="ttname"><a href="collision_8c.html#a3f8bb71955dee04634fa938463d22dd4">sub_08017CBC</a></div><div class="ttdeci">s32 sub_08017CBC(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:422</div></div>
-<div class="ttc" id="acollision_8c_html_a40e0db46dabe891eef6bca690a642ffe"><div class="ttname"><a href="collision_8c.html#a40e0db46dabe891eef6bca690a642ffe">sub_08017B58</a></div><div class="ttdeci">s32 sub_08017B58(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:366</div></div>
-<div class="ttc" id="acollision_8c_html_a4362745ca7fa5329b21cf15a5ccf263e"><div class="ttname"><a href="collision_8c.html#a4362745ca7fa5329b21cf15a5ccf263e">sub_08018250</a></div><div class="ttdeci">s32 sub_08018250(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:659</div></div>
-<div class="ttc" id="acollision_8c_html_a6377cbfc83ac1dfdaa88e9048a4afc6b"><div class="ttname"><a href="collision_8c.html#a6377cbfc83ac1dfdaa88e9048a4afc6b">sub_08017F3C</a></div><div class="ttdeci">s32 sub_08017F3C(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:522</div></div>
-<div class="ttc" id="acollision_8c_html_a78fa50bdbb7c7a585c815f2b109aca10"><div class="ttname"><a href="collision_8c.html#a78fa50bdbb7c7a585c815f2b109aca10">sub_08017D6C</a></div><div class="ttdeci">s32 sub_08017D6C(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:450</div></div>
-<div class="ttc" id="acollision_8c_html_a934281d1038330f791b4cbefe2c29486"><div class="ttname"><a href="collision_8c.html#a934281d1038330f791b4cbefe2c29486">sub_08017D28</a></div><div class="ttdeci">s32 sub_08017D28(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:439</div></div>
-<div class="ttc" id="acollision_8c_html_a98449ce2b0f8e1fc8e8c792e46d26af0"><div class="ttname"><a href="collision_8c.html#a98449ce2b0f8e1fc8e8c792e46d26af0">sub_08018288</a></div><div class="ttdeci">s32 sub_08018288(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:670</div></div>
-<div class="ttc" id="acollision_8c_html_ab62c9a7fcae48f5b306e108b74c66a1f"><div class="ttname"><a href="collision_8c.html#ab62c9a7fcae48f5b306e108b74c66a1f">sub_08017BBC</a></div><div class="ttdeci">s32 sub_08017BBC(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:385</div></div>
-<div class="ttc" id="acollision_8c_html_ab90eff21c06103866c11d61bfca62293"><div class="ttname"><a href="collision_8c.html#ab90eff21c06103866c11d61bfca62293">sub_08018228</a></div><div class="ttdeci">s32 sub_08018228(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:653</div></div>
-<div class="ttc" id="acollision_8c_html_ac6e9e1cffafde1e5b46273bf39a29a65"><div class="ttname"><a href="collision_8c.html#ac6e9e1cffafde1e5b46273bf39a29a65">sub_08017EB0</a></div><div class="ttdeci">s32 sub_08017EB0(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:500</div></div>
-<div class="ttc" id="acollision_8c_html_acab508e9ace05914ee1337581bedc3ac"><div class="ttname"><a href="collision_8c.html#acab508e9ace05914ee1337581bedc3ac">sub_08017E88</a></div><div class="ttdeci">s32 sub_08017E88(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:492</div></div>
-<div class="ttc" id="acollision_8c_html_ace68e8b407c62d666cefbe1d22259d59"><div class="ttname"><a href="collision_8c.html#ace68e8b407c62d666cefbe1d22259d59">sub_08017B1C</a></div><div class="ttdeci">s32 sub_08017B1C(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:355</div></div>
-<div class="ttc" id="acollision_8c_html_ad2d17578f5ce1da27cda8044c587228b"><div class="ttname"><a href="collision_8c.html#ad2d17578f5ce1da27cda8044c587228b">sub_080180E8</a></div><div class="ttdeci">s32 sub_080180E8(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:603</div></div>
-<div class="ttc" id="acollision_8c_html_ad36577951b6f4b0ba3e6759305856eb5"><div class="ttname"><a href="collision_8c.html#ad36577951b6f4b0ba3e6759305856eb5">sub_08017F40</a></div><div class="ttdeci">s32 sub_08017F40(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:526</div></div>
-<div class="ttc" id="acollision_8c_html_af36f3b13f327cba1ba4ea06866db4c65"><div class="ttname"><a href="collision_8c.html#af36f3b13f327cba1ba4ea06866db4c65">sub_08017C40</a></div><div class="ttdeci">s32 sub_08017C40(Entity *org, Entity *tgt, u32 direction, ColSettings *settings)</div><div class="ttdef"><b>Definition:</b> collision.c:404</div></div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

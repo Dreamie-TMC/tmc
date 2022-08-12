@@ -40,12 +40,15 @@ var searchData=
   ['entrance_5fused_37',['ENTRANCE_USED',['../flags_8h.html#a3f3de3e0d751949b8d0b60ffb302944aa30cba09c92d8826a290382595d7441da',1,'flags.h']]],
   ['envelope_5fshelf_38',['ENVELOPE_SHELF',['../furniture_8c.html#aa06e085575735587cc1ab6389b3f2662a7fcd5526ff823d3bc94ba18e877a412d',1,'furniture.c']]],
   ['epona_39',['EPONA',['../npc_8h.html#ab86484a9fbeb0e4494cb75cadb5f4cf3a331d30a03f7395f577eb3048d82f0a95',1,'npc.h']]],
-  ['evil_5fspirit_40',['EVIL_SPIRIT',['../object_8h.html#a0b29a1e1c76a85a0dbaa7c34a9d2874aaf3369cdb7d3702ba09e96402aa1a5dbf',1,'object.h']]],
-  ['eye_5fswitch_41',['EYE_SWITCH',['../object_8h.html#a0b29a1e1c76a85a0dbaa7c34a9d2874aa75b2eaf4a287080dbd087dc55231ee6d',1,'object.h']]],
-  ['eyegore_42',['EYEGORE',['../enemy_8h.html#aea93ec65ac90bcf874dde349967f08aba7cdecfa211fef1a1269e52ed3302db76',1,'enemy.h']]],
-  ['ezero_5f1st_43',['EZERO_1ST',['../flags_8h.html#a3f3de3e0d751949b8d0b60ffb302944aad33d891b54a3b028207621aaa70bc3d9',1,'flags.h']]],
-  ['ezlo_44',['EZLO',['../npc_8h.html#ab86484a9fbeb0e4494cb75cadb5f4cf3aed05450d614bce1ca57f6ce666f0c784',1,'npc.h']]],
-  ['ezlo_5fcap_45',['EZLO_CAP',['../object_8h.html#a0b29a1e1c76a85a0dbaa7c34a9d2874aaf0134c227de06840d8316c33003a4599',1,'object.h']]],
-  ['ezlo_5fcap_5fflying_46',['EZLO_CAP_FLYING',['../object_8h.html#a0b29a1e1c76a85a0dbaa7c34a9d2874aa92252e505328150c650ca647ec156a3e',1,'object.h']]],
-  ['ezlo_5fhint_5fmanager_47',['EZLO_HINT_MANAGER',['../manager_8h.html#aba358ebafc57f67fb3857896d466026ea7e8c9027e3680d3a7a1e9ae6652fe5cd',1,'manager.h']]]
+  ['equip_5fslot_5fa_40',['EQUIP_SLOT_A',['../item_8h.html#a0e64738dd17353d58cb9cf9b455e5ea3a4ed2f412e5a2ddd350c73a68747a0f78',1,'item.h']]],
+  ['equip_5fslot_5fb_41',['EQUIP_SLOT_B',['../item_8h.html#a0e64738dd17353d58cb9cf9b455e5ea3ae6bfac2799b38cbaaad2732dae2bd340',1,'item.h']]],
+  ['equip_5fslot_5fnone_42',['EQUIP_SLOT_NONE',['../item_8h.html#a0e64738dd17353d58cb9cf9b455e5ea3aa04cb40334d86da617aa7423bf768b60',1,'item.h']]],
+  ['evil_5fspirit_43',['EVIL_SPIRIT',['../object_8h.html#a0b29a1e1c76a85a0dbaa7c34a9d2874aaf3369cdb7d3702ba09e96402aa1a5dbf',1,'object.h']]],
+  ['eye_5fswitch_44',['EYE_SWITCH',['../object_8h.html#a0b29a1e1c76a85a0dbaa7c34a9d2874aa75b2eaf4a287080dbd087dc55231ee6d',1,'object.h']]],
+  ['eyegore_45',['EYEGORE',['../enemy_8h.html#aea93ec65ac90bcf874dde349967f08aba7cdecfa211fef1a1269e52ed3302db76',1,'enemy.h']]],
+  ['ezero_5f1st_46',['EZERO_1ST',['../flags_8h.html#a3f3de3e0d751949b8d0b60ffb302944aad33d891b54a3b028207621aaa70bc3d9',1,'flags.h']]],
+  ['ezlo_47',['EZLO',['../npc_8h.html#ab86484a9fbeb0e4494cb75cadb5f4cf3aed05450d614bce1ca57f6ce666f0c784',1,'npc.h']]],
+  ['ezlo_5fcap_48',['EZLO_CAP',['../object_8h.html#a0b29a1e1c76a85a0dbaa7c34a9d2874aaf0134c227de06840d8316c33003a4599',1,'object.h']]],
+  ['ezlo_5fcap_5fflying_49',['EZLO_CAP_FLYING',['../object_8h.html#a0b29a1e1c76a85a0dbaa7c34a9d2874aa92252e505328150c650ca647ec156a3e',1,'object.h']]],
+  ['ezlo_5fhint_5fmanager_50',['EZLO_HINT_MANAGER',['../manager_8h.html#aba358ebafc57f67fb3857896d466026ea7e8c9027e3680d3a7a1e9ae6652fe5cd',1,'manager.h']]]
 ];

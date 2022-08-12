@@ -8,5 +8,6 @@ var searchData=
   ['enemyinteractionmanager_5finitstate_5',['EnemyInteractionManager_InitState',['../enemyInteractionManager_8c.html#ad8cf4ca9b1bb60857a4400801f58a437',1,'enemyInteractionManager.c']]],
   ['entityflags_6',['EntityFlags',['../entity_8h.html#acda3452546886b2b713c62c4a07fd52a',1,'entity.h']]],
   ['entitykind_7',['EntityKind',['../entity_8h.html#ad90c5929a39651126870429e8f6689b3',1,'entity.h']]],
-  ['esubtask_8',['ESubtask',['../subtask_8h.html#a5d4218ea7533a3703796cb69620ca811',1,'subtask.h']]]
+  ['equipslot_8',['EquipSlot',['../item_8h.html#a0e64738dd17353d58cb9cf9b455e5ea3',1,'item.h']]],
+  ['esubtask_9',['ESubtask',['../subtask_8h.html#a5d4218ea7533a3703796cb69620ca811',1,'subtask.h']]]
 ];
