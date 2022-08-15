@@ -153,9 +153,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ac2b0dbe2042c8f30eb9c22747fb8e01a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#ac2b0dbe2042c8f30eb9c22747fb8e01a">ANIM_DONE</a>&#160;&#160;&#160;(1 &lt;&lt; 7) /* invalid <a class="el" href="playerUtils_8c.html#a943f49763dd36e31fc7ea8604fcad789">frame</a> <a class="el" href="itemTryPickupObject_8c.html#a355234d6a61ed497fca496e2287c8a64">index</a> */</td></tr>
 <tr class="separator:ac2b0dbe2042c8f30eb9c22747fb8e01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Tile Macros</div></td></tr>
-<tr class="memitem:a1c90f4f786ae8c749d2b50a6c7686b96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a1c90f4f786ae8c749d2b50a6c7686b96">TILE</a>(x,  y)&#160;&#160;&#160;(((((x)-gRoomControls.origin_x) &gt;&gt; 4) &amp; 0x3F) | ((((y)-gRoomControls.origin_y) &gt;&gt; 4) &amp; 0x3F) &lt;&lt; 6)</td></tr>
+<tr class="memitem:a1c90f4f786ae8c749d2b50a6c7686b96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#a1c90f4f786ae8c749d2b50a6c7686b96">TILE</a>(<a class="el" href="beanstalkSubtask_8c.html#ad71db2ff6815b624a0d7abbf20408d7d">x</a>,  <a class="el" href="beanstalkSubtask_8c.html#a673955c85a345a695b435abafb2c06f3">y</a>)&#160;&#160;&#160;(((((<a class="el" href="beanstalkSubtask_8c.html#ad71db2ff6815b624a0d7abbf20408d7d">x</a>)-gRoomControls.origin_x) &gt;&gt; 4) &amp; 0x3F) | ((((<a class="el" href="beanstalkSubtask_8c.html#a673955c85a345a695b435abafb2c06f3">y</a>)-gRoomControls.origin_y) &gt;&gt; 4) &amp; 0x3F) &lt;&lt; 6)</td></tr>
 <tr class="separator:a1c90f4f786ae8c749d2b50a6c7686b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf1fece7e6eba5f984da82d0b0d6921c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#acf1fece7e6eba5f984da82d0b0d6921c">TILE_POS</a>(x,  y)&#160;&#160;&#160;(x + (y &lt;&lt; 6))</td></tr>
+<tr class="memitem:acf1fece7e6eba5f984da82d0b0d6921c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#acf1fece7e6eba5f984da82d0b0d6921c">TILE_POS</a>(<a class="el" href="beanstalkSubtask_8c.html#ad71db2ff6815b624a0d7abbf20408d7d">x</a>,  <a class="el" href="beanstalkSubtask_8c.html#a673955c85a345a695b435abafb2c06f3">y</a>)&#160;&#160;&#160;(<a class="el" href="beanstalkSubtask_8c.html#ad71db2ff6815b624a0d7abbf20408d7d">x</a> + (<a class="el" href="beanstalkSubtask_8c.html#a673955c85a345a695b435abafb2c06f3">y</a> &lt;&lt; 6))</td></tr>
 <tr class="separator:acf1fece7e6eba5f984da82d0b0d6921c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea6aeab771b5c0ae685d9f197a3be683"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entity_8h.html#aea6aeab771b5c0ae685d9f197a3be683">TILE_POS_X_COMPONENT</a>&#160;&#160;&#160;0x3f</td></tr>
 <tr class="separator:aea6aeab771b5c0ae685d9f197a3be683"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -899,18 +899,18 @@ Variables</h2></td></tr>
           <td class="memname">#define TILE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
+          <td class="paramname"><a class="el" href="beanstalkSubtask_8c.html#ad71db2ff6815b624a0d7abbf20408d7d">x</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">y&#160;</td>
+          <td class="paramname"><a class="el" href="beanstalkSubtask_8c.html#a673955c85a345a695b435abafb2c06f3">y</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((((x)-gRoomControls.origin_x) &gt;&gt; 4) &amp; 0x3F) | ((((y)-gRoomControls.origin_y) &gt;&gt; 4) &amp; 0x3F) &lt;&lt; 6)</td>
+          <td></td><td>&#160;&#160;&#160;(((((<a class="el" href="beanstalkSubtask_8c.html#ad71db2ff6815b624a0d7abbf20408d7d">x</a>)-gRoomControls.origin_x) &gt;&gt; 4) &amp; 0x3F) | ((((<a class="el" href="beanstalkSubtask_8c.html#a673955c85a345a695b435abafb2c06f3">y</a>)-gRoomControls.origin_y) &gt;&gt; 4) &amp; 0x3F) &lt;&lt; 6)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -927,18 +927,18 @@ Variables</h2></td></tr>
           <td class="memname">#define TILE_POS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
+          <td class="paramname"><a class="el" href="beanstalkSubtask_8c.html#ad71db2ff6815b624a0d7abbf20408d7d">x</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">y&#160;</td>
+          <td class="paramname"><a class="el" href="beanstalkSubtask_8c.html#a673955c85a345a695b435abafb2c06f3">y</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(x + (y &lt;&lt; 6))</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="beanstalkSubtask_8c.html#ad71db2ff6815b624a0d7abbf20408d7d">x</a> + (<a class="el" href="beanstalkSubtask_8c.html#a673955c85a345a695b435abafb2c06f3">y</a> &lt;&lt; 6))</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -176,7 +176,7 @@ Macros</h2></td></tr>
 <tr class="separator:a14f9f143dd45e0b8132bdf5d36cb5601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67084a90a363b9478fb18aeafd135574"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#a67084a90a363b9478fb18aeafd135574">RESET_ALL</a>&#160;&#160;&#160;0xFF</td></tr>
 <tr class="separator:a67084a90a363b9478fb18aeafd135574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9bfe543c13061e45469ad6a449b9026"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#ac9bfe543c13061e45469ad6a449b9026">SystemCall</a>(x)&#160;&#160;&#160;    { asm(&quot;svc &quot; #x); }</td></tr>
+<tr class="memitem:ac9bfe543c13061e45469ad6a449b9026"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#ac9bfe543c13061e45469ad6a449b9026">SystemCall</a>(<a class="el" href="beanstalkSubtask_8c.html#ad71db2ff6815b624a0d7abbf20408d7d">x</a>)&#160;&#160;&#160;    { asm(&quot;svc &quot; #x); }</td></tr>
 <tr class="separator:ac9bfe543c13061e45469ad6a449b9026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74ef33fa66ca12686c4c6bad201071d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#a74ef33fa66ca12686c4c6bad201071d8">Stop</a>()</td></tr>
 <tr class="separator:a74ef33fa66ca12686c4c6bad201071d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,7 +203,7 @@ Functions</h2></td></tr>
 <tr class="separator:a4f52a2fe7daa9c32a797a2bf0ce54b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a397a422ddf5324d9b5eff0522f1a5cf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#a397a422ddf5324d9b5eff0522f1a5cf3">Sqrt</a> (<a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> num)</td></tr>
 <tr class="separator:a397a422ddf5324d9b5eff0522f1a5cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad117b39bb75b238eae2862ce942cee70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#ad117b39bb75b238eae2862ce942cee70">ArcTan2</a> (<a class="el" href="types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a> x, <a class="el" href="types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a> y)</td></tr>
+<tr class="memitem:ad117b39bb75b238eae2862ce942cee70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#ad117b39bb75b238eae2862ce942cee70">ArcTan2</a> (<a class="el" href="types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a> <a class="el" href="beanstalkSubtask_8c.html#ad71db2ff6815b624a0d7abbf20408d7d">x</a>, <a class="el" href="types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a> <a class="el" href="beanstalkSubtask_8c.html#a673955c85a345a695b435abafb2c06f3">y</a>)</td></tr>
 <tr class="separator:ad117b39bb75b238eae2862ce942cee70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a328f63bd7c90b5b2b5da519a056eeb0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall_8h.html#a328f63bd7c90b5b2b5da519a056eeb0f">CpuSet</a> (const void *src, void *dest, <a class="el" href="types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> control)</td></tr>
 <tr class="separator:a328f63bd7c90b5b2b5da519a056eeb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -441,7 +441,7 @@ Functions</h2></td></tr>
           <td class="memname">#define SystemCall</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
+          <td class="paramname"><a class="el" href="beanstalkSubtask_8c.html#ad71db2ff6815b624a0d7abbf20408d7d">x</a></td><td>)</td>
           <td>&#160;&#160;&#160;    { asm(&quot;svc &quot; #x); }</td>
         </tr>
       </table>
