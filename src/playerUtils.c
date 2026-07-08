@@ -1723,7 +1723,7 @@ void sub_08078FB0(Entity* this) {
         gPlayerState.field_0x35 = 0xff;
     }
     sub_08079064(this);
-    if (gPlayerState.flags & PL_NO_CAP) {
+    if (gPlayerState.flags & PL_NO_CAP && gPlayerState.animation >> 8 == ANIM_DEFAULT_NOCAP >> 8) {
         animIndex = 0x58;
     } else {
         if (gPlayerState.flags & PL_MINISH) {
