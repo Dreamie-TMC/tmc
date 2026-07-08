@@ -2980,7 +2980,13 @@ static void sub_08073968(PlayerEntity* this) {
     CheckPlayerVelocity();
     if ((gPlayerState.heldObject | gPlayerState.keepFacing) == 0) {
         if (gPlayerState.flags & PL_NO_CAP) {
-            gPlayerState.animation = ANIM_HOP_NOCAP;
+            // When you jump off a ledge the game sets the top 2 bits, cape jumps do not
+            // so use this to discriminate between ledge hops and cape hops
+            if ((gPlayerState.jump_status & 0xC0) == 0) {
+                gPlayerState.animation = ANIM_HOP;
+            } else {
+                gPlayerState.animation = ANIM_HOP_NOCAP;
+            }
         } else {
             if ((gPlayerState.flags & PL_MINISH) == 0) {
                 if (gPlayerState.flags & PL_ENTER_MINECART) {
