@@ -486,7 +486,7 @@ Entity* sub_08077CF8(u32 id, u32 type, u32 type2, u32 unk) {
     return &ent->base;
 }
 
-void sub_08077D38(ItemBehavior* this, u32 index) {
+void InitItemAnimation(ItemBehavior* this, u32 index) {
     u32 anim;
     ItemDefinition* ptr;
 
@@ -509,6 +509,9 @@ void sub_08077D38(ItemBehavior* this, u32 index) {
                     break;
                 case 0xd:
                     anim = ANIM_SHIELD_PULLOUT_NOCAP;
+                    break;
+                default:
+                    anim = ptr->frameIndex;
                     break;
             }
             SetItemAnim(this, anim);
