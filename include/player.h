@@ -774,7 +774,7 @@ void FreeCarryEntity(Entity*);
 void PlayerDropHeldObject();
 void PlayerResetStateFromFusion();
 void DeleteItemBehavior(ItemBehavior*, u32);
-void sub_08077D38(ItemBehavior*, u32);
+void InitItemAnimation(ItemBehavior*, u32);
 void SetItemAnim(ItemBehavior* this, u32 animIndex);
 void sub_08077E3C(ItemBehavior*, u32);
 void sub_080751E8(u32, u32, void*);
