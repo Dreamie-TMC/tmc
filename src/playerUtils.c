@@ -2091,8 +2091,14 @@ void sub_080797EC(void) {
     u32 animation;
 
     if (gPlayerState.flags & PL_NO_CAP) {
-        if (gPlayerState.heldObject) {
+        if (gPlayerState.gustJarState) {
+            return;
+        } else if (gPlayerState.heldObject) {
             animation = ANIM_CARRY_NOCAP;
+        } else if (gPlayerState.dash_state) {
+            animation = ANIM_DASH;
+        } else if (gPlayerState.flags & PL_IN_MINECART) {
+            animation = ANIM_MINECART;
         } else if (gPlayerState.shield_status) {
             animation = ANIM_SHIELD_WALK_NOCAP;
         } else if (!gPlayerState.bow_state) {
@@ -2107,7 +2113,12 @@ void sub_080797EC(void) {
                     if (gPlayerState.framestate == PL_STATE_IDLE) {
                         gPlayerState.framestate = PL_STATE_WALK;
                     }
-                    animation = ANIM_WALK_NOCAP;
+                    
+                    if ((gPlayerState.flags & PL_USE_LANTERN) != 0) {
+                        animation = ANIM_LANTERN;
+                    } else {
+                        animation = ANIM_WALK_NOCAP;
+                    }
                 } else {
                     animation = ANIM_SWORD_CHARGE_WALK;
                     if (sub_080793E4(0)) {
@@ -2184,8 +2195,14 @@ void ResolvePlayerAnimation(void) {
             if (gPlayerState.gustJarState | gPlayerState.moleMittsState) {
                 return;
             }
-            if (gPlayerState.flags & PL_CONVEYOR_PUSHED) {
+            if (gPlayerState.flags & PL_MOLDWORM_CAPTURED) {
+                anim = ANIM_MOLDWORM_CAPTURED;
+            } else if (gPlayerState.flags & PL_CONVEYOR_PUSHED) {
                 anim = ANIM_JUMP;
+            } else if (gPlayerState.dash_state) {
+                anim = ANIM_DASH;
+            } else if (gPlayerState.flags & PL_IN_MINECART) {
+                anim = ANIM_MINECART_PAUSE;
             } else if (gPlayerState.shield_status) {
                 anim = ANIM_SHIELD_NOCAP;
             } else if (gPlayerState.bow_state) {
@@ -2213,7 +2230,14 @@ void ResolvePlayerAnimation(void) {
                                 break;
                         }
                     } else {
-                        anim = ANIM_DEFAULT_NOCAP;
+                        if (gPlayerState.flags & PL_USE_LANTERN) {
+                            if (gActiveItems[ACTIVE_ITEM_LANTERN].animPriority) {
+                                return;
+                            }
+                            anim = ANIM_LANTERN_ON;
+                        } else {
+                            anim = ANIM_DEFAULT_NOCAP;
+                        }
                     }
                 } else {
                     anim = ANIM_SWORD_CHARGE;
