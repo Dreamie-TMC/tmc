@@ -72,7 +72,7 @@ void sub_080768F8(ItemBehavior* this, u32 index) {
         } else {
             gPlayerState.animation = ANIM_DASH_CHARGE_MINISH;
         }
-        sub_08077D38(this, index);
+        InitItemAnimation(this, index);
         sub_08076964(this, index);
     } else {
         gPlayerState.dash_state = 0;

@@ -133,7 +133,7 @@ void ItemPickupCheck(ItemBehavior* this, u32 index) {
 void sub_080762C4(ItemBehavior* this, Entity* arg1, u8 arg2, u32 arg3) {
     this->field_0x18 = arg1;
     gPlayerState.heldObject = arg2;
-    sub_08077D38(this, arg3);
+    InitItemAnimation(this, arg3);
 }
 
 void sub_080762D8(ItemBehavior* this, u32 index) {

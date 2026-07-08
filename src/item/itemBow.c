@@ -21,7 +21,7 @@ void sub_08075DF4(ItemBehavior* this, u32 index) {
         this->priority |= 0x80;
         sub_0806F948(&gPlayerEntity.base);
         sub_08077BB8(this);
-        sub_08077D38(this, index);
+        InitItemAnimation(this, index);
         gPlayerState.bow_state = 1;
     } else {
         DeleteItemBehavior(this, index);

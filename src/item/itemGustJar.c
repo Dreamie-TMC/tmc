@@ -13,7 +13,7 @@ void ItemGustJar(ItemBehavior* this, u32 index) {
 void sub_08076DF4(ItemBehavior* this, u32 index) {
     if (GetActTileInFront(&gPlayerEntity.base) != ACT_TILE_41 && gPlayerState.floor_type != SURFACE_DOOR &&
         gPlayerState.floor_type != SURFACE_DOOR_13 && gPlayerState.jump_status == 0) {
-        sub_08077D38(this, index);
+        InitItemAnimation(this, index);
         this->timer = 0;
         this->playerAnimationState = gPlayerEntity.base.animationState;
         this->priority |= 0x80;
