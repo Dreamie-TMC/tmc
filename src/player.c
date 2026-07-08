@@ -2056,7 +2056,7 @@ static void PlayerRollInit(PlayerEntity* this) {
         gPlayerState.animation = ANIM_ROLL_MINISH;
     } else {
         super->hurtType = 0x1e;
-        if (playerFlags & PL_NO_CAP) {
+        if (playerFlags & PL_NO_CAP && !(gPlayerState.skills & SKILL_ROLL_ATTACK)) {
             gPlayerState.animation = ANIM_ROLL_NOCAP;
         } else {
             gPlayerState.animation = ANIM_ROLL;
