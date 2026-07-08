@@ -69,7 +69,7 @@ static const u16 sLightRaysAlphaBlends[] = {
 };
 
 #define FLAG_BYTE(bank, flag) (((bank) + (flag)) >> 3)
-#define FLAG_X(flag) (1 << ((flag)&7))
+#define FLAG_X(flag) (1 << ((flag) & 7))
 
 #ifdef DEMO_JP
 static const SaveFile gDemoSave = {

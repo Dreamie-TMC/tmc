@@ -82,10 +82,10 @@ typedef enum {
     /*0x06*/ LV5_CLEAR,           /**< undocumented */
     /*0x07*/ LV6_CLEAR,           /**< undocumented */
     /*0x08*/ LV7_CLEAR,           /**< undocumented */
-    /*0x09*/ LV8_CLEAR,           /**< undocumented */
+    /*0x09*/ LV8_CLEAR,           /**< Simulation chest opened */
     /*0x0a*/ MACHI_SET_1,         /**< Defeated Big Green Chuchu */
     /*0x0b*/ MACHI_SET_2,         /**< Defeated Gleerok */
-    /*0x0c*/ MACHI_SET_3,         /**< undocumented */
+    /*0x0c*/ MACHI_SET_3,         /**< Entered Ocarina of Winds Room */
     /*0x0d*/ MACHI_SET_4,         /**< Defeated Big Octorok */
     /*0x0e*/ MACHI_SET_5,         /**< Defeated Gyorg Pair */
     /*0x0f*/ MACHI_SET_6,         /**< undocumented */
@@ -93,87 +93,87 @@ typedef enum {
     /*0x11*/ MACHI_SET_8,         /**< undocumented */
     /*0x12*/ MACHI_MACHIHOKORI,   /**< Sucked dust from carpet */
     /*0x13*/ START,               /**< Met Zelda */
-    /*0x14*/ EZERO_1ST,           /**< Met Ezlo */
-    /*0x15*/ TABIDACHI,           /**< Talked to Daltus and Smith */
+    /*0x14*/ EZERO_1ST,           /**< Have Ezlo */
+    /*0x15*/ TABIDACHI,           /**< Saw Daltus & Smith Scene */
     /*0x16*/ LV1TARU,             /**< undocumented */
-    /*0x17*/ LV1TARU_OPEN,        /**< Sucked barrel web */
-    /*0x18*/ TATEKAKE_HOUSE,      /**< Red house complete */
-    /*0x19*/ TATEKAKE_TOCHU,      /**< Red house frame */
-    /*0x1a*/ WATERBEAN_OUT,       /**< Holding bean */
-    /*0x1b*/ WATERBEAN_PUT,       /**< Threw bean in hole */
-    /*0x1c*/ ZELDA_CHASE,         /**< Enter town festival */
-    /*0x1d*/ INLOCK,              /**< Gave key to Talon */
-    /*0x1e*/ DASHBOOTS,           /**< Read Castor Wilds sign */
-    /*0x1f*/ LEFT_DOOR_OPEN,      /**< Spoke to Dr. Left */
-    /*0x20*/ HAKA_KEY_LOST,       /**< Graveyard key stolen */
-    /*0x21*/ HAKA_KEY_FOUND,      /**< Graveyard key obtained back */
+    /*0x17*/ LV1TARU_OPEN,        /**< Sucked Barrel Web */
+    /*0x18*/ TATEKAKE_HOUSE,      /**< Red House Complete */
+    /*0x19*/ TATEKAKE_TOCHU,      /**< Red House Frame */
+    /*0x1a*/ WATERBEAN_OUT,       /**< Holding Bean */
+    /*0x1b*/ WATERBEAN_PUT,       /**< Threw Bean to Hole */
+    /*0x1c*/ ZELDA_CHASE,         /**< Followed by Zelda */
+    /*0x1d*/ INLOCK,              /**< Gave Key to Talon */
+    /*0x1e*/ DASHBOOTS,           /**< Visited Castor Wilds/Read Sign */
+    /*0x1f*/ LEFT_DOOR_OPEN,      /**< Spoke to Dr. Left Outside Door */
+    /*0x20*/ HAKA_KEY_LOST,       /**< Graveyard Key Stolen */
+    /*0x21*/ HAKA_KEY_FOUND,      /**< Graveyard Key Obtained Back */
     /*0x22*/ ENTRANCE_OK,         /**< undocumented */
     /*0x23*/ TATSUMAKI,           /**< undocumented */
-    /*0x24*/ KUMOTATSUMAKI,       /**< Vortex spawned */
+    /*0x24*/ KUMOTATSUMAKI,       /**< Vortex Spawned */
     /*0x25*/ KAITENGIRI,          /**< undocumented */
     /*0x26*/ DAIKAITENGIRI,       /**< undocumented */
     /*0x27*/ GATOTSU,             /**< undocumented */
     /*0x28*/ KABUTOWARI,          /**< undocumented */
     /*0x29*/ MIZUKAKI_START,      /**< Spoke to Lake Hylia Minish */
-    /*0x2a*/ MIZUKAKI_HARIFALL,   /**< Library book falling */
-    /*0x2b*/ RENTED_HOUSE_DIN,    /**< Din moves to blue house */
-    /*0x2c*/ RENTED_HOUSE_NAYRU,  /**< Nayru moves to blue house */
-    /*0x2d*/ RENTED_HOUSE_FARORE, /**< Farore moves to blue house */
-    /*0x2e*/ NEW_HOUSE_DIN,       /**< Din moves to red house */
-    /*0x2f*/ NEW_HOUSE_NAYRU,     /**< Nayru moves to red house */
-    /*0x30*/ NEW_HOUSE_FARORE,    /**< Farore moves to red house */
-    /*0x31*/ OUGONTEKI_A,         /**< Golden Octorok defeated */
-    /*0x32*/ OUGONTEKI_B,         /**< Golden Tektite defeated */
-    /*0x33*/ OUGONTEKI_C,         /**< Golden Rope defeated */
-    /*0x34*/ OUGONTEKI_D,         /**< Golden Rope defeated */
-    /*0x35*/ OUGONTEKI_E,         /**< Golden Rope defeated */
-    /*0x36*/ OUGONTEKI_F,         /**< Golden Tektite defeated */
-    /*0x37*/ OUGONTEKI_G,         /**< Golden Tektite defeated */
-    /*0x38*/ OUGONTEKI_H,         /**< Golden Octorok defeated */
-    /*0x39*/ OUGONTEKI_I,         /**< Golden Octorok defeated */
-    /*0x3a*/ KAKERA_COMPLETE,     /**< All fusions complete */
-    /*0x3b*/ DRUG_1,              /**< Yellow pico bloomed */
-    /*0x3c*/ DRUG_2,              /**< Blue pico bloomed */
-    /*0x3d*/ DRUG_3,              /**< Orange pico bloomed */
-    /*0x3e*/ GORON_KAKERA_LV2,    /**< Goron merchant restock 1 */
-    /*0x3f*/ GORON_KAKERA_LV3,    /**< Goron merchant restock 2 */
-    /*0x40*/ GORON_KAKERA_LV4,    /**< Goron merchant restock 3 */
-    /*0x41*/ GORON_KAKERA_LV5,    /**< Goron merchant restock 4 */
+    /*0x2a*/ MIZUKAKI_HARIFALL,   /**< Library Book Falling */
+    /*0x2b*/ RENTED_HOUSE_DIN,    /**< Din moves to Blue House */
+    /*0x2c*/ RENTED_HOUSE_NAYRU,  /**< Nayru moves to Blue House */
+    /*0x2d*/ RENTED_HOUSE_FARORE, /**< Farore moves to Blue House */
+    /*0x2e*/ NEW_HOUSE_DIN,       /**< Din moves to Red House */
+    /*0x2f*/ NEW_HOUSE_NAYRU,     /**< Nayru moves to Red House */
+    /*0x30*/ NEW_HOUSE_FARORE,    /**< Farore moves to Red House */
+    /*0x31*/ OUGONTEKI_A,         /**< Golden Octorok Defeated */
+    /*0x32*/ OUGONTEKI_B,         /**< Golden Tektite Defeated */
+    /*0x33*/ OUGONTEKI_C,         /**< Golden Rope Defeated */
+    /*0x34*/ OUGONTEKI_D,         /**< Golden Rope Defeated */
+    /*0x35*/ OUGONTEKI_E,         /**< Golden Rope Defeated */
+    /*0x36*/ OUGONTEKI_F,         /**< Golden Tektite Defeated */
+    /*0x37*/ OUGONTEKI_G,         /**< Golden Tektite Defeated */
+    /*0x38*/ OUGONTEKI_H,         /**< Golden Octorok Defeated */
+    /*0x39*/ OUGONTEKI_I,         /**< Golden Octorok Defeated */
+    /*0x3a*/ KAKERA_COMPLETE,     /**< Talked to Tingle with all fusions complete */
+    /*0x3b*/ DRUG_1,              /**< Yellow Pico Bloom Bloomed */
+    /*0x3c*/ DRUG_2,              /**< Blue Pico Bloom Bloomed */
+    /*0x3d*/ DRUG_3,              /**< Orange Pico Bloom Bloomed */
+    /*0x3e*/ GORON_KAKERA_LV2,    /**< Goron Merchant restocked for the first time */
+    /*0x3f*/ GORON_KAKERA_LV3,    /**< Goron Merchant restocked for the second time */
+    /*0x40*/ GORON_KAKERA_LV4,    /**< Goron Merchant restocked for the 3rd time */
+    /*0x41*/ GORON_KAKERA_LV5,    /**< Goron Merchant restocked for the 4th time */
     /*0x42*/ GORON_KAKERA_L,      /**< Red kinstone sold out */
     /*0x43*/ GORON_KAKERA_M,      /**< Blue kinstone sold out */
     /*0x44*/ GORON_KAKERA_R,      /**< Green kinstone sold out */
-    /*0x45*/ CHIKATSURO_SHUTTER,  /**< Castle basement door open */
+    /*0x45*/ CHIKATSURO_SHUTTER,  /**< Door Open */
     /*0x46*/ ENTRANCE_USED,       /**< undocumented */
-    /*0x47*/ GOMAN_RENTED_HOUSE,  /**< Spoke to Gorman blue house */
-    /*0x48*/ GOMAN_NEW_HOUSE,     /**< Spoke to Gorman red house */
-    /*0x49*/ OUTDOOR,             /**< Exited Link's house */
-    /*0x4a*/ POWERGLOVE_HINT,     /**< Spoke to Dr. Left Minish */
-    /*0x4b*/ ANJU_LV_BIT0,        /**< Cucco game 1 bit */
-    /*0x4c*/ ANJU_LV_BIT1,        /**< Cucco game 2 bit */
-    /*0x4d*/ ANJU_LV_BIT2,        /**< Cucco game 4 bit */
-    /*0x4e*/ ANJU_LV_BIT3,        /**< Cucco game 8 bit */
-    /*0x4f*/ ANJU_HEART,          /**< Cucco heart piece */
-    /*0x50*/ MAROYA_WAKEUP,       /**< undocumented */
-    /*0x51*/ ENDING,              /**< Vaati's wrath defeated */
-    /*0x52*/ WARP_1ST,            /**< Wind ocarina unlocked */
-    /*0x53*/ WARP_MONUMENT,       /**< First windcrest discovered */
-    /*0x54*/ DRUG_COUNT,          /**< Pico bloom minish items */
-    /*0x55*/ GAMECLEAR,           /**< Watched end cutscene */
-    /*0x56*/ WHITE_SWORD_END,     /**< Exit mines with white sword */
-    /*0x57*/ SOUGEN_06_HASHIGO,   /**< Boomerang cave ladder */
-    /*0x58*/ WARP_EVENT_END,      /**< Wind tribe tower state */
+    /*0x47*/ GOMAN_RENTED_HOUSE,  /**< Spoke to Gorman at Blue House */
+    /*0x48*/ GOMAN_NEW_HOUSE,     /**< Spoke to Gorman at Red House */
+    /*0x49*/ OUTDOOR,             /**< Exited Link's House */
+    /*0x4a*/ POWERGLOVE_HINT,     /**< Spoke to Minish */
+    /*0x4b*/ ANJU_LV_BIT0,        /**< Cucco game level +1 */
+    /*0x4c*/ ANJU_LV_BIT1,        /**< Cucco game level +2 */
+    /*0x4d*/ ANJU_LV_BIT2,        /**< Cucco game level +4 */
+    /*0x4e*/ ANJU_LV_BIT3,        /**< Cucco game level +8 */
+    /*0x4f*/ ANJU_HEART,          /**< Obtained Heart Piece */
+    /*0x50*/ MAROYA_WAKEUP,       /**< Waking up is Active */
+    /*0x51*/ ENDING,              /**< Vaati's Wrath defeated */
+    /*0x52*/ WARP_1ST,            /**< Ezlo talks after using Ocarina for first time */
+    /*0x53*/ WARP_MONUMENT,       /**< Ezlo talks about the first wind crest */
+    /*0x54*/ DRUG_COUNT,          /**< Gave Pico Bloom minish an item */
+    /*0x55*/ GAMECLEAR,           /**< Major Feat Accomplished */
+    /*0x56*/ WHITE_SWORD_END,     /**< Melari & Smiths' Moved to Rooms */
+    /*0x57*/ SOUGEN_06_HASHIGO,   /**< Ladder Appeared */
+    /*0x58*/ WARP_EVENT_END,      /**< Wind Tribe Tower State */
     /*0x59*/ FIGURE_ALLCOMP,      /**< Obtained Carlov Medal */
-    /*0x5a*/ AKINDO_BOTTLE_SELL,  /**< Bought bottle from scrub */
-    /*0x5b*/ BIN_DOGFOOD,         /**< undocumented */
+    /*0x5a*/ AKINDO_BOTTLE_SELL,  /**< Bought Bottle from Business Scrub */
+    /*0x5b*/ BIN_DOGFOOD,         /**< Gave Dog Food to Dog */
     /*0x5c*/ TINGLE_TALK1ST,      /**< Spoke to Tingle */
-    /*0x5d*/ SEIIKI_BGM,          /**< Elemental sanctuary BGM */
-    /*0x5e*/ ENTRANCE_0,          /**< Trunk entrance cutscene */
-    /*0x5f*/ ENTRANCE_1,          /**< Rock entrance cutscene */
-    /*0x60*/ ENTRANCE_2,          /**< Pot entrance cutscene */
-    /*0x61*/ MIZUKAKI_NECHAN,     /**< Spoke to librarian */
-    /*0x62*/ MAZE_CLEAR,          /**< Cleared Castle maze */
+    /*0x5d*/ SEIIKI_BGM,          /**< Tense music in Elemental Sanctuary */
+    /*0x5e*/ ENTRANCE_0,          /**< Seen Tree Trunk Minish Cutscene */
+    /*0x5f*/ ENTRANCE_1,          /**< Seen Crenel Rock Minish Cutscene */
+    /*0x60*/ ENTRANCE_2,          /**< Seen Pot Minish Cutscene */
+    /*0x61*/ MIZUKAKI_NECHAN,     /**< Spoke to Library Receptionist */
+    /*0x62*/ MAZE_CLEAR,          /**< Play Jingle When Exiting Maze from North */
     /*0x63*/ TINY_ENTRANCE,       /**< Ezlo described entrances */
-    /*0x64*/ CASTLE_BGM,          /**< Castle intro BGM */
+    /*0x64*/ CASTLE_BGM,          /**< Enter Castle Garden during intro */
     END,
 } Flag;
 
@@ -193,7 +193,7 @@ typedef enum {
     MIZUUMI_00_CAP_0,             /**< undocumented */
 #else
     HIKYOU_00_T0,                 /**< undocumented */
-    HIKYOU_00_T1,                 /**< undocumented */
+    HIKYOU_00_T1,                 /**< Blue L Kinstone Chest Open in Castor Wilds, behind west Eyegore */
 #endif
     MAENIWA_00_00,                /**< Ladder to Hyrule Castle Basement revealed in Hyrule Castle Garden */
     MAENIWA_00_01,                /**< undocumented */
@@ -222,7 +222,7 @@ typedef enum {
     HIKYOU_00_M1,                 /**< Red (> Kinstone Obtained in Castor Wilds, underwater */
     HIKYOU_00_M2,                 /**< Red 3 Prong Kinstone Obtained in Castor Wilds, underwater */
 #if !defined(EU) && !defined(JP) && !defined(DEMO_JP)
-    HIKYOU_00_T1,                 /**< undocumented */
+    HIKYOU_00_T1,                 /**< Blue L Kinstone Chest Open in Castor Wilds, behind west Eyegore */
 #endif
     LOST_00_ENTER,                /**< ??? in Wind Ruins */
     LOST_00_00,                   /**< Shortcut 1 Open in Wind Ruins */
@@ -239,13 +239,13 @@ typedef enum {
     LOST_05_00,                   /**< Defeated Armoses in Wind Ruins Running Armos */
     LOST_05_01,                   /**< Defeated Beetles & Ropes in Wind Ruins */
 #if !defined(JP) && !defined(EU) && !defined(DEMO_JP)
-    LOST_05_02,                   /**< undocumented */
-    LOST_05_03,                   /**< undocumented */
+    LOST_05_02,                   /**< Armos's defeated in Wind Ruins Running Armos */
+    LOST_05_03,                   /**< Ropes and Beetles defeated in Wind Ruins Running Armos */
 #endif
     LOST_05_T0,                   /**< 100 Rupee Chest Open in Wind Ruins */
     LOST_05_T1,                   /**< 50 Shell Chest Open in Wind Ruins */
-    MORI_00_HIBI_0,               /**< Left rock "blown up in Minish Woods */
-    MORI_00_HIBI_1,               /**< Right rock "blown up in Minish Woods */
+    MORI_00_HIBI_0,               /**< Left rock "blown up" in Minish Woods */
+    MORI_00_HIBI_1,               /**< Right rock "blown up" in Minish Woods */
     MORI_00_HIBI_2,               /**< Blew up left rock in Minish Woods */
     MORI_00_HIBI_3,               /**< Blew up middle rock in Minish Woods */
     MORI_00_HIBI_4,               /**< Blew up right rock in Minish Woods */
@@ -258,14 +258,14 @@ typedef enum {
     YAMA_01_BW00,                 /**< Great Fairy Fountain cave blown open in Mount Crenel Wall */
     YAMA_02_00,                   /**< Cave to Grip Ring Business Scrub blown open in Mount Crenel */
     YAMA_03_00,                   /**< Fairy Heart Piece cave blown open in Mount Crenel */
-    YAMA_03_01,                   /**< Crenel Mines" cave blown open in Mount Crenel */
+    YAMA_03_01,                   /**< "Crenel Mines" cave blown open in Mount Crenel */
     YAMA_03_02,                   /**< Heart Piece cave blown open in Mount Crenel */
-    YAMA_03_DOKU_0,               /**< Pathway tile to cave "blown up in Mount Crenel, front of Heart Piece cave */
-    YAMA_03_DOKU_1,               /**< Upper wall tile "blown up in Mount Crenel Wall Entrance */
-    YAMA_03_DOKU_2,               /**< Bottom wall tile "blown up in Mount Crenel Wall Entrance */
+    YAMA_03_DOKU_0,               /**< Pathway tile to cave "blown up" in Mount Crenel, front of Heart Piece cave */
+    YAMA_03_DOKU_1,               /**< Upper wall tile "blown up" in Mount Crenel Wall Entrance */
+    YAMA_03_DOKU_2,               /**< Bottom wall tile "blown up" in Mount Crenel Wall Entrance */
     YAMA_04_CAP_0,                /**< Ezlo talks about Whirlwind in Mount Crenel Base */
 #if !defined(JP) && !defined(EU) && !defined(DEMO_JP)
-    YAMA_04_CAP_1,                /**< undocumented */
+    YAMA_04_CAP_1,                /**< Ezlo talks after Crenel Minish Cutscene in Mount Crenel */
 #endif
     YAMA_04_R00,                  /**< Grabbed Red Rupee in Mount Crenel Base */
     YAMA_04_HIBI_0,               /**< undocumented */
@@ -298,7 +298,7 @@ typedef enum {
     SOUGEN_01_WAKAGI_9,           /**< Top bush cut east of Town entrance in South Hyrule Field */
     SOUGEN_01_WAKAGI_10,          /**< Middle bush cut east of Town entrance in South Hyrule Field */
     SOUGEN_01_WAKAGI_11,          /**< Bottom left bush cut east of Town entrance in South Hyrule Field */
-    SOUGEN_01_WAKAGI_12,          /**< Bottom right bush cut east of Town entrance (hidden behind tree) in South Hyrule Field */
+    SOUGEN_01_WAKAGI_12,          /**< Bottom right bush cut east of Town entrance  (hidden behind tree) in South Hyrule Field */
     SOUGEN_01_00,                 /**< Cave west of Town entrance blown open in South Hyrule Field */
     SOUGEN_01_BENT,               /**< Minish Tree Pegasus Bonked in South Hyrule Field */
     SOUGEN_01_ZELDA,              /**< Zelda enters Town in South Hyrule Field */
@@ -327,8 +327,8 @@ typedef enum {
     SOUGEN_06_WAKAGI_3,           /**< Bottom bush cut east of Town entrance in Outside Castle */
     SOUGEN_06_HIBI_0,             /**< Blew up left rock to Veil Falls in Outside Castle */
     SOUGEN_06_HIBI_1,             /**< Blew up right rock to Veil Falls in Outside Castle */
-    SOUGEN_06_HIBI_2,             /**< Left fence piece "blown up in Outside Castle */
-    SOUGEN_06_HIBI_3,             /**< Right fence piece "blown up in Outside Castle */
+    SOUGEN_06_HIBI_2,             /**< Left fence piece "blown up" in Outside Castle */
+    SOUGEN_06_HIBI_3,             /**< Right fence piece "blown up" in Outside Castle */
     SOUGEN_06_HIBI_4,             /**< Blew up west rock in Outside Castle */
     SOUGEN_06_IWA_0,              /**< Minish Hole Open in Outside Castle, East Rock */
     SOUGEN_06_AKINDO,             /**< Defeated Deku Scrub in Outside Castle */
@@ -363,10 +363,10 @@ typedef enum {
     SUIGEN_00_r2,                 /**< Obtained Red Rupee (Bottom right) in Veil Falls Outside East Digging Cave */
     SUIGEN_00_CAP_0,              /**< Ezlo talks about waterfall in Veil Falls, near Kinstone door */
     SUIGEN_00_CAP_1,              /**< undocumented */
-    SUIGEN_00_R0,                 /**< Obtained hidden 50 Rupee in Veil Falls, rock circle */
-    SUIGEN_00_R1,                 /**< undocumented */
+    SUIGEN_00_R0,                 /**< Obtained hidden 50 Rupee digging spot in Veil Falls, rock circle */
+    SUIGEN_00_R1,                 /**< Obtained hidden middle digging spot in Veil Falls, past likelike */
 #if !defined(JP) && !defined(EU) && !defined(DEMO_JP)
-    SUIGEN_00_R2,                 /**< undocumented */
+    SUIGEN_00_R2,                 /**< Dig up the Big Green Rupee below the blue Rupee Like in Veil Falls */
 #endif
     SUIGEN_00_h1,                 /**< Obtained Heart Piece in Veil Falls South */
     SUIGENGORON_00_CAP_0,         /**< Ezlo talks about vortex in Veil Springs */
@@ -378,15 +378,15 @@ typedef enum {
     BEANDEMO_03,                  /**< Eastern Hills Beanstalk has grown in Eastern Hills, Minish house, fuse with minish */
     BEANDEMO_04,                  /**< Western Wood Beanstalk has grown in Western Wood, Minish house, fuse with minish */
     KAKERA_TAKARA_A,              /**< Bottle Chest Opened in Eastern Hills */
-    KAKERA_TAKARA_E,              /**< Blue S Kinstone Chest Open in Minish Woods, northwest */
+    KAKERA_TAKARA_E,              /**< Blue S Kinstone West Chest Open in Minish Woods */
 #if !defined(JP) && !defined(EU) && !defined(DEMO_JP)
-    KAKERA_TAKARA_J,              /**< undocumented */
+    KAKERA_TAKARA_J,              /**< Blue S Kinstone Near Belari Chest Open in Minish Woods */
 #endif
     KAKERA_TAKARA_K,              /**< Bomb Bag Chest Open in Wind Ruins, near entrance to Fortress of Winds */
-    KAKERA_TAKARA_L,              /**< Red W Kinstone Chest Open in Minish Woods */
-    KAKERA_TAKARA_M,              /**< Red (> Kinstone Chest Open in Trilby Highlands */
-    KAKERA_TAKARA_N,              /**< Red 3 Prong Kinstone Chest Open in Minish Woods */
-    KAKERA_TAKARA_O,              /**< 200 Rupee Chest Opened in Minish Woods */
+    KAKERA_TAKARA_L,              /**< Red W Kinstone East Chest Open in Minish Woods */
+    KAKERA_TAKARA_M,              /**< Red (> Kinstone North Chest Open in Trilby Highlands */
+    KAKERA_TAKARA_N,              /**< Red 3 Prong Kinstone Near Dungeon Chest Open in Minish Woods */
+    KAKERA_TAKARA_O,              /**< 200 Rupee North Chest Opened in Minish Woods */
     KAKERA_TAKARA_P,              /**< 200 Shell Chest Open in South Hyrule Field */
     KAKERA_TAKARA_Q,              /**< Red 3 Prong Kinstone Chest Open in Royal Valley Graveyard, northwest chest */
     KAKERA_TAKARA_R,              /**< Red (> Kinstone Chest Open in Royal Valley Graveyard, northeast chest */
@@ -396,7 +396,7 @@ typedef enum {
     KAKERA_TAKARA_V,              /**< Blue S Kinstone Chest Open in Veil Falls */
     KAKERA_TAKARA_W,              /**< Blue L Kinstone Chest Open in Mt. Crenel */
     KAKERA_TAKARA_X,              /**< 200 Rupee Chest Open in Crenel base */
-    KAKERA_TAKARA_Y,              /**< 200 Shell Chest Open in Wind Ruins Tektite Room */
+    KAKERA_TAKARA_Y,              /**< 200 Shell Chest Open in Wind Ruins Pillar Room */
     KAKERA_TAKARA_Z,              /**< undocumented */
     MACHI_02_HEISHI_TALK,         /**< Spoke to Westside Soldier in Hyrule Town */
     MACHI00_00,                   /**< Flipped Minish Pot in Hyrule Town, Top of Library */
@@ -406,7 +406,7 @@ typedef enum {
     MACHI_00_T01,                 /**< Opened Red W Kinstone Chest in Hyrule Town, Top of School */
     MACHI_01_DEMO,                /**< Lolly and Candy Moved in Hyrule Town, Festival */
     MACHI_02_HEISHI,              /**< Showed Spin Attack to Westside Soldier in Hyrule Town */
-    MACHI_02_DOG,                 /**< Talk to dog as minish */
+    MACHI_02_DOG,                 /**< Talked to Growler as Minish in Hyrule Town */
     MACHI_07_BELL,                /**< Obtained Heart Piece in Bell in Hyrule Town */
     SHOP05_OPEN,                  /**< Figurine House Open in Hyrule Town */
     MACHI_MES_20,                 /**< Talked to gossip woman (right of well) in Hyrule Town */
@@ -418,7 +418,7 @@ typedef enum {
     MACHI_MES_40,                 /**< Talked to man near mushroom house in Hyrule Town, State 5 */
     MACHI_MES_60,                 /**< Spoke to Jasmine (Woman outside Cafe) in Hyrule Town */
     MACHI_MES_50,                 /**< Spoke to Herb (Figurine House Owner) in Hyrule Town */
-    MACHI_DOG_C,                  /**< Seen all dog dialogue */
+    MACHI_DOG_C,                  /**< Talked to Growler as Human in Hyrule Town, near stairs */
     KUMOUE_00_CAP_0,              /**< Ezlo talks about Wind Tribe Tower in Cloud Tops 3F */
     KUMOUE_01_CAP_0,              /**< Ezlo talks about Wind Tribe Tower in Cloud Tops 2F */
     KUMOUE_01_T0,                 /**< East Gold E Kinstone Chest Open in Cloud Tops 2F East */
@@ -443,9 +443,9 @@ typedef enum {
     KUMOUE_02_AWASE_04,           /**< Middle Pinwheel Spinning in Cloud Tops, fuse with Middle Cloud */
     KUMOUE_02_AWASE_05,           /**< Bottom Right Pinwheel Spinning in Cloud Tops, fuse with Bottom Right Cloud */
     KUMOUE_02_00,                 /**< Defeated Top Cloud Piranhas in Cloud Tops North */
-    KUMOUE_02_01,                 /**< Obtained Top Gold Î£ Kinstone in Cloud Tops, Top Piranhas */
+    KUMOUE_02_01,                 /**< Obtained Top Gold Σ Kinstone in Cloud Tops, Top Piranhas */
     KUMOUE_02_02,                 /**< Defeated Bottom Cloud Piranhas in Cloud Tops South */
-    KUMOUE_02_03,                 /**< Obtained Bottom Î£ Gold Kinstone in Cloud Tops, Bottom Piranhas */
+    KUMOUE_02_03,                 /**< Obtained Bottom Σ Gold Kinstone in Cloud Tops, Bottom Piranhas */
     KUMOUE_UNCLE_TALK,            /**< Talked to Gale in Cloud Tops Entrance */
     KUMOUE_GIRL_TALK,             /**< Talked to Hailey in Cloud Tops Entrance */
 #if !defined(JP) && !defined(EU) && !defined(DEMO_JP)
@@ -455,11 +455,11 @@ typedef enum {
     KS_C25,                       /**< undocumented */
 #else
     MIZUUMI_00_CAP_0,             /**< undocumented */
-    SUIGEN_00_R2,                 /**< undocumented */
-    YAMA_04_CAP_1,                /**< undocumented */
-    LOST_05_02,                   /**< undocumented */
-    LOST_05_03,                   /**< undocumented */
-    KAKERA_TAKARA_J,              /**< undocumented */
+    SUIGEN_00_R2,                 /**< Dig up the Big Green Rupee below the blue Rupee Like in Veil Falls */
+    YAMA_04_CAP_1,                /**< Ezlo talks after Crenel Minish Cutscene in Mount Crenel */
+    LOST_05_02,                   /**< Armos's defeated in Wind Ruins Running Armos */
+    LOST_05_03,                   /**< Ropes and Beetles defeated in Wind Ruins Running Armos */
+    KAKERA_TAKARA_J,              /**< Blue S Kinstone Near Belari Chest Open in Minish Woods */
 #endif
 #ifdef DEMO_JP
     KS_WARPUSE,                   /**< undocumented */
@@ -469,9 +469,9 @@ typedef enum {
 
 typedef enum {
     BEGIN_2,                      
-    BILL05_YADO1F_MATSU_T0,       /**< Luxury Room" Chest Open in Hyrule Town, Happy Hearth */
-    BILL06_YADO1F_TAKE_T0,        /**< Regular Room" Chest Open in Hyrule Town, Happy Hearth */
-    BILL07_YADO1F_UME_T0,         /**< Cheap Room" Chest Open in Hyrule Town, Happy Hearth */
+    BILL05_YADO1F_MATSU_T0,       /**< "Luxury Room" Chest Open in Hyrule Town, Happy Hearth */
+    BILL06_YADO1F_TAKE_T0,        /**< "Regular Room" Chest Open in Hyrule Town, Happy Hearth */
+    BILL07_YADO1F_UME_T0,         /**< "Cheap Room" Chest Open in Hyrule Town, Happy Hearth */
     BILL0A_YADO_TAKARA_T0,        /**< undocumented */
     SHOUSE_00_T0,                 /**< Green (< Kinstone Chest Open in Wind Tribe Tower 1F Left Chest */
     SHOUSE_00_T1,                 /**< Green Rectangle Kinstone Chest Open in Wind Tribe Tower 1F Right Chest */
@@ -486,7 +486,7 @@ typedef enum {
     SHOUSE_03_T1,                 /**< Red 3 Prong Chest Open in Wind Tribe Tower 4F Right Chest */
     KOBITOANA_06_T0,              /**< Bow Chest Open in Castor Wilds */
     KOBITOANA_03_T0,              /**< Red (> Kinstone Chest Open in Mount Crenel Minish Hole near Bean */
-    KOBITOANA_07_T0,              /**< Red 3 Prong Chest Open in Wind Ruins Minish Hole */
+    KOBITOANA_07_T0,              /**< Red 3 Prong Chest Open in Wind Ruins Entrance Minish Hole */
     KOBITOANA_09_T0,              /**< Blue S Kinstone Chest Open in Castor Wilds North Minish Hole */
     KOBITOANA_0A_T0,              /**< Red W Kinstone Chest Open in Castor Wilds West Minish Hole */
     KOBITOANA_0B_T0,              /**< Red (> Kinstone Chest Open in Castor Wilds Middle Minish Hole */
@@ -588,7 +588,7 @@ typedef enum {
     MIZUKAKI_STAIR_WARP_OK,       /**< Screen fades out to the Flipper Cave in Hyrule Town Library, Librari's Book House */
     KHOUSE27_00,                  /**< undocumented */
     NO_USE_00,                    /**< undocumented */
-    KHOUSE51_00,                  /**< Got 50 Rupees from the bottom minish for returning the books in Hyrule Town Library, Minish Bookshelf */
+    KHOUSE51_00,                  /**< Got 50 Rupees from the bottom minish  for returning the books in Hyrule Town Library, Minish Bookshelf */
     NO_USE_01,                    /**< undocumented */
     KHOUSE51_02,                  /**< Spoke to Librari in Hyrule Town Library, Librari's Book House Before Book Quest */
     KHOUSE42_00,                  /**< Spoke to Minish in Hyrule Town, Dr. Left's House After obtaining Power Bracelets */
@@ -632,7 +632,7 @@ typedef enum {
     BILL0B_DOUZOU_L,              /**< undocumented */
     BILL0B_DOUZOU_R,              /**< undocumented */
     KOBITOANA_08_T0,              /**< Blue L Kinstone Chest Open in Minish Woods South Minish Hole, shared fuse */
-    KOBITOANA_0C_T0,              /**< Red 3 Prong Kinstone Chest Open in Wind Ruins Pillar Room Minish Hole */
+    KOBITOANA_0C_T0,              /**< Red 3 Prong Kinstone Chest Open in Wind Ruins Tektite Room Minish Hole */
     KOBITOANA_0D_T0,              /**< Red W Kinstone Chest Open in Castor Wilds, Minish Hole next to Bow */
     KOBITOHOUSE_23_H0,            /**< undocumented */
     MHOUSE08_DANRO,               /**< undocumented */
@@ -640,7 +640,7 @@ typedef enum {
     MHOUSE0A_DANRO,               /**< Put out Fireplace in Hyrule Town, Blue Oracle House (Nayru?) */
     MHOUSE0B_DANRO,               /**< Put out Fireplace in Hyrule Town, Blue Oracle House (Din?) */
     MHOUSE0C_DANRO,               /**< undocumented */
-    MHOUSE12_DANRO,               /**< Put out Fireplace in DampÃ©'s Hut */
+    MHOUSE12_DANRO,               /**< Put out Fireplace in Dampé's Hut */
     SORA_DANRO,                   /**< Put out Fireplace in Wind Tribe Tower 1F */
     MIZUKAKI_HINT3_MAP,           /**< Spoke with the minish after talking to Hagen in Hyrule Town, Mayor Hagen's House */
     LEFT_TALK,                    /**< Spoke to Dr. Left inside his house in Hyrule Town, Dr. Left's House */
@@ -668,14 +668,14 @@ typedef enum {
     BILL_02_CAP_0,                /**< Ezlo talks about books in Hyrule Town Library 2F, bottom right bookshelf */
     MHOUSE_07_CAP_0,              /**< Ezlo talks about cat 1 in Hyrule Town, Julietta's House */
     MHOUSE_07_CAP_1,              /**< Ezlo talks about cat 2 in Hyrule Town, Julietta's House */
-    MHOUSE_10_CAP_0,              /**< links house entrance*/
-    MHOUSE_15_CAP_0,              /**< links bedroom*/
+    MHOUSE_10_CAP_0,              /**< Ezlo talks about Link's House in Link's House, entrace */
+    MHOUSE_15_CAP_0,              /**< Ezlo talks about Link's bed in Link's House, bedroom */
     MHOUSE_15_CAP_1,              /**< Ezlo talks about something being unusual in Link's House, bottom left corner of bedroom */
     SHOP_03_CAP_0,                /**< Ezlo talks about pastries in Hyrule Town Bakery */
     MHOUSE_07_CAP_2,              /**< Ezlo talks about library book in Hyrule Town, Julietta's House */
 #ifndef EU
-    SHOP00_BOMBBAG,               /**< undocumented */
-    CAFE_01_CAP_1,                /**< undocumented */
+    SHOP00_BOMBBAG,               /**< Bought Bomb Bag in Hyrule Town Shop */
+    CAFE_01_CAP_1,                /**< Ezlo talks about using items on people with R in Rem's Shoe Shop */
 #endif
 #if !defined(EU) && !defined(JP) && !defined(DEMO_JP)
     KS_A02,                       /**< undocumented */
@@ -892,7 +892,7 @@ typedef enum {
     LV4_HAKA_08_K0,               /**< Obtained Small Key in Royal Crypt Entrance */
     MAROYA_1ST,                   /**< undocumented */
 #ifndef EU
-    MACHI_CHIKA2_10_CAP_0,        /**< undocumented */
+    MACHI_CHIKA2_10_CAP_0,        /**< Ezlo talks after Flippers in Hyrule Town Sewer Flippers Room */
 #endif
 #if !defined(EU) && !defined(JP) && !defined(DEMO_JP)
     KS_C02,                       /**< undocumented */
@@ -964,7 +964,7 @@ typedef enum {
     YAMADOUKUTU_02_00,            /**< Bridge Button Activated in Mount Crenel Bridge Cave */
     YAMADOUKUTU_03_T0,            /**< Blue S Kinstone Chest Open in Mount Crenel Pillar Cave */
     YAMADOUKUTU_06_H0,            /**< undocumented */
-    YAMADOUKUTU_07_T0,            /**< Blue L Kinstone Chest Open in Crenel Mines" cave */
+    YAMADOUKUTU_07_T0,            /**< Blue L Kinstone Chest Open in "Crenel Mines" cave */
     YAMADOUKUTU_08_h0,            /**< Obtained Heart Piece in Mount Crenel Heart Piece Cave */
     YAMADOUKUTU_08_h1,            /**< Blue S Kinstone Chest Open in Mount Crenel Heart Piece Cave */
     YAMADOUKUTU_08_h2,            /**< 50 Rupee Chest Open in Mount Crenel Heart Piece Cave */
@@ -1049,26 +1049,26 @@ typedef enum {
 
 typedef enum {
     BEGIN_5,
-    LV1_00_WALK,                  /**< Visited Room 13 in Deepwood Shrine 13 (Madderpillar) */
-    LV1_01_WALK,                  /**< Visited Room 12 in Deepwood Shrine 12 (To Madderpillar) */
-    LV1_02_WALK,                  /**< Visited Room 11 in Deepwood Shrine 11 (Stairs to B2) */
-    LV1_03_WALK,                  /**< Visited Room 6 in Deepwood Shrine 6 (Pressure Button Bridge) */
-    LV1_04_WALK,                  /**< Visited Room 7 in Deepwood Shrine 7 (Double Pillar Small Key) */
-    LV1_05_WALK,                  /**< Visited Room 5 in Deepwood Shrine 5 (Heart Piece & Map) */
-    LV1_06_WALK,                  /**< Visited Room 4 in Deepwood Shrine 4 (Barrel) */
-    LV1_07_WALK,                  /**< Visited Room 8 in Deepwood Shrine 8 (Mushrooms) */
-    LV1_08_WALK,                  /**< Visited Room 10 in Deepwood Shrine 10 (Mulldozer Fight) */
-    LV1_09_WALK,                  /**< Visited Room 9 in Deepwood Shrine 9 (Pillars & Slugs) */
-    LV1_0A_WALK,                  /**< Visited Room 3 in Deepwood Shrine 3 (Bridge & Mushroom) */
-    LV1_0B_WALK,                  /**< Visited Entrance in Deepwood Shrine 1 (Entrance) */
-    LV1_10_WALK,                  /**< Visited Room 2 in Deepwood Shrine 2 (Slug & Torches) */
-    LV1_11_WALK,                  /**< Visited Room 17 in Deepwood Shrine 17 (Boss Key) */
-    LV1_12_WALK,                  /**< Visited Room 16 in Deepwood Shrine 16 (Lilypad North) */
+    LV1_00_WALK,                  /**< Map Screen, Visited Room 13 in Deepwood Shrine 13 (Madderpillar) */
+    LV1_01_WALK,                  /**< Map Screen, Visited Room 12 in Deepwood Shrine 12 (To Madderpillar) */
+    LV1_02_WALK,                  /**< Map Screen, Visited Room 11 in Deepwood Shrine 11 (Stairs to B2) */
+    LV1_03_WALK,                  /**< Map Screen, Visited Room 6 in Deepwood Shrine 6 (Pressure Button Bridge) */
+    LV1_04_WALK,                  /**< Map Screen, Visited Room 7 in Deepwood Shrine 7 (Double Pillar Small Key) */
+    LV1_05_WALK,                  /**< Map Screen, Visited Room 5 in Deepwood Shrine 5 (Heart Piece & Map) */
+    LV1_06_WALK,                  /**< Map Screen, Visited Room 4 in Deepwood Shrine 4 (Barrel) */
+    LV1_07_WALK,                  /**< Map Screen, Visited Room 8 in Deepwood Shrine 8 (Mushrooms) */
+    LV1_08_WALK,                  /**< Map Screen, Visited Room 10 in Deepwood Shrine 10 (Mulldozer Fight) */
+    LV1_09_WALK,                  /**< Map Screen, Visited Room 9 in Deepwood Shrine 9 (Pillars & Slugs) */
+    LV1_0A_WALK,                  /**< Map Screen, Visited Room 3 in Deepwood Shrine 3 (Bridge & Mushroom) */
+    LV1_0B_WALK,                  /**< Map Screen, Visited Entrance in Deepwood Shrine 1 (Entrance) */
+    LV1_10_WALK,                  /**< Map Screen, Visited Room 2 in Deepwood Shrine 2 (Slug & Torches) */
+    LV1_11_WALK,                  /**< Map Screen, Visited Room 17 in Deepwood Shrine 17 (Boss Key) */
+    LV1_12_WALK,                  /**< Map Screen, Visited Room 16 in Deepwood Shrine 16 (Lilypad North) */
     LV1_13_WALK,                  /**< undocumented */
-    LV1_14_WALK,                  /**< Visited Room 14 in Deepwood Shrine 14 (Lilypad West) */
-    LV1_15_WALK,                  /**< Visited Room 15 in Deepwood Shrine 15 (Lilypad East) */
-    LV1_16_WALK,                  /**< Visited Room 19 in Deepwood Shrine 19 (Big Green Chuchu) */
-    LV1_17_WALK,                  /**< Visited Room 18 in Deepwood Shrine 18 (Boss Door) */
+    LV1_14_WALK,                  /**< Map Screen, Visited Room 14 in Deepwood Shrine 14 (Lilypad West) */
+    LV1_15_WALK,                  /**< Map Screen, Visited Room 15 in Deepwood Shrine 15 (Lilypad East) */
+    LV1_16_WALK,                  /**< Map Screen, Visited Room 19 in Deepwood Shrine 19 (Big Green Chuchu) */
+    LV1_17_WALK,                  /**< Map Screen, Visited Room 18 in Deepwood Shrine 18 (Boss Door) */
     LV1_TARU_0,                   /**< Left Buttons Pressed in Deepwood Shrine 4 (Barrel) */
     LV1_TARU_1,                   /**< Right Button Pressed in Deepwood Shrine 4 (Barrel) */
     LV1_00_00,                    /**< Defeated Madderpillar in Deepwood Shrine 13 (Madderpillar) */
@@ -1142,25 +1142,25 @@ typedef enum {
 
 typedef enum {
     BEGIN_6,
-    LV2_00_WALK,                  /**< Visited Room 12 in Cave of Flames 12 (Stairs to B2) */
-    LV2_01_WALK,                  /**< Visited Room 11 in Cave of Flames 11 (Spiny Chu Fight) */
-    LV2_02_WALK,                  /**< Visited Room 10 in Cave of Flames 10 (Lava Minecart) */
-    LV2_03_WALK,                  /**< Visited Entrance in Cave of Flames 1 (Entrance) */
-    LV2_04_WALK,                  /**< Visited Room 5 in Cave of Flames 5 (Minecart) */
-    LV2_05_WALK,                  /**< Visited Room 4 in Cave of Flames 4 (Rupee Like) */
-    LV2_06_WALK,                  /**< Visited Room 6 in Cave of Flames 6 (B1 West) */
-    LV2_07_WALK,                  /**< Visited Room 7 in Cave of Flames 7 (Helmasaurs) */
-    LV2_08_WALK,                  /**< Visited Room 9 in Cave of Flames 9 (Whirlwind) */
-    LV2_09_WALK,                  /**< Visited Room 8 in Cave of Flames 8 (Minish Lava) */
-    LV2_10_WALK,                  /**< Visited Room 13 in Cave of Flames 13 (Minish Spike Traps) */
-    LV2_11_WALK,                  /**< Visited Room 14 in Cave of Flames 14 (Quad Rollobite) */
-    LV2_12_WALK,                  /**< Visited Room 18 in Cave of Flames 18 (Hole to Gleerok) */
-    LV2_13_WALK,                  /**< Visited Room 16 in Cave of Flames 16 (Pacci Whirlwind) */
-    LV2_14_WALK,                  /**< Visited Room 17 in Cave of Flames 17 (Spike Trap Kinstone) */
-    LV2_15_WALK,                  /**< Visited Room 3 in Cave of Flames 3 (Spinies) */
-    LV2_16_WALK,                  /**< Visited Room 1 in Cave of Flames 2 (Bob-ombs) */
-    LV2_17_WALK,                  /**< Visited Room 15 in Cave of Flames 15 (Boss Key Room) */
-    LV2_BOSS_00_WALK,             /**< Visited Room 19 in Cave of Flames 19 (Gleerok) */
+    LV2_00_WALK,                  /**< Map Screen, Visited Room 12 in Cave of Flames 12 (Stairs to B2) */
+    LV2_01_WALK,                  /**< Map Screen, Visited Room 11 in Cave of Flames 11 (Spiny Chu Fight) */
+    LV2_02_WALK,                  /**< Map Screen, Visited Room 10 in Cave of Flames 10 (Lava Minecart) */
+    LV2_03_WALK,                  /**< Map Screen, Visited Entrance in Cave of Flames 1 (Entrance) */
+    LV2_04_WALK,                  /**< Map Screen, Visited Room 5 in Cave of Flames 5 (Minecart) */
+    LV2_05_WALK,                  /**< Map Screen, Visited Room 4 in Cave of Flames 4 (Rupee Like) */
+    LV2_06_WALK,                  /**< Map Screen, Visited Room 6 in Cave of Flames 6 (B1 West) */
+    LV2_07_WALK,                  /**< Map Screen, Visited Room 7 in Cave of Flames 7 (Helmasaurs) */
+    LV2_08_WALK,                  /**< Map Screen, Visited Room 9 in Cave of Flames 9 (Whirlwind) */
+    LV2_09_WALK,                  /**< Map Screen, Visited Room 8 in Cave of Flames 8 (Minish Lava) */
+    LV2_10_WALK,                  /**< Map Screen, Visited Room 13 in Cave of Flames 13 (Minish Spike Traps) */
+    LV2_11_WALK,                  /**< Map Screen, Visited Room 14 in Cave of Flames 14 (Quad Rollobite) */
+    LV2_12_WALK,                  /**< Map Screen, Visited Room 18 in Cave of Flames 18 (Hole to Gleerok) */
+    LV2_13_WALK,                  /**< Map Screen, Visited Room 16 in Cave of Flames 16 (Pacci Whirlwind) */
+    LV2_14_WALK,                  /**< Map Screen, Visited Room 17 in Cave of Flames 17 (Spike Trap Kinstone) */
+    LV2_15_WALK,                  /**< Map Screen, Visited Room 3 in Cave of Flames 3 (Spinies) */
+    LV2_16_WALK,                  /**< Map Screen, Visited Room 1 in Cave of Flames 2 (Bob-ombs) */
+    LV2_17_WALK,                  /**< Map Screen, Visited Room 15 in Cave of Flames 15 (Boss Key Room) */
+    LV2_BOSS_00_WALK,             /**< Map Screen, Visited Room 19 in Cave of Flames 19 (Gleerok) */
     LV2_00_00,                    /**< Opened Stairs Door in Cave of Flames 12 (Stairs to B2) */
     LV2_00_01,                    /**< Hit Door Button in Cave of Flames 12 (Stairs to B2) */
     LV2_01_01,                    /**< Defeated Spiny Chus in Cave of Flames 11 (Spiny Chu Fight) */
@@ -1215,32 +1215,32 @@ typedef enum {
 
 typedef enum {
     BEGIN_7,
-    LV3_00_WALK,                  /**< Visited Room in Fortress of Winds, Left Side 3F Eyegores */
-    LV3_01_WALK,                  /**< Visited Room in Fortress of Winds, Before Mazaal */
-    LV3_02_WALK,                  /**< Visited Room in Fortress of Winds, Right Side 3F Key */
-    LV3_03_WALK,                  /**< Visited Room in Fortress of Winds, Left Side 3F Pit Platforms */
-    LV3_04_WALK,                  /**< Visited Room in Fortress of Winds, Left Side 3F Key */
+    LV3_00_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Left Side 3F Eyegores */
+    LV3_01_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Before Mazaal */
+    LV3_02_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Right Side 3F Key */
+    LV3_03_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Left Side 3F Pit Platforms */
+    LV3_04_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Left Side 3F Key */
     LV3_05_WALK,                  /**< undocumented */
     LV3_06_WALK,                  /**< undocumented */
-    LV3_10_WALK,                  /**< Visited Room in Fortress of Winds, Center Door 2F Darknut */
-    LV3_11_WALK,                  /**< Visited Room in Fortress of Winds, Center Door 2F Eyes */
-    LV3_12_WALK,                  /**< Visited Room in Fortress of Winds, Center Door 2F Pit Hall Left */
-    LV3_13_WALK,                  /**< Visited Room in Fortress of Winds, Center Door 2F Wallmasters */
-    LV3_14_WALK,                  /**< Visited Room in Fortress of Winds, Center Door 2F Pillar Clone Buttons */
-    LV3_15_WALK,                  /**< Visited Room in Fortress of Winds, Center Door 2F Spike Traps */
-    LV3_16_WALK,                  /**< Visited Room in Fortress of Winds, Mazaal */
-    LV3_17_WALK,                  /**< Visited Room in Fortress of Winds, Left Side 2F Stalfos */
-    LV3_18_WALK,                  /**< Visited Room in Fortress of Winds, Left Side 2F Eyes */
-    LV3_19_WALK,                  /**< Visited Room in Fortress of Winds, Center Door 2F */
-    LV3_1A_WALK,                  /**< Visited Room in Fortress of Winds, Center Door 2F Minish Hole to Key */
-    LV3_1B_WALK,                  /**< Visited Room in Fortress of Winds, Center Door 2F Boss Key */
-    LV3_1C_WALK,                  /**< Visited Room in Fortress of Winds, Left Side 2F */
-    LV3_1D_WALK,                  /**< Visited Room in Fortress of Winds, Right Side 2F */
-    LV3_20_WALK,                  /**< Visited Room in Fortress of Winds, Left Door */
-    LV3_21_WALK,                  /**< Visited Room in Fortress of Winds, Center Door */
-    LV3_22_WALK,                  /**< Visited Room in Fortress of Winds, Right Door */
-    LV3_23_WALK,                  /**< Visited Room in Fortress of Winds, Leftmost Door Wizzrobes */
-    LV3_24_WALK,                  /**< Visited Room in Fortress of Winds, Rightmost Door Heart Piece */
+    LV3_10_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Center Door 2F Darknut */
+    LV3_11_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Center Door 2F Eyes */
+    LV3_12_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Center Door 2F Pit Hall Left */
+    LV3_13_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Center Door 2F Wallmasters */
+    LV3_14_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Center Door 2F Pillar Clone Buttons */
+    LV3_15_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Center Door 2F Spike Traps */
+    LV3_16_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Mazaal */
+    LV3_17_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Left Side 2F Stalfos */
+    LV3_18_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Left Side 2F Eyes */
+    LV3_19_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Center Door 2F */
+    LV3_1A_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Center Door 2F Minish Hole to Key */
+    LV3_1B_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Center Door 2F Boss Key */
+    LV3_1C_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Left Side 2F */
+    LV3_1D_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Right Side 2F */
+    LV3_20_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Left Door */
+    LV3_21_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Center Door */
+    LV3_22_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Right Door */
+    LV3_23_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Leftmost Door Wizzrobes */
+    LV3_24_WALK,                  /**< Map Screen, Visited Room in Fortress of Winds, Rightmost Door Heart Piece */
     LV3_00_00,                    /**< Defeated Eyegores in Fortress of Winds, Left Side 3F Eyegores */
     LV3_00_T0,                    /**< Compass Chest Open in Fortress of Winds, Left Side 3F Eyegores */
     LV3_02_00,                    /**< Door Open in Fortress of Winds, Right Side Key Boss Key Side */
@@ -1293,46 +1293,46 @@ typedef enum {
 
 typedef enum {
     BEGIN_8,
-    LV4_00_WALK,                  /**< Visited Room in Temple of Droplets West Hole to Boss Key */
-    LV4_01_WALK,                  /**< Visited Room in Temple of Droplets North Split to Keys */
-    LV4_02_WALK,                  /**< Visited Room in Temple of Droplets East Hole to Key */
-    LV4_03_WALK,                  /**< Visited Room in Temple of Droplets Entrance */
-    LV4_04_WALK,                  /**< Visited Room in Temple of Droplets Stairs to West Lever */
-    LV4_05_WALK,                  /**< Visited Room in Temple of Droplets Scissors Beetle Miniboss */
-    LV4_06_WALK,                  /**< Visited Room in Temple of Droplets West Waterfall Northwest */
-    LV4_07_WALK,                  /**< Visited Room in Temple of Droplets West Waterfall Northeast */
-    LV4_08_WALK,                  /**< Visited Room in Temple of Droplets Main Room */
-    LV4_09_WALK,                  /**< Visited Room in Temple of Droplets Corner from Beetle Miniboss */
-    LV4_0A_WALK,                  /**< Visited Room in Temple of Droplets Ice Pit Maze */
-    LV4_0B_WALK,                  /**< Visited Room in Temple of Droplets, Hole to Blue Chuchu Key */
-    LV4_0C_WALK,                  /**< Visited Room in Temple of Droplets West Waterfall Southwest */
-    LV4_0D_WALK,                  /**< Visited Room in Temple of Droplets West Waterfall Southeast */
-    LV4_0E_WALK,                  /**< Visited Room in Temple of Droplets, Big Octorok */
-    LV4_0F_WALK,                  /**< Visited Room in Temple of Droplets, Door to Big Blue Chuchu */
-    LV4_10_WALK,                  /**< Visited Room in Temple of Droplets Big Blue Chuchu */
-    LV4_11_WALK,                  /**< Visited Room in Temple of Droplets Blue Chuchu Key */
-    LV4_20_WALK,                  /**< Visited Room in Temple of Droplets Boss Key Room */
-    LV4_21_WALK,                  /**< Visited Room in Temple of Droplets Key 1 Room */
-    LV4_22_WALK,                  /**< Visited Room in Temple of Droplets Block Clone Button Puzzle */
-    LV4_23_WALK,                  /**< Visited Room in Temple of Droplets Block Clone Puzzle 1 */
-    LV4_24_WALK,                  /**< Visited Room in Temple of Droplets Block Clone Ice Bridge */
-    LV4_25_WALK,                  /**< Visited Room in Temple of Droplets Stairs to Beetle Miniboss */
-    LV4_26_WALK,                  /**< Visited Room in Temple of Droplets Spikebars after 9 Lantern */
-    LV4_27_WALK,                  /**< Visited Room in Temple of Droplets 9 Lantern Room */
-    LV4_28_WALK,                  /**< Visited Room in Temple of Droplets Lilypad Ice Blocks */
-    LV4_29_WALK,                  /**< Visited Room in Temple of Droplets The 1 Frame Roll */
-    LV4_2A_WALK,                  /**< Visited Room in Temple of Droplets Mulldozers & Firebars */
-    LV4_2B_WALK,                  /**< Visited Room in Temple of Droplets Dark Lantern Maze */
-    LV4_2C_WALK,                  /**< Visited Room in Temple of Droplets Twin Madderpillars */
-    LV4_2D_WALK,                  /**< Visited Room in Temple of Droplets After Twin Madderpillars */
-    LV4_2E_WALK,                  /**< Visited Room in Temple of Droplets Blue Chuchu Key Lever */
-    LV4_2F_WALK,                  /**< Visited Room in Temple of Droplets Mulldozer Key Room */
-    LV4_30_WALK,                  /**< Visited Room in Temple of Droplets Bombwall to Twin Madderpillars */
-    LV4_31_WALK,                  /**< Visited Room in Temple of Droplets Lilypad B2 West */
-    LV4_32_WALK,                  /**< Visited Room in Temple of Droplets Compass Room */
-    LV4_33_WALK,                  /**< Visited Room in Temple of Droplets 4 Lantern Scissors Beetles */
-    LV4_34_WALK,                  /**< Visited Room in Temple of Droplets Lilypad B2 Middle Room */
-    LV4_35_WALK,                  /**< Visited Room in Temple of Droplets Lilypad B2 East Madderpillar */
+    LV4_00_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets West Hole to Boss Key */
+    LV4_01_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets North Split to Keys */
+    LV4_02_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets East Hole to Key */
+    LV4_03_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Entrance */
+    LV4_04_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Stairs to West Lever */
+    LV4_05_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Scissors Beetle Miniboss */
+    LV4_06_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets West Waterfall Northwest */
+    LV4_07_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets West Waterfall Northeast */
+    LV4_08_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Main Room */
+    LV4_09_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Corner from Beetle Miniboss */
+    LV4_0A_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Ice Pit Maze */
+    LV4_0B_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets, Hole to Blue Chuchu Key */
+    LV4_0C_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets West Waterfall Southwest */
+    LV4_0D_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets West Waterfall Southeast */
+    LV4_0E_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets, Big Octorok */
+    LV4_0F_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets, Door to Big Blue Chuchu */
+    LV4_10_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Big Blue Chuchu */
+    LV4_11_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Blue Chuchu Key */
+    LV4_20_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Boss Key Room */
+    LV4_21_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Key 1 Room */
+    LV4_22_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Block Clone Button Puzzle */
+    LV4_23_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Block Clone Puzzle 1 */
+    LV4_24_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Block Clone Ice Bridge */
+    LV4_25_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Stairs to Beetle Miniboss */
+    LV4_26_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Spikebars after 9 Lantern */
+    LV4_27_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets 9 Lantern Room */
+    LV4_28_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Lilypad Ice Blocks */
+    LV4_29_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets The 1 Frame Roll */
+    LV4_2A_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Mulldozers & Firebars */
+    LV4_2B_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Dark Lantern Maze */
+    LV4_2C_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Twin Madderpillars */
+    LV4_2D_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets After Twin Madderpillars */
+    LV4_2E_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Blue Chuchu Key Lever */
+    LV4_2F_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Mulldozer Key Room */
+    LV4_30_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Bombwall to Twin Madderpillars */
+    LV4_31_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Lilypad B2 West */
+    LV4_32_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Compass Room */
+    LV4_33_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets 4 Lantern Scissors Beetles */
+    LV4_34_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Lilypad B2 Middle Room */
+    LV4_35_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Lilypad B2 East Madderpillar */
     LV4_INIT,                     /**< Open Hole Setup Completed in Temple of Droplets West Hole to Boss Key */
     LV4_01_00,                    /**< Door Open in Temple of Droplets North Split to Keys */
     LV4_03_CAP_0,                 /**< Ezlo talks about Temple of Droplets in Temple of Droplets Entrance */
@@ -1422,7 +1422,7 @@ typedef enum {
     LV4_03_CAP_1,                 /**< Ezlo talks about slippery floor in Temple of Droplets Entrance */
     LV4_08_CAP_0,                 /**< Ezlo talks about frozen Element in Temple of Droplets Main Room */
     LV4_08_CAP_1,                 /**< Ezlo talks after pushing East Lever in Temple of Droplets Main Room */
-    LV4_36_WALK,                  /**< Visited Room in Temple of Droplets Flamebar Block Puzzle */
+    LV4_36_WALK,                  /**< Map Screen, Visited Room in Temple of Droplets Flamebar Block Puzzle */
     LV4_36_T0,                    /**< undocumented */
     LV4_21_CAP_1,                 /**< Ezlo talks about frozen key in Temple of Droplets Key 1 Room */
     LV4_0d_03,                    /**< Grabbed 1st Green Rupee in Temple of Droplets West Waterfall Southeast */
@@ -1461,57 +1461,57 @@ typedef enum {
 
 typedef enum {
     BEGIN_9,
-    LV5_00_WALK,                  /**< Visited Room in Palace of Winds 46 (Vortex to Gyorg) */
-    LV5_01_WALK,                  /**< Visited Room in Palace of Winds 24 (5F Boss Key Chest) */
-    LV5_02_WALK,                  /**< Visited Room in Palace of Winds 19 (5F Before Boss Door Hall) */
-    LV5_03_WALK,                  /**< Visited Room in Palace of Winds 44 (5F Real Boss Door) */
-    LV5_04_WALK,                  /**< Visited Room in Palace of Winds 5F East Kinstone Chest from Boss */
-    LV5_05_WALK,                  /**< Visited Room in Palace of Winds 23 (5F Moblin & Wizzrobe Fight) */
-    LV5_06_WALK,                  /**< Visited Room in Palace of Winds 22 (5F Stalfos & Clone Buttons) */
-    LV5_07_WALK,                  /**< Visited Room in Palace of Winds 21 (5F Key Chest & Blocks) */
-    LV5_08_WALK,                  /**< Visited Room in Palace of Winds 20 (5F Boss Door Hall) */
-    LV5_09_WALK,                  /**< Visited Room in Palace of Winds 43 (5F Bombarossa Switch Maze) */
-    LV5_0A_WALK,                  /**< Visited Room in Palace of Winds 25 (5F Hole to Darknut Miniboss) */
-    LV5_0B_WALK,                  /**< Visited Room in Palace of Winds 42 (5F North Corner) */
-    LV5_0C_WALK,                  /**< Visited Room in Palace of Winds 26 (1F Darknut Miniboss) */
-    LV5_0D_WALK,                  /**< Visited Room in Palace of Winds 40 (5F Gibdo Corner) */
-    LV5_0E_WALK,                  /**< Visited Room in Palace of Winds 41 (5F Outside Wall) */
-    LV5_0F_WALK,                  /**< Visited Room in Palace of Winds 18 (4F Cloud Jumps to 5F) */
-    LV5_10_WALK,                  /**< Visited Room in Palace of Winds 45 (4F Block Maze to Boss) */
-    LV5_11_WALK,                  /**< Visited Room in Palace of Winds 17 (4F Lakitu Platforms) */
-    LV5_12_WALK,                  /**< Visited Room in Palace of Winds 4F Bridge to Heart Piece */
-    LV5_13_WALK,                  /**< Visited Room in Palace of Winds 16 (4F Bridge & Fan) */
-    LV5_14_WALK,                  /**< Visited Room in Palace of Winds 15 (4F Moblin Corner) */
-    LV5_15_WALK,                  /**< Visited Room in Palace of Winds 39 (4F Bombarossa Block Hole) */
-    LV5_16_WALK,                  /**< Visited Room in Palace of Winds 8 (3F Northwest) */
-    LV5_17_WALK,                  /**< Visited Room in Palace of Winds 14 (3F Corner after Key) */
-    LV5_18_WALK,                  /**< Visited Room in Palace of Winds 9 (3F Southwest) */
-    LV5_19_WALK,                  /**< Visited Room in Palace of Winds 10 (3F Platform & Cloud to 4F) */
-    LV5_1A_WALK,                  /**< Visited Room in Palace of Winds 11 (3F Spike Bar & Pots) */
-    LV5_1B_WALK,                  /**< Visited Room in Palace of Winds 37 (3F Floormaster Lever) */
-    LV5_1C_WALK,                  /**< Visited Room in Palace of Winds 36 (3F Map Chest Fire Wizzrobes) */
-    LV5_1D_WALK,                  /**< Visited Room in Palace of Winds 13 (3F Key Switch Minish Portal) */
-    LV5_1E_WALK,                  /**< Visited Room in Palace of Winds 38 (3F Stairs to 4F) */
-    LV5_1F_WALK,                  /**< Visited Room in Palace of Winds 3F Hole to Kinstone Wizzrobe Fight */
-    LV5_20_WALK,                  /**< Visited Room in Palace of Winds 12 (3F Key Switch) */
-    LV5_21_WALK,                  /**< Visited Room in Palace of Winds 6 (2F West) */
-    LV5_22_WALK,                  /**< Visited Room in Palace of Winds 7 (2F East) */
-    LV5_23_WALK,                  /**< Visited Room in Palace of Winds 32 (2F Peahat Clone Switches) */
-    LV5_24_WALK,                  /**< Visited Room in Palace of Winds 34 (2F Bombarossa Whirlwinds) */
-    LV5_25_WALK,                  /**< Visited Room in Palace of Winds 30 (2F Stalfos Corner) */
-    LV5_26_WALK,                  /**< Visited Room in Palace of Winds 31 (2F Stalfos Firebars) */
-    LV5_27_WALK,                  /**< Visited Room in Palace of Winds (2F Shortcut Door Switches) */
-    LV5_28_WALK,                  /**< Visited Room in Palace of Winds 29 (2F Stairs) */
-    LV5_29_WALK,                  /**< Visited Room in Palace of Winds, Kinstone Wizzrobe Fight */
-    LV5_2A_WALK,                  /**< Visited Room in Palace of Winds 35 (2F Gibdo Corner) */
-    LV5_2B_WALK,                  /**< Visited Room in Palace of Winds 33 (2F Spikebar Key Chest) */
-    LV5_2C_WALK,                  /**< Visited Room in Palace of Winds 5 (Roc's Cape) */
-    LV5_2D_WALK,                  /**< Visited Room in Palace of Winds 4 (Firebar Bob-omb Grate) */
-    LV5_2E_WALK,                  /**< Visited Room in Palace of Winds 3 (Platform Ride Bombarossas) */
-    LV5_2F_WALK,                  /**< Visited Room in Palace of Winds 27 (1F Bridge after Darknut) */
-    LV5_30_WALK,                  /**< Visited Room in Palace of Winds 2 (Bridge Switches & Clone Block) */
-    LV5_31_WALK,                  /**< Visited Room in Palace of Winds Entrance */
-    LV5_32_WALK,                  /**< Visited Room in Palace of Winds 28 (1F Dark Room) */
+    LV5_00_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 46 (Vortex to Gyorg) */
+    LV5_01_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 24 (5F Boss Key Chest) */
+    LV5_02_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 19 (5F Before Boss Door Hall) */
+    LV5_03_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 44 (5F Real Boss Door) */
+    LV5_04_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 5F East Kinstone Chest from Boss */
+    LV5_05_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 23 (5F Moblin & Wizzrobe Fight) */
+    LV5_06_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 22 (5F Stalfos & Clone Buttons) */
+    LV5_07_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 21 (5F Key Chest & Blocks) */
+    LV5_08_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 20 (5F Boss Door Hall) */
+    LV5_09_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 43 (5F Bombarossa Switch Maze) */
+    LV5_0A_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 25 (5F Hole to Darknut Miniboss) */
+    LV5_0B_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 42 (5F North Corner) */
+    LV5_0C_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 26 (1F Darknut Miniboss) */
+    LV5_0D_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 40 (5F Gibdo Corner) */
+    LV5_0E_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 41 (5F Outside Wall) */
+    LV5_0F_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 18 (4F Cloud Jumps to 5F) */
+    LV5_10_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 45 (4F Block Maze to Boss) */
+    LV5_11_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 17 (4F Lakitu Platforms) */
+    LV5_12_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 4F Bridge to Heart Piece */
+    LV5_13_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 16 (4F Bridge & Fan) */
+    LV5_14_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 15 (4F Moblin Corner) */
+    LV5_15_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 39 (4F Bombarossa Block Hole) */
+    LV5_16_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 8 (3F Northwest) */
+    LV5_17_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 14 (3F Corner after Key) */
+    LV5_18_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 9 (3F Southwest) */
+    LV5_19_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 10 (3F Platform & Cloud to 4F) */
+    LV5_1A_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 11 (3F Spike Bar & Pots) */
+    LV5_1B_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 37 (3F Floormaster Lever) */
+    LV5_1C_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 36 (3F Map Chest Fire Wizzrobes) */
+    LV5_1D_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 13 (3F Key Switch Minish Portal) */
+    LV5_1E_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 38 (3F Stairs to 4F) */
+    LV5_1F_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 3F Hole to Kinstone Wizzrobe Fight */
+    LV5_20_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 12 (3F Key Switch) */
+    LV5_21_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 6 (2F West) */
+    LV5_22_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 7 (2F East) */
+    LV5_23_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 32 (2F Peahat Clone Switches) */
+    LV5_24_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 34 (2F Bombarossa Whirlwinds) */
+    LV5_25_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 30 (2F Stalfos Corner) */
+    LV5_26_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 31 (2F Stalfos Firebars) */
+    LV5_27_WALK,                  /**< Map Screen, Visited Room in Palace of Winds (2F Shortcut Door Switches) */
+    LV5_28_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 29 (2F Stairs) */
+    LV5_29_WALK,                  /**< Map Screen, Visited Room in Palace of Winds, Kinstone Wizzrobe Fight */
+    LV5_2A_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 35 (2F Gibdo Corner) */
+    LV5_2B_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 33 (2F Spikebar Key Chest) */
+    LV5_2C_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 5 (Roc's Cape) */
+    LV5_2D_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 4 (Firebar Bob-omb Grate) */
+    LV5_2E_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 3 (Platform Ride Bombarossas) */
+    LV5_2F_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 27 (1F Bridge after Darknut) */
+    LV5_30_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 2 (Bridge Switches & Clone Block) */
+    LV5_31_WALK,                  /**< Map Screen, Visited Room in Palace of Winds Entrance */
+    LV5_32_WALK,                  /**< Map Screen, Visited Room in Palace of Winds 28 (1F Dark Room) */
     LV5_01_T0,                    /**< Boss Key Chest Open in Palace of Winds 24 (5F Boss Key Chest) */
     LV5_03_T0,                    /**< Small Key Chest Open in Palace of Winds 44, West of Boss Door */
     LV5_03_BOSSDOOR,              /**< Boss Door Open in Palace of Winds 44, Boss Door */
@@ -1601,65 +1601,65 @@ typedef enum {
 
 typedef enum {
     BEGIN_10,
-    LV6_00_WALK,                  /**< Visited Room in Dark Hyrule Castle 10 (1F Entrance) */
-    LV6_01_WALK,                  /**< Visited Room in Dark Hyrule Castle 51 (3F Northwest Key Chest) */
-    LV6_02_WALK,                  /**< Visited Room in Dark Hyrule Castle 41 (3F Northeast Key Chest) */
-    LV6_03_WALK,                  /**< Visited Room in Dark Hyrule Castle 48 (3F Southwest Key Chest) */
-    LV6_04_WALK,                  /**< Visited Room in Dark Hyrule Castle 45 (3F Southeast Key Chest) */
-    LV6_05_WALK,                  /**< Visited Room in Dark Hyrule Castle 53 (3F Vaati Keaton Hallway) */
-    LV6_06_WALK,                  /**< Visited Room in Dark Hyrule Castle 54 (3F Vaati Triple Darknuts) */
-    LV6_07_WALK,                  /**< Visited Room in Dark Hyrule Castle 50 (2F Northwest Corner) */
-    LV6_08_WALK,                  /**< Visited Room in Dark Hyrule Castle 49 (2F Northwest Eye Switches) */
-    LV6_09_WALK,                  /**< Visited Room in Dark Hyrule Castle 52 (2F Boss Key) */
-    LV6_0A_WALK,                  /**< Visited Room in Dark Hyrule Castle 37 (2F North Darknut) */
-    LV6_0B_WALK,                  /**< Visited Room in Dark Hyrule Castle 40 (2F Northeast Ghini) */
-    LV6_0C_WALK,                  /**< Visited Room in Dark Hyrule Castle 39 (2F Northeast Firebar) */
-    LV6_0D_WALK,                  /**< Visited Room in Dark Hyrule Castle 29 (2F Northeast Corner) */
-    LV6_0E_WALK,                  /**< Visited Room in Dark Hyrule Castle 35 (2F Center Northwest) */
-    LV6_0F_WALK,                  /**< Visited Room in Dark Hyrule Castle 36 (2F Center North, Sparks) */
-    LV6_10_WALK,                  /**< Visited Room in Dark Hyrule Castle 38 (2F Center Northeast) */
+    LV6_00_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 10 (1F Entrance) */
+    LV6_01_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 51 (3F Northwest Key Chest) */
+    LV6_02_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 41 (3F Northeast Key Chest) */
+    LV6_03_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 48 (3F Southwest Key Chest) */
+    LV6_04_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 45 (3F Southeast Key Chest) */
+    LV6_05_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 53 (3F Vaati Keaton Hallway) */
+    LV6_06_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 54 (3F Vaati Triple Darknuts) */
+    LV6_07_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 50 (2F Northwest Corner) */
+    LV6_08_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 49 (2F Northwest Eye Switches) */
+    LV6_09_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 52 (2F Boss Key) */
+    LV6_0A_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 37 (2F North Darknut) */
+    LV6_0B_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 40 (2F Northeast Ghini) */
+    LV6_0C_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 39 (2F Northeast Firebar) */
+    LV6_0D_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 29 (2F Northeast Corner) */
+    LV6_0E_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 35 (2F Center Northwest) */
+    LV6_0F_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 36 (2F Center North, Sparks) */
+    LV6_10_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 38 (2F Center Northeast) */
     LV6_11_WALK,                  /**< undocumented */
-    LV6_12_WALK,                  /**< Visited Room in Dark Hyrule Castle 30/34 (2F Center East/Center West) */
-    LV6_13_WALK,                  /**< Visited Room in Dark Hyrule Castle 33 (2F Center Southwest) */
-    LV6_14_WALK,                  /**< Visited Room in Dark Hyrule Castle 32 (2F Center South, Boss Door) */
-    LV6_15_WALK,                  /**< Visited Room in Dark Hyrule Castle 42 (2F Center Southeast) */
-    LV6_16_WALK,                  /**< Visited Room in Dark Hyrule Castle 46 (2F Southwest Floortiles) */
-    LV6_17_WALK,                  /**< Visited Room in Dark Hyrule Castle 31 (2F South Entrance) */
-    LV6_18_WALK,                  /**< Visited Room in Dark Hyrule Castle 43 (2F Southeast Clone Switches) */
-    LV6_19_WALK,                  /**< Visited Room in Dark Hyrule Castle 48 (2F Southwest Corner) */
-    LV6_1A_WALK,                  /**< Visited Room in Dark Hyrule Castle 47 (2F Southwest Ghini) */
+    LV6_12_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 30/34 (2F Center East/Center West) */
+    LV6_13_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 33 (2F Center Southwest) */
+    LV6_14_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 32 (2F Center South, Boss Door) */
+    LV6_15_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 42 (2F Center Southeast) */
+    LV6_16_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 46 (2F Southwest Floortiles) */
+    LV6_17_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 31 (2F South Entrance) */
+    LV6_18_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 43 (2F Southeast Clone Switches) */
+    LV6_19_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 48 (2F Southwest Corner) */
+    LV6_1A_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 47 (2F Southwest Ghini) */
     LV6_1B_WALK,                  /**< undocumented */
-    LV6_1C_WALK,                  /**< Visited Room in Dark Hyrule Castle 1 (B1 Entrance to Garden) */
-    LV6_1D_WALK,                  /**< Visited Room in Dark Hyrule Castle 44 (2F Southeast Corner) */
-    LV6_1E_WALK,                  /**< Visited Room in Dark Hyrule Castle (1F Northwest Gibdo Corner) */
-    LV6_1F_WALK,                  /**< Visited Room in Dark Hyrule Castle 24 (1F Throne Room) */
-    LV6_20_WALK,                  /**< Visited Room in Dark Hyrule Castle 27 (1F Compass Room) */
-    LV6_21_WALK,                  /**< Visited Room in Dark Hyrule Castle 28 (1F Stairs to 2F) */
-    LV6_22_WALK,                  /**< Visited Room in Dark Hyrule Castle 23 (1F Entrance to Throne Room) */
-    LV6_23_WALK,                  /**< Visited Room in Dark Hyrule Castle 14 (1F Center Northwest) */
-    LV6_24_WALK,                  /**< Visited Room in Dark Hyrule Castle 15 (1F Center North) */
-    LV6_25_WALK,                  /**< Visited Room in Dark Hyrule Castle 16 (1F Center Northeast) */
-    LV6_26_WALK,                  /**< Visited Room in Dark Hyrule Castle 13 (1F Center West) */
-    LV6_27_WALK,                  /**< Visited Room in Dark Hyrule Castle 17 (1F Center East) */
-    LV6_28_WALK,                  /**< Visited Room in Dark Hyrule Castle 12 (1F Center Southwest) */
-    LV6_29_WALK,                  /**< Visited Room in Dark Hyrule Castle 11 (1F Center South) */
-    LV6_2A_WALK,                  /**< Visited Room in Dark Hyrule Castle 18 (1F Center Southeast) */
-    LV6_2B_WALK,                  /**< Visited Room in Dark Hyrule Castle (1F Pot Corner) */
-    LV6_2C_WALK,                  /**< Visited Room in Dark Hyrule Castle (1F Southeast Gibdo Corner) */
-    LV6_2D_WALK,                  /**< Visited Room in Dark Hyrule Castle 25 (B1 Dark Hall West) */
-    LV6_2E_WALK,                  /**< Visited Room in Dark Hyrule Castle 26 (B1 Dark Hall East) */
-    LV6_2F_WALK,                  /**< Visited Room in Dark Hyrule Castle 22 (B1 North Stairs) */
-    LV6_30_WALK,                  /**< Visited Room in Dark Hyrule Castle 4 (B1 Center Northwest, Stairs to B2) */
-    LV6_31_WALK,                  /**< Visited Room in Dark Hyrule Castle 5 (B1 Center North, Minish Portal) */
-    LV6_32_WALK,                  /**< Visited Room in Dark Hyrule Castle 21 (B1 Center Northeast, Keatons) */
-    LV6_33_WALK,                  /**< Visited Room in Dark Hyrule Castle 3 (B1 Center West, Firebars) */
-    LV6_34_WALK,                  /**< Visited Room in Dark Hyrule Castle 20 (B1 Center East, Cannons) */
-    LV6_35_WALK,                  /**< Visited Room in Dark Hyrule Castle 2 (B1 Center Southwest) */
-    LV6_36_WALK,                  /**< Visited Room in Dark Hyrule Castle 19 (B1 Center East) */
-    LV6_37_WALK,                  /**< Visited Room in Dark Hyrule Castle 9 (B1 South Stairs) */
-    LV6_38_WALK,                  /**< Visited Room in Dark Hyrule Castle 7 (B2 Prison West) */
-    LV6_39_WALK,                  /**< Visited Room in Dark Hyrule Castle 8 (B2 Prison East) */
-    LV6_3A_WALK,                  /**< Visited Room in Dark Hyrule Castle 6 (B2 Prison Southwest) */
+    LV6_1C_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 1 (B1 Entrance to Garden) */
+    LV6_1D_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 44 (2F Southeast Corner) */
+    LV6_1E_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle (1F Northwest Gibdo Corner) */
+    LV6_1F_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 24 (1F Throne Room) */
+    LV6_20_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 27 (1F Compass Room) */
+    LV6_21_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 28 (1F Stairs to 2F) */
+    LV6_22_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 23 (1F Entrance to Throne Room) */
+    LV6_23_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 14 (1F Center Northwest) */
+    LV6_24_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 15 (1F Center North) */
+    LV6_25_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 16 (1F Center Northeast) */
+    LV6_26_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 13 (1F Center West) */
+    LV6_27_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 17 (1F Center East) */
+    LV6_28_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 12 (1F Center Southwest) */
+    LV6_29_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 11 (1F Center South) */
+    LV6_2A_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 18 (1F Center Southeast) */
+    LV6_2B_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle (1F Pot Corner) */
+    LV6_2C_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle (1F Southeast Gibdo Corner) */
+    LV6_2D_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 25 (B1 Dark Hall West) */
+    LV6_2E_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 26 (B1 Dark Hall East) */
+    LV6_2F_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 22 (B1 North Stairs) */
+    LV6_30_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 4 (B1 Center Northwest, Stairs to B2) */
+    LV6_31_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 5 (B1 Center North, Minish Portal) */
+    LV6_32_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 21 (B1 Center Northeast, Keatons) */
+    LV6_33_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 3 (B1 Center West, Firebars) */
+    LV6_34_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 20 (B1 Center East, Cannons) */
+    LV6_35_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 2 (B1 Center Southwest) */
+    LV6_36_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 19 (B1 Center East) */
+    LV6_37_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 9 (B1 South Stairs) */
+    LV6_38_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 7 (B2 Prison West) */
+    LV6_39_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 8 (B2 Prison East) */
+    LV6_3A_WALK,                  /**< Map Screen, Visited Room in Dark Hyrule Castle 6 (B2 Prison Southwest) */
     LV6_3B_WALK,                  /**< undocumented */
     LV6_00_00,                    /**< Locked Door Open in Dark Hyrule Castle 10 (1F Entrance) */
     LV6_01_T0,                    /**< Small Key Chest Open in Dark Hyrule Castle 51 (3F Northwest Key Chest) */
