@@ -16,7 +16,7 @@ void ItemPacciCane(ItemBehavior* this, u32 index) {
 
 void sub_08076C98(ItemBehavior* this, u32 index) {
     this->priority |= 0xf;
-    sub_08077D38(this, index);
+    InitItemAnimation(this, index);
     sub_0806F948(&gPlayerEntity.base);
     sub_08077BB8(this);
 }

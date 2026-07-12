@@ -19,7 +19,7 @@ void ItemJarEmpty(ItemBehavior* this, u32 index) {
 
 void sub_08077534(ItemBehavior* this, u32 index) {
     u32 tmp;
-    sub_08077D38(this, index);
+    InitItemAnimation(this, index);
     sub_0806F948(&gPlayerEntity.base);
     sub_08077BB8(this);
     this->priority |= 0xf;

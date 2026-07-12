@@ -30,7 +30,7 @@ void OcarinaUse(ItemBehavior* this, u32 index) {
         gPlayerState.field_0xa = (8 >> index) | gPlayerState.field_0xa;
         gPlayerState.keepFacing = (8 >> index) | gPlayerState.keepFacing;
         ResetPlayerVelocity();
-        sub_08077D38(this, index);
+        InitItemAnimation(this, index);
         SoundReq(SFX_216);
         SetPlayerEventPriority();
     }

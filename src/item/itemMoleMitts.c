@@ -30,7 +30,7 @@ void sub_08077130(ItemBehavior* this, u32 index) {
     s32 iVar1;
 
     if (gPlayerState.jump_status == 0) {
-        sub_08077D38(this, index);
+        InitItemAnimation(this, index);
         gPlayerState.moleMittsState = 1;
         this->priority |= 0x80;
         iVar1 = sub_080774A0();

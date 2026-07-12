@@ -17,7 +17,7 @@ void sub_08075D2C(ItemBehavior* this, u32 index) {
         this->priority |= 0xf;
         sub_0806F948(&gPlayerEntity.base);
         CreatePlayerItemIfNotExists(this, ITEM_BOOMERANG);
-        sub_08077D38(this, index);
+        InitItemAnimation(this, index);
         gPlayerState.attack_status |= 8;
     } else {
         DeleteItemBehavior(this, index);

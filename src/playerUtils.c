@@ -486,7 +486,7 @@ Entity* sub_08077CF8(u32 id, u32 type, u32 type2, u32 unk) {
     return &ent->base;
 }
 
-void sub_08077D38(ItemBehavior* this, u32 index) {
+void InitItemAnimation(ItemBehavior* this, u32 index) {
     u32 anim;
     ItemDefinition* ptr;
 
@@ -509,6 +509,9 @@ void sub_08077D38(ItemBehavior* this, u32 index) {
                     break;
                 case 0xd:
                     anim = ANIM_SHIELD_PULLOUT_NOCAP;
+                    break;
+                default:
+                    anim = ptr->frameIndex;
                     break;
             }
             SetItemAnim(this, anim);
@@ -1720,7 +1723,7 @@ void sub_08078FB0(Entity* this) {
         gPlayerState.field_0x35 = 0xff;
     }
     sub_08079064(this);
-    if (gPlayerState.flags & PL_NO_CAP) {
+    if (gPlayerState.flags & PL_NO_CAP && gPlayerState.animation >> 8 == ANIM_DEFAULT_NOCAP >> 8) {
         animIndex = 0x58;
     } else {
         if (gPlayerState.flags & PL_MINISH) {
@@ -2088,8 +2091,14 @@ void sub_080797EC(void) {
     u32 animation;
 
     if (gPlayerState.flags & PL_NO_CAP) {
-        if (gPlayerState.heldObject) {
+        if (gPlayerState.gustJarState) {
+            return;
+        } else if (gPlayerState.heldObject) {
             animation = ANIM_CARRY_NOCAP;
+        } else if (gPlayerState.dash_state) {
+            animation = ANIM_DASH;
+        } else if (gPlayerState.flags & PL_IN_MINECART) {
+            animation = ANIM_MINECART;
         } else if (gPlayerState.shield_status) {
             animation = ANIM_SHIELD_WALK_NOCAP;
         } else if (!gPlayerState.bow_state) {
@@ -2104,7 +2113,12 @@ void sub_080797EC(void) {
                     if (gPlayerState.framestate == PL_STATE_IDLE) {
                         gPlayerState.framestate = PL_STATE_WALK;
                     }
-                    animation = ANIM_WALK_NOCAP;
+                    
+                    if ((gPlayerState.flags & PL_USE_LANTERN) != 0) {
+                        animation = ANIM_LANTERN;
+                    } else {
+                        animation = ANIM_WALK_NOCAP;
+                    }
                 } else {
                     animation = ANIM_SWORD_CHARGE_WALK;
                     if (sub_080793E4(0)) {
@@ -2181,8 +2195,14 @@ void ResolvePlayerAnimation(void) {
             if (gPlayerState.gustJarState | gPlayerState.moleMittsState) {
                 return;
             }
-            if (gPlayerState.flags & PL_CONVEYOR_PUSHED) {
+            if (gPlayerState.flags & PL_MOLDWORM_CAPTURED) {
+                anim = ANIM_MOLDWORM_CAPTURED;
+            } else if (gPlayerState.flags & PL_CONVEYOR_PUSHED) {
                 anim = ANIM_JUMP;
+            } else if (gPlayerState.dash_state) {
+                anim = ANIM_DASH;
+            } else if (gPlayerState.flags & PL_IN_MINECART) {
+                anim = ANIM_MINECART_PAUSE;
             } else if (gPlayerState.shield_status) {
                 anim = ANIM_SHIELD_NOCAP;
             } else if (gPlayerState.bow_state) {
@@ -2210,7 +2230,14 @@ void ResolvePlayerAnimation(void) {
                                 break;
                         }
                     } else {
-                        anim = ANIM_DEFAULT_NOCAP;
+                        if (gPlayerState.flags & PL_USE_LANTERN) {
+                            if (gActiveItems[ACTIVE_ITEM_LANTERN].animPriority) {
+                                return;
+                            }
+                            anim = ANIM_LANTERN_ON;
+                        } else {
+                            anim = ANIM_DEFAULT_NOCAP;
+                        }
                     }
                 } else {
                     anim = ANIM_SWORD_CHARGE;

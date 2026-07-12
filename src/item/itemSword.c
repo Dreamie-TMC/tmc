@@ -32,7 +32,7 @@ void sub_08075338(ItemBehavior* this, u32 index) {
     u32 temp, temp2;
     if (gPlayerState.flags & PL_MINISH) {
         this->priority |= 0x80;
-        sub_08077D38(this, index);
+        InitItemAnimation(this, index);
         gPlayerState.animation = ANIM_SWORD_MINISH;
         SoundReq(SFX_PLY_VO1);
         return;
@@ -70,7 +70,7 @@ void sub_08075338(ItemBehavior* this, u32 index) {
         }
         // Do the roll attack.
 
-        sub_08077D38(this, index);
+        InitItemAnimation(this, index);
         sub_08077B98(this);
         temp = (8 >> index);
         gPlayerState.attack_status |= temp | (temp << 4);
@@ -99,7 +99,7 @@ void sub_08075338(ItemBehavior* this, u32 index) {
         }
     }
 
-    sub_08077D38(this, index);
+    InitItemAnimation(this, index);
     sub_08077B98(this);
 }
 

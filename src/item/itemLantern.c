@@ -38,7 +38,7 @@ void sub_08075A0C(ItemBehavior* this, u32 index) {
         DeleteItemBehavior(this, index);
     } else {
         this->priority |= 0x80;
-        sub_08077D38(this, index);
+        InitItemAnimation(this, index);
         CreatePlayerItemForItemIfNotExists(this);
         sub_0806F948(&gPlayerEntity.base);
         this->behaviorId = 0x10;
